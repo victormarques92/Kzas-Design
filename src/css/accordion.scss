@@ -1,0 +1,78 @@
+/*
+ACCORDION
+*/
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-top: 1.500rem;
+    padding-bottom: 1.500rem;
+    padding-left: 1.500rem;
+    padding-right: 1.500rem;
+    
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: $grey;
+    
+    cursor: pointer;
+}
+
+.accordion-header .title {
+    padding-bottom: 0;
+    padding-right: 0.500rem;
+    flex-grow: 1;
+}
+
+.accordion-content {
+    padding-top: 1.500rem;
+    padding-bottom: 1.500rem;
+    padding-left: 1.500rem;
+    padding-right: 1.500rem;
+    margin-bottom: 0.500rem;
+    
+    border-bottom-left-radius: 1.500rem;
+    border-bottom-right-radius: 1.500rem;
+}
+
+.accordion .accordion-content,
+.accordion .accordion-header .icon {
+    transition: all .4s ease;
+}
+
+.accordion.is-active .accordion-header .icon {
+    transform: rotate(180deg);
+}
+
+.accordion:not(.is-active) .accordion-content {
+    height: 1px;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.accordion:not(.is-active) .accordion-content,
+.accordion:not(.is-active) .accordion-content > * {
+    opacity: 0;
+}
+
+.accordion[data-hided]{
+    display: none;
+}
+
+.accordions .buttons {
+    padding-top: 1.000rem;
+}
+
+.accordions .buttons .button .icon.is-rotated {
+    transform: rotate(135deg);
+}
+
+/*
+end ACCORDION
+*/

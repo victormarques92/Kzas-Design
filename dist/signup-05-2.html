@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#41A5BB">
+
+  <title>Kzas - Você no controle da compra do seu imóvel</title>
+  <meta name="description"
+    content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+  <!-- jQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- LOADING -->
+  <script src="./js/loading.js"></script>
+
+  <!-- SMOOTHSCROLL -->
+  <script src="./js/smoothscroll.js"></script>
+
+  <!-- VISIBLE -->
+  <script src="./js/visible.js"></script>
+
+  <!-- BULMA TOAST -->
+  <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+
+  <!-- jQUERY MASKS -->
+  <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+  <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+  <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
+  <!-- https://plentz.github.io/jquery-maskmoney/ -->
+
+  <!-- jQUERY VALIDATOR -->
+  <script type="text/javascript" src="js/parsley.min.js"></script>
+  <script type="text/javascript" src="js/parsley.lang.pt-br.js"></script>
+  <!-- http://parsleyjs.org/ -->
+
+  <!-- SWIPER -->
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <!-- http://idangero.us/swiper/ -->
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <!-- SCRIPT MINHA LISTA -->
+  <script type="text/javascript" src="js/page-signup-05-2.js"></script>
+
+  <!-- Google Analytics -->
+  <!-- Hotjar -->
+</head>
+
+<body class="page-minha-lista">
+
+  <!-- LOADER -->
+  <div id="preloader">
+    <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+  </div>
+  <!-- end LOADER -->
+
+  <!-- LOADING CONTENT -->
+  <div class="preloader-content">
+
+    <!-- COOKIE ALERT -->
+    <div class="topbar is-secundary" style="display: none">
+      <div class="topbar-text">
+        <p class="text">
+          O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor
+          experi&ecirc;ncia na compra do seu im&oacute;vel.
+          <a class="link" href="" data-modal="modal-privacidade">
+            <strong>
+              Saiba mais
+            </strong>
+          </a>
+        </p>
+      </div>
+      <div class="topbar-action">
+        <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title=""
+          href="" role="close">
+          <span class="icon">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- end COOKIE ALERT -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar has-border" role="navigation" aria-label="main navigation">
+
+      <!-- CONTAINER -->
+      <div class="container">
+
+        <div class="navbar-brand">
+
+          <a class="navbar-item">
+            <img src="./img/kzas-logo.png" alt="Kzas">
+          </a>
+
+        </div>
+
+        <div class="navbar-menu">
+
+          <div class="navbar-item is-mobile">
+
+            <a class="button is-circle notification" target="_blank">
+              <span class="badge is-rounded">
+                <strong class="notification-counter">0</strong>
+              </span>
+            </a>
+
+          </div>
+
+          <!-- AVATAR -->
+          <div class="navbar-item is-mobile">
+
+            <button class="button is-circle user" role="button" data-modal="modal-user">
+                <figure class="image is-40">
+                    <img class="is-rounded" src="./img/icon-user-blue.png">
+                </figure>
+                <span class="badge is-rounded for-validation">
+                    <i class="fas fa-exclamation"></i>
+                </span>
+            </button>
+
+          </div>
+          <!-- end AVATAR -->
+
+        </div>
+
+      </div>
+      <!-- CONTAINER -->
+
+    </nav>
+    <!-- end NAVBAR -->
+
+    <!-- MINHA LISTA -->
+    <section class="minha-lista">
+      <!-- not is-blocked -->
+
+      <!-- CONTAINER -->
+      <div class="container">
+
+
+        <!-- STEPS -->
+        <div class="section-steps">
+
+          <div class="steps">
+
+            <a class="step-item is-completed" href="signup-01.html">
+              <span class="step-marker">
+                <span class="marker-number">1</span>
+              </span>
+              <span class="tooltip" data-tooltip="Minhas informa&ccedil;&otilde;es"></span>
+            </a>
+            <a class="step-item is-completed" href="signup-02.html">
+              <span class="step-marker">
+                <span class="marker-number">2</span>
+              </span>
+              <span class="tooltip" data-tooltip="Disponibilidade financeira"></span>
+            </a>
+            <a class="step-item is-completed" href="signup-03.html">
+              <span class="step-marker">
+                <span class="marker-number">3</span>
+              </span>
+              <span class="tooltip" data-tooltip="Minhas prefer&ecirc;ncias"></span>
+            </a>
+            <a class="step-item is-completed" href="signup-04.html">
+              <span class="step-marker">
+                <span class="marker-number">4</span>
+              </span>
+              <span class="tooltip" data-tooltip="Match"></span>
+            </a>
+            <a class="step-item" href="signup-05.html">
+              <span class="step-marker">
+                <span class="marker-number">5</span>
+              </span>
+              <span class="tooltip" data-tooltip="Minha lista"></span>
+            </a>
+            <span class="step-item is-final">
+              <span class="step-marker">
+                <span class="icon">
+                  <i class="fa fa-key"></i>
+                </span>
+              </span>
+            </span>
+
+          </div>
+
+        </div>
+        <!-- end STEPS -->
+
+        <!-- TITLE -->
+        <div class="section-title">
+
+          <h2 class="title is-medium">
+            <span>
+              Minha Lista
+            </span>
+          </h2>
+          <p class="text is-regular">
+            Reveja seus imóveis preferidos, tire suas dúvidas, visite-os e faça suas propostas.
+          </p>
+
+        </div>
+        <!-- end TITLE -->
+
+        <!-- BOX CONFIRMATION -->
+        <div class="box-confirmation">
+          <img class="box-confirmation-icon" src="./img/icon-illus-shield-check-purple.png" />
+
+          <div class="content">
+            <h3 class="content-title">Manuela, precisamos confirmar alguns dos seus dados
+            </h3>
+
+            <p class="text is-small">
+                Para ter acesso a total às vantagens do Kzas, você precisa confirmar algumas informações.
+                Mas não se preocupe em paz: nós não compartilharemos seus dados com ninguém ;)
+            </p>
+
+            <button type="button" class="button is-small" role="button">
+              <strong>Confirmar agora</strong>
+            </button>
+          </div>
+        </div>
+        <!-- end BOX CONFIRMATION -->
+
+        <!-- LIST -->
+        <div class="box-list">
+          
+            <!-- LIST HEAD -->
+            <div class="head">
+                        
+                <h3 class="title is-small">
+                    <i class="fas fa-heart"></i>
+                    <strong class="count-propertie">3</strong>
+                    imóveis salvos na sua lista
+                </h3>
+
+                <a href="signup-03.html" class="link">
+                    Selecionar outros imóveis                         
+                </a>
+
+            </div>
+            <!-- end LIST HEAD -->
+
+          <!-- CARD 01 -->
+          <div class="card is-list" id="00">
+
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+              <!-- SWIPER -->
+              <div class="swiper-container">
+
+                <!-- WRAPPER -->
+                <div class="swiper-wrapper">
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-02.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-01.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-03.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                </div>
+                <!-- WRAPPER -->
+
+                <!-- DOTS -->
+                <div class="swiper-pagination"></div>
+                <!-- end DOTS -->
+
+                <!-- NAV -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- NAV -->
+
+              </div>
+              <!-- end SWIPER -->
+
+            </div>
+            <!-- end CARD IMAGE -->
+
+            <!-- CARD CONTENT -->
+            <div class="card-content">
+
+              <!-- CONTENT HEAD -->
+              <div class="content-head halign-middle">
+
+                <div class="column halign-middle">
+
+                  <span class="match-score is-hottest">
+                    <span class="icon is-left">
+                      <i class="fas fa-fire"></i>
+                    </span>
+                    <strong>Match 100%</strong>
+                  </span>
+
+                </div>
+
+                <div class="column tags">
+
+                  <span class="tag is-rounded is-superinc is-inverted">
+                    <span class="icon is-left">
+                      <i class="fas fa-bolt"></i>
+                    </span>
+                    <strong class="text">
+                      Super Inc
+                    </strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <!-- end CONTENT HEAD -->
+
+              <!-- CONTENT BODY -->
+              <div class="content-body">
+
+                <h3 class="title is-smaller">
+                  Apartamento no Morumbi
+                </h3>
+
+                <ul class="list has-icons-left">
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-car"></i>
+                    </span>
+                    <span class="text is-small">
+                      1 -3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-bed"></i>
+                    </span>
+                    <span class="text is-small">
+                      2 - 3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-vector-square"></i>
+                    </span>
+                    <span class="text is-small">
+                      80 - 120 m&sup2;
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT BODY -->
+
+              <!-- CONTENT FOOT -->
+              <div class="content-foot columns">
+
+                <ul class="list has-icons-left">
+                  <li class="match-status">
+                    <span class="icon is-left">
+                      <i class="fas fa-dolly"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pronto para morar
+                    </span>
+                  </li>
+                  <li class="match-interests">
+                    <span class="icon is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pontos de interesses em 1,5km &agrave; 4,5km
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT FOOT -->
+
+            </div>
+            <!-- end CARD CONTENT -->
+
+            <!-- CARD ACTIONS -->
+            <div class="card-actions">
+
+              <!-- Card Saved -->
+              <div class="card-saved">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+
+                  <!-- VALOR -->
+                  <!--
+                      INDICADORES
+                      ---
+                      ACIMA DA MEDIA: data-info="is-high"
+                      DENTRO DA MEDIA: data-info="is-normal"
+                      DENTRO DA MEDIA: data-info="is-low"
+                  -->
+                  <div class="price valor" data-info="is-low">
+                    <span class="price-label">
+                      <span class="text">A partir de</span>
+                    </span>
+                    <strong class="price-value">
+                      <strong class="text">
+                        R$ 624.000
+                      </strong>
+                    </strong>
+                    <span class="price-info">
+                      <span class="icon is-left">
+                        <i class="fas fa-arrow-down"></i>
+                      </span>
+                      <strong class="text">
+                        2,5% da m&eacute;dia
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end VALOR -->
+
+
+                  <!-- CASHBACK -->
+                  <div class="cashback">
+                    <span class="cashback-label">
+                      <span class="text">Cashback até</span>
+                    </span>
+                    <strong class="cashback-value">
+                      <strong class="text">
+                        R$ 6.240
+                      </strong>
+                    </strong>
+                  </div>
+                  <!-- end CASHBACK -->
+
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="button action trash">
+                    <span class="icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                  </a>
+
+                  <div class="row">
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-messages"
+                      open-is-modal="not-messages">
+                      <span class="icon">
+                        <i class="far fa-envelope"></i>
+                      </span>
+                    </a>
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-visits"
+                      open-is-modal="not-visits">
+                      <span class="icon">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </a>
+
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-proposals"
+                      open-is-modal="new-proposals">
+                      <span class="icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+              </div>
+              <!-- end Card Saved -->
+
+
+              <!-- Card Blocked -->
+              <div class="card-blocked">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+                  <span class="icon">
+                    <i class="fas fa-lock"></i>
+                  </span>
+
+                  <p>
+                    Confirme seus dados para enviar mensagem e agendar visitas
+                  </p>
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="btn-action">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+
+                  <div>
+                    <a class="btn-action">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="far fa-calendar-alt"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+
+              </div>
+              <!-- end Card Blocked -->
+
+            </div>
+            <!-- end CARD ACTIONS -->
+
+          </div>
+          <!-- end CARD 01 -->
+
+
+          <!-- CARD 02 -->
+          <div class="card is-list" id="00">
+
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+              <!-- SWIPER -->
+              <div class="swiper-container">
+
+                <!-- WRAPPER -->
+                <div class="swiper-wrapper">
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-b-01.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-b-02.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-b-03.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                </div>
+                <!-- WRAPPER -->
+
+                <!-- DOTS -->
+                <div class="swiper-pagination"></div>
+                <!-- end DOTS -->
+
+                <!-- NAV -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- NAV -->
+
+              </div>
+              <!-- end SWIPER -->
+
+            </div>
+            <!-- end CARD IMAGE -->
+
+            <!-- CARD CONTENT -->
+            <div class="card-content">
+
+              <!-- CONTENT HEAD -->
+              <div class="content-head halign-middle">
+
+                <div class="column halign-middle">
+
+                  <span class="match-score is-hottest">
+                    <span class="icon is-left">
+                      <i class="fas fa-thermometer-full"></i>
+                    </span>
+                    <strong>Match 90%</strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <!-- end CONTENT HEAD -->
+
+              <!-- CONTENT BODY -->
+              <div class="content-body">
+
+                <h3 class="title is-smaller">
+                  Apartamento duplex em Pinheiros
+                </h3>
+
+                <ul class="list has-icons-left">
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-car"></i>
+                    </span>
+                    <span class="text is-small">
+                      1 -3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-bed"></i>
+                    </span>
+                    <span class="text is-small">
+                      2 - 3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-vector-square"></i>
+                    </span>
+                    <span class="text is-small">
+                      80 - 120 m&sup2;
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT BODY -->
+
+              <!-- CONTENT FOOT -->
+              <div class="content-foot columns">
+
+                <ul class="list has-icons-left">
+                  <li class="match-status">
+                    <span class="icon is-left">
+                      <i class="fas fa-dolly"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pronto para morar
+                    </span>
+                  </li>
+                  <li class="match-interests">
+                    <span class="icon is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pontos de interesses em 1,5km &agrave; 4,5km
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT FOOT -->
+
+            </div>
+            <!-- end CARD CONTENT -->
+
+            <!-- CARD ACTIONS -->
+            <div class="card-actions">
+
+              <!-- Card Saved -->
+              <div class="card-saved">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+
+                  <!-- VALOR -->
+                  <!--
+                                        INDICADORES
+                                        ---
+                                        ACIMA DA MEDIA: data-info="is-high"
+                                        DENTRO DA MEDIA: data-info="is-normal"
+                                        DENTRO DA MEDIA: data-info="is-low"
+                                    -->
+                  <div class="price valor" data-info="is-normal">
+                    <span class="price-label">
+                      <span class="text">A partir de</span>
+                    </span>
+                    <strong class="price-value">
+                      <strong class="text">
+                        R$ 2.344.000
+                      </strong>
+                    </strong>
+                    <span class="price-info">
+                      <span class="icon is-left">
+                        <i class="fas fa-dot-circle"></i>
+                      </span>
+                      <strong class="text">
+                        Dentro da média
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end VALOR -->
+
+
+                  <!-- CASHBACK -->
+                  <div class="cashback">
+                    <span class="cashback-label">
+                      <span class="text">Cashback até</span>
+                    </span>
+                    <strong class="cashback-value">
+                      <strong class="text">
+                        R$ 6.240
+                      </strong>
+                    </strong>
+                  </div>
+                  <!-- end CASHBACK -->
+
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="button action trash">
+                    <span class="icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                  </a>
+
+                  <div class="row">
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-messages"
+                      open-is-modal="list-messages">
+                      <span class="icon">
+                        <i class="far fa-envelope"></i>
+                      </span>
+                      <span class="badge">
+                        <strong class="notification-counter">1</strong>
+                      </span>
+                    </a>
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-visits"
+                      open-is-modal="not-visits">
+                      <span class="icon">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </a>
+
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-proposals"
+                      open-is-modal="new-proposals">
+                      <span class="icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+              </div>
+              <!-- end Card Saved -->
+
+
+              <!-- Card Blocked -->
+              <div class="card-blocked">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+                  <span class="icon">
+                    <i class="fas fa-lock"></i>
+                  </span>
+
+                  <p>
+                    Confirme seus dados para enviar mensagem e agendar visitas
+                  </p>
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="btn-action">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+
+                  <div>
+                    <a class="btn-action">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="far fa-calendar-alt"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+
+              </div>
+              <!-- end Card Blocked -->
+
+            </div>
+            <!-- end CARD ACTIONS -->
+
+          </div>
+          <!-- end CARD 02 -->
+
+
+          <!-- CARD 03 -->
+          <div class="card is-list" id="00">
+
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+              <!-- SWIPER -->
+              <div class="swiper-container">
+
+                <!-- WRAPPER -->
+                <div class="swiper-wrapper">
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-c-01.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-c-02.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-c-03.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                </div>
+                <!-- WRAPPER -->
+
+                <!-- DOTS -->
+                <div class="swiper-pagination"></div>
+                <!-- end DOTS -->
+
+                <!-- NAV -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- NAV -->
+
+              </div>
+              <!-- end SWIPER -->
+
+            </div>
+            <!-- end CARD IMAGE -->
+
+            <!-- CARD CONTENT -->
+            <div class="card-content">
+
+              <!-- CONTENT HEAD -->
+              <div class="content-head halign-middle">
+
+                <div class="column halign-middle">
+
+                  <span class="match-score is-hottest">
+                    <span class="icon is-left">
+                      <i class="fas fa-thermometer-full"></i>
+                    </span>
+                    <strong>Match 90%</strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <!-- end CONTENT HEAD -->
+
+              <!-- CONTENT BODY -->
+              <div class="content-body">
+
+                <h3 class="title is-smaller">
+                  Apartamento em condomínio na Lapa
+                </h3>
+
+                <ul class="list has-icons-left">
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-car"></i>
+                    </span>
+                    <span class="text is-small">
+                      1 -3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-bed"></i>
+                    </span>
+                    <span class="text is-small">
+                      2 - 3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-vector-square"></i>
+                    </span>
+                    <span class="text is-small">
+                      80 - 120 m&sup2;
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT BODY -->
+
+              <!-- CONTENT FOOT -->
+              <div class="content-foot columns">
+
+                <ul class="list has-icons-left">
+                  <li class="match-status">
+                    <span class="icon is-left">
+                      <i class="fas fa-dolly"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pronto para morar
+                    </span>
+                  </li>
+                  <li class="match-interests">
+                    <span class="icon is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pontos de interesses em 1,5km &agrave; 4,5km
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT FOOT -->
+
+            </div>
+            <!-- end CARD CONTENT -->
+
+            <!-- CARD ACTIONS -->
+            <div class="card-actions">
+
+              <!-- Card Saved -->
+              <div class="card-saved">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+
+                  <!-- VALOR -->
+                  <!--
+                                        INDICADORES
+                                        ---
+                                        ACIMA DA MEDIA: data-info="is-high"
+                                        DENTRO DA MEDIA: data-info="is-normal"
+                                        DENTRO DA MEDIA: data-info="is-low"
+                                    -->
+                  <div class="price valor" data-info="is-normal">
+                    <span class="price-label">
+                      <span class="text">A partir de</span>
+                    </span>
+                    <strong class="price-value">
+                      <strong class="text">
+                        R$ 720.000
+                      </strong>
+                    </strong>
+                    <span class="price-info">
+                      <span class="icon is-left">
+                        <i class="fas fa-dot-circle"></i>
+                      </span>
+                      <strong class="text">
+                        Dentro da média
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end VALOR -->
+
+
+                  <!-- CASHBACK -->
+                  <div class="cashback">
+                    <span class="cashback-label">
+                      <span class="text">Cashback até</span>
+                    </span>
+                    <strong class="cashback-value">
+                      <strong class="text">
+                        R$ 7.200
+                      </strong>
+                    </strong>
+                  </div>
+                  <!-- end CASHBACK -->
+
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="button action trash">
+                    <span class="icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                  </a>
+
+                  <div class="row">
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-messages"
+                      open-is-modal="not-messages">
+                      <span class="icon">
+                        <i class="far fa-envelope"></i>
+                      </span>
+                    </a>
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-visits"
+                      open-is-modal="list-visits">
+                      <span class="icon">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                      <span class="badge">
+                        <strong class="notification-counter">1</strong>
+                      </span>
+                    </a>
+
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-proposals"
+                      open-is-modal="new-proposals">
+                      <span class="icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+              </div>
+              <!-- end Card Saved -->
+
+
+              <!-- Card Blocked -->
+              <div class="card-blocked">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+                  <span class="icon">
+                    <i class="fas fa-lock"></i>
+                  </span>
+
+                  <p>
+                    Confirme seus dados para enviar mensagem e agendar visitas
+                  </p>
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="btn-action">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+
+                  <div>
+                    <a class="btn-action">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="far fa-calendar-alt"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+
+              </div>
+              <!-- end Card Blocked -->
+
+            </div>
+            <!-- end CARD ACTIONS -->
+
+          </div>
+          <!-- end CARD 03 -->
+
+
+          <!-- CARD 04 -->
+          <div class="card is-list" id="00">
+
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+              <!-- SWIPER -->
+              <div class="swiper-container">
+
+                <!-- WRAPPER -->
+                <div class="swiper-wrapper">
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-02.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-01.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-03.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                </div>
+                <!-- WRAPPER -->
+
+                <!-- DOTS -->
+                <div class="swiper-pagination"></div>
+                <!-- end DOTS -->
+
+                <!-- NAV -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- NAV -->
+
+              </div>
+              <!-- end SWIPER -->
+
+            </div>
+            <!-- end CARD IMAGE -->
+
+            <!-- CARD CONTENT -->
+            <div class="card-content">
+
+              <!-- CONTENT HEAD -->
+              <div class="content-head halign-middle">
+
+                <div class="column halign-middle">
+
+                  <span class="match-score is-hottest">
+                    <span class="icon is-left">
+                      <i class="fas fa-thermometer-three-quarters"></i>
+                    </span>
+                    <strong>Match 85%</strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <!-- end CONTENT HEAD -->
+
+              <!-- CONTENT BODY -->
+              <div class="content-body">
+
+                <h3 class="title is-smaller">
+                  Maison em Pinheiros
+                </h3>
+
+                <ul class="list has-icons-left">
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-car"></i>
+                    </span>
+                    <span class="text is-small">
+                      1 -3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-bed"></i>
+                    </span>
+                    <span class="text is-small">
+                      2 - 3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-vector-square"></i>
+                    </span>
+                    <span class="text is-small">
+                      80 - 120 m&sup2;
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT BODY -->
+
+              <!-- CONTENT FOOT -->
+              <div class="content-foot columns">
+
+                <ul class="list has-icons-left">
+                  <li class="match-status">
+                    <span class="icon is-left">
+                      <i class="fas fa-dolly"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pronto para morar
+                    </span>
+                  </li>
+                  <li class="match-interests">
+                    <span class="icon is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pontos de interesses em 1,5km &agrave; 4,5km
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT FOOT -->
+
+            </div>
+            <!-- end CARD CONTENT -->
+
+            <!-- CARD ACTIONS -->
+            <div class="card-actions">
+
+              <!-- Card Saved -->
+              <div class="card-saved">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+
+                  <!-- VALOR -->
+                  <!--
+                                        INDICADORES
+                                        ---
+                                        ACIMA DA MEDIA: data-info="is-high"
+                                        DENTRO DA MEDIA: data-info="is-normal"
+                                        DENTRO DA MEDIA: data-info="is-low"
+                                    -->
+                  <div class="price valor" data-info="is-high">
+                    <span class="price-label">
+                      <span class="text">A partir de</span>
+                    </span>
+                    <strong class="price-value">
+                      <strong class="text">
+                        R$ 1.233.000
+                      </strong>
+                    </strong>
+                    <span class="price-info">
+                      <span class="icon is-left">
+                        <i class="fas fa-arrow-up"></i>
+                      </span>
+                      <strong class="text">
+                        +21% da média
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end VALOR -->
+
+
+                  <!-- CASHBACK -->
+                  <div class="cashback">
+                    <span class="cashback-label">
+                      <span class="text">Cashback até</span>
+                    </span>
+                    <strong class="cashback-value">
+                      <strong class="text">
+                        R$ 12.330
+                      </strong>
+                    </strong>
+                  </div>
+                  <!-- end CASHBACK -->
+
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="button action trash">
+                    <span class="icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                  </a>
+
+                  <div class="row">
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-messages"
+                      open-is-modal="not-messages">
+                      <span class="icon">
+                        <i class="far fa-envelope"></i>
+                      </span>
+                    </a>
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-visits"
+                      open-is-modal="not-visits">
+                      <span class="icon">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </a>
+
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-proposals"
+                      open-is-modal="list-proposals">
+                      <span class="icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                      </span>
+                      <span class="badge">
+                        <strong class="notification-counter">1</strong>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+              </div>
+              <!-- end Card Saved -->
+
+
+              <!-- Card Blocked -->
+              <div class="card-blocked">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+                  <span class="icon">
+                    <i class="fas fa-lock"></i>
+                  </span>
+
+                  <p>
+                    Confirme seus dados para enviar mensagem e agendar visitas
+                  </p>
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="btn-action">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+
+                  <div>
+                    <a class="btn-action">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="far fa-calendar-alt"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+
+              </div>
+              <!-- end Card Blocked -->
+
+            </div>
+            <!-- end CARD ACTIONS -->
+
+          </div>
+          <!-- end CARD 04 -->
+
+
+          <!-- CARD 05 -->
+          <div class="card is-list" id="00">
+
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+              <!-- SWIPER -->
+              <div class="swiper-container">
+
+                <!-- WRAPPER -->
+                <div class="swiper-wrapper">
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-03.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-01.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                  <!-- SLIDE -->
+                  <div class="swiper-slide">
+                    <figure class="image is-background" style="background-image: url(img/imoveis/tegra-a-02.jpg)">
+                    </figure>
+                  </div>
+                  <!-- end SLIDE -->
+
+                </div>
+                <!-- WRAPPER -->
+
+                <!-- DOTS -->
+                <div class="swiper-pagination"></div>
+                <!-- end DOTS -->
+
+                <!-- NAV -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- NAV -->
+
+              </div>
+              <!-- end SWIPER -->
+
+            </div>
+            <!-- end CARD IMAGE -->
+
+            <!-- CARD CONTENT -->
+            <div class="card-content">
+
+              <!-- CONTENT HEAD -->
+              <div class="content-head halign-middle">
+
+                <div class="column halign-middle">
+
+                  <span class="match-score is-hottest">
+                    <span class="icon is-left">
+                      <i class="fas fa-thermometer-three-quarters"></i>
+                    </span>
+                    <strong>Match 85%</strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <!-- end CONTENT HEAD -->
+
+              <!-- CONTENT BODY -->
+              <div class="content-body">
+
+                <h3 class="title is-smaller">
+                  Casa em condomínio na Mooca
+                </h3>
+
+                <ul class="list has-icons-left">
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-car"></i>
+                    </span>
+                    <span class="text is-small">
+                      1 -3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-bed"></i>
+                    </span>
+                    <span class="text is-small">
+                      2 - 3
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon is-left">
+                      <i class="fas fa-vector-square"></i>
+                    </span>
+                    <span class="text is-small">
+                      80 - 120 m&sup2;
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT BODY -->
+
+              <!-- CONTENT FOOT -->
+              <div class="content-foot columns">
+
+                <ul class="list has-icons-left">
+                  <li class="match-status">
+                    <span class="icon is-left">
+                      <i class="fas fa-dolly"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pronto para morar
+                    </span>
+                  </li>
+                  <li class="match-interests">
+                    <span class="icon is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text is-small">
+                      Pontos de interesses em 1,5km &agrave; 4,5km
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- end CONTENT FOOT -->
+
+            </div>
+            <!-- end CARD CONTENT -->
+
+            <!-- CARD ACTIONS -->
+            <div class="card-actions">
+
+              <!-- Card Saved -->
+              <div class="card-saved">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+
+                  <!-- VALOR -->
+                  <!--
+                                        INDICADORES
+                                        ---
+                                        ACIMA DA MEDIA: data-info="is-high"
+                                        DENTRO DA MEDIA: data-info="is-normal"
+                                        DENTRO DA MEDIA: data-info="is-low"
+                                    -->
+                  <div class="price valor" data-info="is-high">
+                    <span class="price-label">
+                      <span class="text">A partir de</span>
+                    </span>
+                    <strong class="price-value">
+                      <strong class="text">
+                        R$ 890.000
+                      </strong>
+                    </strong>
+                    <span class="price-info">
+                      <span class="icon is-left">
+                        <i class="fas fa-arrow-up"></i>
+                      </span>
+                      <strong class="text">
+                        +13% da média
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end VALOR -->
+
+
+                  <!-- CASHBACK -->
+                  <div class="cashback">
+                    <span class="cashback-label">
+                      <span class="text">Cashback até</span>
+                    </span>
+                    <strong class="cashback-value">
+                      <strong class="text">
+                        R$ 8.900
+                      </strong>
+                    </strong>
+                  </div>
+                  <!-- end CASHBACK -->
+
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="button action trash">
+                    <span class="icon">
+                      <i class="fas fa-trash-alt"></i>
+                    </span>
+                  </a>
+
+                  <div class="row">
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-messages"
+                      open-is-modal="not-messages">
+                      <span class="icon">
+                        <i class="far fa-envelope"></i>
+                      </span>
+                    </a>
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-visits"
+                      open-is-modal="not-visits">
+                      <span class="icon">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </a>
+
+                    <a class="button is-neutral is-rounded is-regular action" data-modal="modal-proposals"
+                      open-is-modal="new-proposals">
+                      <span class="icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+              </div>
+              <!-- end Card Saved -->
+
+
+              <!-- Card Blocked -->
+              <div class="card-blocked">
+
+                <!-- ACTIONS BODY -->
+                <div class="card-actions-body">
+                  <span class="icon">
+                    <i class="fas fa-lock"></i>
+                  </span>
+
+                  <p>
+                    Confirme seus dados para enviar mensagem e agendar visitas
+                  </p>
+                </div>
+                <!-- end ACTIONS BODY -->
+
+                <!-- FOOT -->
+                <div class="card-actions-foot">
+                  <a class="btn-action">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+
+                  <div>
+                    <a class="btn-action">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="far fa-calendar-alt"></i>
+                    </a>
+                    <a class="btn-action">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end FOOT -->
+
+              </div>
+              <!-- end Card Blocked -->
+
+            </div>
+            <!-- end CARD ACTIONS -->
+
+          </div>
+          <!-- end CARD 05 -->
+
+        </div>
+        <!-- end LIST -->
+
+        <!-- OUTROS IMÓVEIS -->
+        <div class="outros-imoveis">
+          <p class="text is-small">
+            Quer selecionar outros imóveis?
+          </p>
+
+          <p class="text is-small">
+            <a href="signup-03.html" class="link">Veja o seu Match</a>
+
+            <span class="foot-spacer">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+
+            <a href="" class="link">Altere suas preferências</a>
+          </p>
+        </div>
+        <!-- end OUTROS IMÓVEIS -->
+
+      </div>
+      <!-- end CONTAINER -->
+
+
+
+      <!-- FOOTBAR -->
+      <div class="footbar is-fixed">
+        <!-- CONTAINER -->
+        <div class="container">
+
+          <!-- SAVED -->
+          <div class="footbar-saved">
+            <button class="button is-neutral is-rounded is-regular has-icons-left" type="button" role="button">
+              <span class="icon is-left">
+                <i class="far fa-envelope"></i>
+              </span>
+              <strong>
+                Minhas mensagens
+              </strong>
+              <span class="badge is-rounded">
+                <strong class="notification-counter">0</strong>
+              </span>
+            </button>
+
+            <button class="button is-neutral is-rounded is-regular has-icons-left" type="button" role="button"
+              data-modal="modal-visits" open-is-modal="new-visits">
+              <span class="icon is-left">
+                <i class="far fa-calendar-alt"></i>
+              </span>
+              <strong>
+                Visitas agendadas
+              </strong>
+              <span class="badge is-rounded">
+                <strong class="notification-counter">0</strong>
+              </span>
+            </button>
+
+            <button class="button is-neutral is-rounded is-regular has-icons-left" type="button" role="button"
+              data-modal="modal-proposals" open-is-modal="not-proposals">
+              <span class="icon is-left">
+                <i class="fas fa-file-invoice-dollar"></i>
+              </span>
+              <strong>
+                Propostas
+              </strong>
+              <span class="badge is-rounded">
+                <strong class="notification-counter">0</strong>
+              </span>
+            </button>
+          </div>
+          <!-- end SAVED -->
+
+          <!-- SAVED -->
+          <div class="footbar-blocked">
+            <button class="button is-rounded is-regular has-icons-left" type="button" role="button" disabled>
+              <span class="icon is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+              <strong>
+                Mensagens
+              </strong>
+            </button>
+
+            <button class="button is-rounded is-regular has-icons-left" type="button" role="button" disabled>
+              <span class="icon is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+              <strong>
+                Visitas agendadas
+              </strong>
+            </button>
+
+            <button class="button is-rounded is-regular has-icons-left" type="button" role="button" disabled>
+              <span class="icon is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+              <strong>
+                Propostas
+              </strong>
+            </button>
+          </div>
+          <!-- end SAVED -->
+
+          <div class="footbar-help">
+            <figure class="image is-48">
+              <img src="img/kzadores/kzador-02.png" alt="" />
+            </figure>
+          </div>
+
+        </div>
+      </div>
+      <!-- end FOOTBAR -->
+
+    </section>
+    <!-- end MINHA LISTA -->
+
+    <!-- FOOTER -->
+    <footer class="footer-light">
+
+      <!-- COPY -->
+      <section class="copy">
+
+        <div class="container">
+
+          <div class="columns">
+
+            <div class="column">
+
+              <span class="text is-small">
+                Copyright &copy;2019 Kzas. Todos os direitos reservados.
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end COPY -->
+
+    </footer>
+    <!-- end FOOTER -->
+
+
+    <!-- MODAL MESSAGES -->
+    <!-- 
+      FUNCIONALIDADES DO MODAL
+      
+      not-messages :: quando não tem mensagem
+      list-messages :: visualizar todas as mensagens
+      chat :: conversa aberta
+    -->
+    <div class="modal is-medium" id="modal-messages" is-modal="not-messages">
+
+      <!-- MODAL BACKGROUND -->
+      <div class="modal-background"></div>
+      <!-- end MODAL BACKGROUND -->
+
+      <!-- MODAL CARD -->
+      <div class="modal-card">
+
+        <!-- MODAL HEADER -->
+        <header class="modal-card-head halign-right">
+
+          <!-- Box Not Messages -->
+          <div class="box-not-messages">
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box Not Messages -->
+
+
+          <!-- Box List Messages -->
+          <div class="box-list-messages">
+            <h3 class="title is-small">
+              <span class="icon">
+                <i class="far fa-envelope"></i>
+              </span>
+              Mensagens
+              <span class="badge">
+                <strong class="notification-counter">8</strong>
+              </span>
+            </h3>
+
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box List Messages -->
+
+
+          <!-- Box Chat -->
+          <div class="box-chat">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-messages"
+                open-is-modal="list-messages">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box Chat -->
+
+        </header>
+        <!-- MODAL HEADER -->
+
+        <!-- MODAL BODY -->
+        <section class="modal-card-body">
+
+          <!-- Box Not Messages -->
+          <div class="box-not-messages">
+            <img src="./img/icon-illus-inbox-grey.png" />
+
+            <h3 class="title is-smallest">
+              Você ainda não tem mensagens enviadas
+            </h3>
+
+            <p class="text is-regular text-center">
+              Tire suas dúvidas agora mesmo sobre seus imóveis favoritos. Não se preocupe: seus dados estão seguros
+              conosco. ;)
+            </p>
+          </div>
+          <!-- end Box Not Messages -->
+
+
+          <!-- List Messages -->
+          <div class="box-list-messages">
+
+            <ul class="list-messages">
+              <li class="list-item new-message" data-modal="modal-messages" open-is-modal="chat">
+                <figure>
+                  <img src="img/imoveis/tegra-b-01.jpg" />
+
+                  <span class="badge">
+                    <strong class="notification-counter">5</strong>
+                  </span>
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento no Morumbi
+                      </h4>
+
+                      <p><strong>Match 100%</strong> • R$ 640.000</p>
+                    </div>
+
+                    <p class="data-hora">13:21</p>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="text-of-message">
+                      Duis congue nunc a lectus laoreet auctor lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-item new-message" data-modal="modal-messages" open-is-modal="chat">
+                <figure>
+                  <img src="img/imoveis/tegra-b-02.jpg" />
+
+                  <span class="badge">
+                    <strong class="notification-counter">3</strong>
+                  </span>
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento duplex em Pinheiros
+                      </h4>
+
+                      <p><strong>Match 80%</strong> • R$ 2.344.000</p>
+                    </div>
+
+                    <p class="data-hora">13:21</p>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="text-of-message">
+                      Duis congue nunc a lectus laoreet auctor lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-item" data-modal="modal-messages" open-is-modal="chat">
+                <figure>
+                  <img src="img/imoveis/tegra-b-03.jpg" />
+
+                  <span class="badge">
+                    <strong class="notification-counter">3</strong>
+                  </span>
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento em condomínio na Lapa
+                      </h4>
+
+                      <p><strong>Match 80%</strong> • R$ 640.000</p>
+                    </div>
+
+                    <p class="data-hora">ontem</p>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="text-of-message">
+                      Duis congue nunc a lectus laoreet auctor lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-item" data-modal="modal-messages" open-is-modal="chat">
+                <figure>
+                  <img src="img/imoveis/tegra-a-01.jpg" />
+
+                  <span class="badge">
+                    <strong class="notification-counter">3</strong>
+                  </span>
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Maison em Pinheiros
+                      </h4>
+
+                      <p><strong>Match 80%</strong> • R$ 640.000</p>
+                    </div>
+
+                    <p class="data-hora">21/08/19</p>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="text-of-message">
+                      Duis congue nunc a lectus laoreet auctor lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <!-- end Box List Messages -->
+
+
+          <!-- Box Chat -->
+          <div class="box-chat">
+
+            <ul class="messages">
+              <!-- Kzadora -->
+              <li class="item">
+                <div class="item-head kzadora">
+                  <p><strong>Maria Clara</strong> • Kzadora</p>
+
+                  <p class="data-hora">01/08/19</p>
+                </div>
+
+                <div class="item-body">
+                  <p>
+                    Phasellus nisi urna, blandit quis quam quis, malesuada ultricies eros, quisque quis nisi et nisl
+                    fermentum facilisis. In quis?
+                  </p>
+                </div>
+              </li>
+
+              <!-- You -->
+              <li class="item">
+                <div class="item-head">
+                  <p><strong>Você</strong></p>
+
+                  <p class="data-hora">ontem</p>
+                </div>
+
+                <div class="item-body">
+                  <p>
+                    posuere ultrices elementum mauris consectetur tellus lorem, id mattis nis?
+                  </p>
+                </div>
+              </li>
+
+              <!-- You -->
+              <li class="item">
+                <div class="item-head">
+                  <p><strong>Você</strong></p>
+
+                  <p class="data-hora">13:21</p>
+                </div>
+
+                <div class="item-body">
+                  <p>
+                    Id mattis nisl elementum sit amet.
+                  </p>
+                </div>
+              </li>
+
+              <!-- NOVAS MENSAGENS -->
+              <li class="item">
+                <div class="news">
+                  <span>Novas</span>
+                </div>
+              </li>
+
+              <!-- You -->
+              <li class="item new-msg">
+                <div class="item-head consultor">
+                  <p><strong>Brandão</strong> • Consultor Tegra</p>
+
+                  <p class="data-hora">ontem</p>
+                </div>
+
+                <div class="item-body">
+                  <p>
+                    Id mattis nisl elementum sit amet.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <!-- end Box Chat -->
+
+        </section>
+        <!-- end MODAL BODY -->
+
+        <!-- MODAL FOOT -->
+        <section class="modal-card-foot">
+
+          <!-- Box Not Messages -->
+          <div class="box-not-messages row">
+            <button class="button is-primary is-inverted" aria-label="close">Voltar para lista</button>
+          </div>
+          <!-- end Box Not Messages -->
+
+
+          <!-- Box List Messages -->
+          <div class="box-list-messages" data-modal="modal-messages" open-is-modal="chat">
+            <figure>
+              <img src="./img/kzas-symbol.png" />
+
+              <span class="badge is-rounded">
+                <strong class="notification-counter">5</strong>
+              </span>
+            </figure>
+
+            <div class="content">
+              <h4 class="title">Kzadores</h4>
+              <p class="text">Conversas com nosso time Kzadores</p>
+            </div>
+          </div>
+          <!-- end Box List Messages -->
+
+
+          <!-- Box Chat -->
+          <div class="box-chat">
+            <div class="box-input">
+              <span class="input-msg" type="text" id="nova-mensagem" contenteditable="true">Escreva sua mensagem...</span>
+
+              <a href="#" data-id="send-message">
+                <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+
+            <button class="button is-primary is-rounded">
+              <i class="fas fa-microphone"></i>
+            </button>
+          </div>
+          <!-- end Box Chat -->
+
+        </section>
+        <!-- end MODAL FOOT -->
+
+      </div>
+      <!-- end MODAL CARD -->
+
+    </div>
+    <!-- end MODAL MESSAGES -->
+
+
+
+    <!-- MODAL PROPOSAL -->
+    <!-- 
+      FUNCIONALIDADES DO MODAL
+      
+      not-proposals :: quando não tem propostas enviadas
+      list-proposals :: visualizar todas as propostas
+      approved-proposals :: proposta aberta
+      sent-proposals :: proposta enviada
+      new-proposals :: solicitação de proposta
+      confirmation-proposals :: confirmação da solicitação de proposta
+    -->
+    <div class="modal is-medium" id="modal-proposals" is-modal="list-proposals">
+
+      <!-- MODAL BACKGROUND -->
+      <div class="modal-background"></div>
+      <!-- end MODAL BACKGROUND -->
+
+      <!-- MODAL CARD -->
+      <div class="modal-card">
+
+        <!-- MODAL HEADER -->
+        <header class="modal-card-head halign-right">
+
+          <!-- Box Not Proposals -->
+          <div class="box-not-proposals">
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box Not Proposals -->
+
+          <!-- Box List Proposals -->
+          <div class="box-list-proposals">
+            <h3 class="title is-small">
+              <span class="icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+              </span>
+              Propostas
+              <span class="badge">
+                <strong class="notification-counter">2</strong>
+              </span>
+            </h3>
+
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box List Proposals -->
+
+          <!-- Box Sent Proposals -->
+          <div class="box-sent-proposals">
+
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-proposals"
+                open-is-modal="list-proposals">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+
+          </div>
+          <!-- Box Sent Proposals -->
+
+          <!-- Box Approved Proposals -->
+          <div class="box-approved-proposals">
+
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-proposals"
+                open-is-modal="list-proposals">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+
+          </div>
+          <!-- Box Approved Proposals -->
+
+          <!-- Box New Proposals -->
+          <div class="box-new-proposals">
+
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-proposals"
+                open-is-modal="list-proposals">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+
+          </div>
+          <!-- Box Approved Proposals -->
+
+          <!-- Box Confirmation Proposals -->
+          <div class="box-confirmation-proposals">
+            <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-proposals"
+              open-is-modal="new-proposals">
+              <span class="icon">
+                <i class="fas fa-arrow-left"></i>
+              </span>
+            </button>
+          </div>
+          <!-- end Box Confirmation Proposals -->
+
+        </header>
+        <!-- end MODAL HEADER -->
+
+        <!-- MODAL BODY -->
+        <section class="modal-card-body">
+
+          <!-- Box Not Proposals -->
+          <div class="box-not-proposals">
+            <img src="./img/icon-illus-proposal-zero-grey.png" />
+
+            <h3 class="title is-smallest">
+              Não existem propostas enviadas
+            </h3>
+
+            <p class="text is-regular text-center">
+              Volte para a sua lista, conheça os imóveis, tire suas dúvidas e faça propostas.
+            </p>
+          </div>
+          <!-- end Box Not Proposals -->
+
+          <!-- Box List Proposals -->
+          <div class="box-list-proposals">
+
+            <ul class="list-proposals">
+              <li class="list-item" data-modal="modal-proposals" open-is-modal="approved-proposals">
+                <figure>
+                  <img src="img/imoveis/tegra-b-01.jpg" />
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento em condomínio na Lapa
+                      </h4>
+
+                      <p><strong>Match 100%</strong> • R$ 640.000</p>
+                    </div>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="status approved">Proposta aprovada - 13/08/2019</p>
+                    <p class="status-description">Parabéns! Sua proposta foi aprovada</p>
+                    <p class="status-action">Enviamos uma mensagem via Whatsapp</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-item" data-modal="modal-proposals" open-is-modal="sent-proposals">
+                <figure>
+                  <img src="img/imoveis/tegra-b-03.jpg" />
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento no Morumbi
+                      </h4>
+
+                      <p><strong>Match 100%</strong> • R$ 640.000</p>
+                    </div>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="status sent">Proposta enviada - 05/09/2019</p>
+                    <p class="status-description">Sua proposta está sob análise</p>
+                    <p class="status-action">Aguarde nosso contato via Whatsapp</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <!-- end Box List Proposals -->
+
+          <!-- Box Sent Proposals -->
+          <div class="box-sent-proposals">
+
+            <div class="infos">
+              <figure>
+                <img src="img/imoveis/tegra-b-03.jpg" />
+              </figure>
+
+              <h3 class="infos-title">Apartamento em condomínio na Lapa</h3>
+              <p class="infos-match">Match 100%</p>
+
+
+              <ul class="list has-icons-left row">
+                <li>
+                  <span class="icon is-le
+                  ft">
+                    <i class="fas fa-car"></i>
+                  </span>
+                  <span class="text is-small">
+                    1 -3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-bed"></i>
+                  </span>
+                  <span class="text is-small">
+                    2 - 3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-vector-square"></i>
+                  </span>
+                  <span class="text is-small">
+                    80 - 120 m&sup2;
+                  </span>
+                </li>
+              </ul>
+
+              <p class="ready-live row halign-middle">
+                <span class="icon is-left">
+                  <i class="fas fa-dolly"></i>
+                </span>
+                <span class="text is-small">
+                  Pronto para morar
+                </span>
+              </p>
+            </div>
+
+            <div class="values">
+
+              <!-- PRICES -->
+              <div class="price valor" data-info="is-normal">
+                <span class="price-label">
+                  <span class="text">A partir de</span>
+                </span>
+                <strong class="price-value">
+                  <strong class="text">
+                    R$ 2.344.000
+                  </strong>
+                </strong>
+                <span class="price-info">
+                  <span class="icon is-left">
+                    <i class="fas fa-dot-circle"></i>
+                  </span>
+                  <strong class="text">
+                    Dentro da média
+                  </strong>
+                </span>
+              </div>
+              <!-- end PRICES -->
+
+              <!-- CASHBACK -->
+              <div class="cashback">
+                <span class="cashback-label">
+                  <span class="text">Cashback até</span>
+                </span>
+                <strong class="cashback-value">
+                  <strong class="text">
+                    R$ 6.240
+                  </strong>
+                </strong>
+              </div>
+              <!-- end CASHBACK -->
+
+            </div>
+
+            <div class="box-msg">
+              <p class="status sent">Proposta enviada - 05/09/2019</p>
+              <p class="status-description">Sua proposta está sob análise</p>
+              <p class="status-action">Aguarde nosso contato via Whatsapp</p>
+            </div>
+          </div>
+          <!-- end Box Sent Proposals -->
+
+          <!-- Box Approved Proposals -->
+          <div class="box-approved-proposals">
+
+            <div class="infos">
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <h3 class="infos-title">Apartamento em condomínio na Lapa</h3>
+              <p class="infos-match">Match 100%</p>
+
+
+              <ul class="list has-icons-left row">
+                <li>
+                  <span class="icon is-le
+                  ft">
+                    <i class="fas fa-car"></i>
+                  </span>
+                  <span class="text is-small">
+                    1 -3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-bed"></i>
+                  </span>
+                  <span class="text is-small">
+                    2 - 3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-vector-square"></i>
+                  </span>
+                  <span class="text is-small">
+                    80 - 120 m&sup2;
+                  </span>
+                </li>
+              </ul>
+
+              <p class="ready-live row halign-middle">
+                <span class="icon is-left">
+                  <i class="fas fa-dolly"></i>
+                </span>
+                <span class="text is-small">
+                  Pronto para morar
+                </span>
+              </p>
+            </div>
+
+            <div class="values">
+
+              <!-- PRICES -->
+              <div class="price valor" data-info="is-normal">
+                <span class="price-label">
+                  <span class="text">A partir de</span>
+                </span>
+                <strong class="price-value">
+                  <strong class="text">
+                    R$ 2.344.000
+                  </strong>
+                </strong>
+                <span class="price-info">
+                  <span class="icon is-left">
+                    <i class="fas fa-dot-circle"></i>
+                  </span>
+                  <strong class="text">
+                    Dentro da média
+                  </strong>
+                </span>
+              </div>
+              <!-- end PRICES -->
+
+              <!-- CASHBACK -->
+              <div class="cashback">
+                <span class="cashback-label">
+                  <span class="text">Cashback até</span>
+                </span>
+                <strong class="cashback-value">
+                  <strong class="text">
+                    R$ 6.240
+                  </strong>
+                </strong>
+              </div>
+              <!-- end CASHBACK -->
+
+            </div>
+
+            <div class="box-msg">
+              <p class="status approved">Proposta aprovada - 13/08/2019</p>
+              <p class="status-description">Parabéns! Sua proposta foi aprovada</p>
+              <p class="status-action">Enviamos uma mensagem via Whatsapp</p>
+            </div>
+          </div>
+          <!-- end Box Sent Proposals -->
+
+          <!-- Box New Proposals -->
+          <div class="box-new-proposals">
+
+            <div class="infos">
+              <figure>
+                <img src="img/imoveis/tegra-b-03.jpg" />
+              </figure>
+
+              <h3 class="infos-title">Apartamento em condomínio na Lapa</h3>
+              <p class="infos-match">Match 100%</p>
+
+
+              <ul class="list has-icons-left row">
+                <li>
+                  <span class="icon is-le
+                  ft">
+                    <i class="fas fa-car"></i>
+                  </span>
+                  <span class="text is-small">
+                    1 -3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-bed"></i>
+                  </span>
+                  <span class="text is-small">
+                    2 - 3
+                  </span>
+                </li>
+                <li>
+                  <span class="icon is-left">
+                    <i class="fas fa-vector-square"></i>
+                  </span>
+                  <span class="text is-small">
+                    80 - 120 m&sup2;
+                  </span>
+                </li>
+              </ul>
+
+              <p class="ready-live row halign-middle">
+                <span class="icon is-left">
+                  <i class="fas fa-dolly"></i>
+                </span>
+                <span class="text is-small">
+                  Pronto para morar
+                </span>
+              </p>
+            </div>
+
+            <div class="values">
+
+              <!-- PRICES -->
+              <div class="price valor" data-info="is-normal">
+                <span class="price-label">
+                  <span class="text">A partir de</span>
+                </span>
+                <strong class="price-value">
+                  <strong class="text">
+                    R$ 720.000
+                  </strong>
+                </strong>
+                <span class="price-info">
+                  <span class="icon is-left">
+                    <i class="fas fa-dot-circle"></i>
+                  </span>
+                  <strong class="text">
+                    Dentro da média
+                  </strong>
+                </span>
+              </div>
+              <!-- end PRICES -->
+
+              <!-- CASHBACK -->
+              <div class="cashback">
+                <span class="cashback-label">
+                  <span class="text">Cashback até</span>
+                </span>
+                <strong class="cashback-value">
+                  <strong class="text">
+                    R$ 7.200
+                  </strong>
+                </strong>
+              </div>
+              <!-- end CASHBACK -->
+
+            </div>
+
+            <div class="box-msg">
+              <p class="status">
+                Após a confirmação de intenção de proposta, um Kzador entrará em contato para te orientar sobre os
+                próximos passos
+              </p>
+            </div>
+          </div>
+          <!-- end Box Sent Proposals -->
+
+          <!-- Box Confirmation Proposals -->
+          <div class="box-confirmation-proposals">
+            <img src="./img/icon-illus-proposal-blue.png" />
+
+            <h3 class="title is-smallest">
+              Proposta enviada
+            </h3>
+
+            <p class="text is-regular text-center">
+              Etiam vulputate mauris semper nunc malesuada, ut congue ligula pharetra. Nulla nec sem tellus.
+              Pellentesque ut consectetur justo.
+            </p>
+          </div>
+          <!-- end Box Confirmation Proposals -->
+
+        </section>
+        <!-- end MODAL BODY -->
+
+        <!-- MODAL FOOT -->
+        <section class="modal-card-foot">
+
+          <!-- Box Not Proposals -->
+          <div class="box-not-proposals row">
+            <button class="button is-primary is-inverted" aria-label="close">Voltar para lista</button>
+          </div>
+          <!-- end Box Not Proposals -->
+
+          <!-- Box Sent Proposals -->
+          <div class="box-sent-proposals row">
+            <button class="button is-primary is-inverted" data-modal="modal-messages" open-is-modal="chat">Enviar
+              mensagem</button>
+          </div>
+          <!-- end Box Sent Proposals -->
+
+          <!-- Box Approved Proposals -->
+          <div class="box-approved-proposals row">
+            <button class="button is-primary is-inverted" data-modal="modal-messages">Enviar
+              mensagem</button>
+          </div>
+          <!-- end Box Approved Proposals -->
+
+          <!-- Box New Proposals -->
+          <div class="box-new-proposals row">
+            <button class="button is-primary" data-modal="modal-proposals"
+              open-is-modal="confirmation-proposals">Confirmar proposta</button>
+          </div>
+          <!-- end Box New Proposals -->
+
+          <!-- Box Confirmation Proposals -->
+          <div class="box-confirmation-proposals row">
+            <button class="button is-primary is-inverted" aria-label="close">Voltar para lista</button>
+          </div>
+          <!-- end Box Confirmation Proposals -->
+
+        </section>
+        <!-- end MODAL FOOT -->
+
+      </div>
+      <!-- end MODAL CARD -->
+
+
+    </div>
+    <!-- end MODAL PROPOSAL -->
+
+
+    <!-- MODAL VISITS -->
+    <!-- 
+      FUNCIONALIDADES DO MODAL
+
+      not-visits :: quando não tem visitas agendadas
+      new-visits :: solicitar visita
+      scheduled-visits :: visita agendada
+      list-visits :: visualizar todas as visitas agendadas
+      details-visits :: detalhes da visita
+      cancel-visits :: cancelar visita
+      canceled-visits : visita cancelada
+     -->
+    <div class="modal is-medium" id="modal-visits" is-modal="not-visits">
+
+      <!-- MODAL BACKGROUND -->
+      <div class="modal-background"></div>
+      <!-- end MODAL BACKGROUND -->
+
+      <!-- MODAL CARD -->
+      <div class="modal-card">
+
+        <!-- MODAL HEADER -->
+        <header class="modal-card-head halign-right">
+
+          <!-- Box Not Visits -->
+          <div class="box-not-visits">
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box Not Visits -->
+
+          <!-- Box New Visits -->
+          <div class="box-new-visits">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-visits"
+                open-is-modal="list-visits">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box New Visits -->
+
+          <!-- Box Scheduled Visits -->
+          <div class="box-scheduled-visits">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-visits"
+                open-is-modal="new-visits">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box Scheduled Visits -->
+
+          <!-- Box List Visits -->
+          <div class="box-list-visits">
+            <h3 class="title is-small">
+              <span class="icon">
+                <i class="far fa-calendar-alt"></i>
+              </span>
+              Visitas
+              <span class="badge">
+                <strong class="notification-counter">2</strong>
+              </span>
+            </h3>
+
+            <button class="delete" aria-label="close"></button>
+          </div>
+          <!-- end Box List Visits -->
+
+          <!-- Box Details Visits -->
+          <div class="box-details-visits">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-visits"
+                open-is-modal="list-visits">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box Details Visits -->
+
+          <!-- Box Cancel Visits -->
+          <div class="box-cancel-visits">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-visits"
+                open-is-modal="list-visits">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box Cancel Visits -->
+
+          <!-- Box Canceled Visits -->
+          <div class="box-canceled-visits">
+            <div class="infos">
+              <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu" data-modal="modal-visits"
+                open-is-modal="list-visits">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+
+              <figure>
+                <img src="img/imoveis/tegra-b-01.jpg" />
+              </figure>
+
+              <div class="content">
+                <h4 class="title">Apartamento no Morumbi</h4>
+                <p>
+                  <strong>Match 100%</strong> • R$ 640.000
+                </p>
+              </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+              <!-- DROPDOWN TRIGGER -->
+              <div class="dropdown-trigger">
+                <button class="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- end DROPDOWN TRIGGER -->
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Agendar visita
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Fazer proposta
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    Detalhes do imóvel
+                  </a>
+                </div>
+              </div>
+              <!-- end DROPDOWN MENU -->
+
+            </div>
+            <!-- end DROPDOWN -->
+          </div>
+          <!-- end Box Canceled Visits -->
+
+        </header>
+        <!-- end MODAL HEADER -->
+
+        <!-- MODAL BODY -->
+        <section class="modal-card-body">
+
+          <!-- Box Not Visits -->
+          <div class="box-not-visits">
+            <img src="./img/icon-illus-calendar-zero-grey.png" />
+
+            <h3 class="title is-smallest">
+              Não existem visitas agendadas
+            </h3>
+
+            <p class="text is-regular text-center">
+              No Kzas você agenda visitas presenciais ou por vídeo conferência, para conhecer os imóveis que mais
+              gostou. :D
+            </p>
+          </div>
+          <!-- end Box Not Visits -->
+
+          <!-- Box New Visits -->
+          <div class="box-new-visits">
+            <div class="box-head">
+              <h3 class="title">
+                Agende uma visita
+              </h3>
+
+              <p class="description">
+                Escolha abaixo a melhor data e horário para você conhecer este imóvel.
+              </p>
+            </div>
+
+            <div class="box-content">
+              <label class="label-content">Dia da visita</label>
+              <div class="box-input">
+                <input class="input-visit" type="text" placeholder="DD/MM/AAAA" data-mask="00/00/0000" />
+
+                <i class="far fa-calendar-alt"></i>
+              </div>
+
+              <label class="label-content">Melhor horário</label>
+              <div class="control">
+                <div class="select is-medium">
+                  <select required>
+                    <option disabled selected>Selecione</option>
+                    <option>12:00 às 13:00</option>
+                    <option>13:00 às 14:00</option>
+                    <option>14:00 às 15:00</option>
+                    <option>15:00 às 16:00</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-msg">
+              <p class="status">
+                Após a confirmação de intenção de visita, um Kzador entrará em contato para te orientar sobre os
+                próximos passos
+              </p>
+            </div>
+          </div>
+          <!-- end Box New Visits -->
+
+          <!-- Box Scheduled Visits -->
+          <div class="box-scheduled-visits">
+            <div class="box-head">
+              <img src="./img/icon-illus-calendar-check-blue.png" />
+
+              <h3 class="title">
+                Visita agendada
+              </h3>
+
+              <p class="description">
+                Enviamos uma confirmação da sua visita para seu e-mail e WhatsApp.
+              </p>
+            </div>
+
+            <div class="box-msg">
+              <p class="status date">21/09/2019 - 15:00 às 16:00</p>
+              <p class="status-description">Rua José de Oliveira Coelho, 808</p>
+              <p class="status-action">Vila Andrade, São Paulo - SP</p>
+              <p class="buttons">
+                <a href="#" class="link">Compartilhar</a>
+                <span class="foot-spacer">&nbsp;-&nbsp;</span>
+                <a href="#" class="link">Como chegar</a>
+              </p>
+            </div>
+          </div>
+          <!-- end Box Scheduled Visits -->
+
+          <!-- Box List Visits -->
+          <div class="box-list-visits">
+
+            <ul class="list-visits">
+              <li class="list-item" data-modal="modal-visits" open-is-modal="details-visits">
+                <figure>
+                  <img src="img/imoveis/tegra-b-01.jpg" />
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento no Morumbi
+                      </h4>
+
+                      <p><strong>Match 100%</strong> • R$ 640.000</p>
+                    </div>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="status date">21/09/19 às 15:00</p>
+                    <p class="status-description">Rua José de Oliveira Coelho, 808</p>
+                    <p class="status-action">Vila Andrade, São Paulo - SP</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-item" data-modal="modal-visits" open-is-modal="details-visits">
+                <figure>
+                  <img src="img/imoveis/tegra-b-03.jpg" />
+                </figure>
+
+                <div class="content">
+                  <div class="content-head">
+                    <div class="infos">
+                      <h4 class="title-info">
+                        Apartamento em condomínio na Lapa
+                      </h4>
+
+                      <p><strong>Match 100%</strong> • R$ 640.000</p>
+                    </div>
+                  </div>
+
+                  <div class="content-body">
+                    <p class="status date">02/10/19 às 18:00</p>
+                    <p class="status-description">Rua Curitiba, 3489</p>
+                    <p class="status-action">Alto da Lapa, São Paulo - SP</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <!-- end Box List Visits -->
+
+          <!-- Box Details Visits -->
+          <div class="box-details-visits">
+            <div class="box-head">
+              <img src="./img/icon-illus-calendar-blue.png" />
+
+              <h3 class="title">
+                Visita agendada
+              </h3>
+
+              <p class="description">
+                Confira os dados referentes à visita, se quiser pode alterar ou cancelar, ok?
+              </p>
+            </div>
+
+            <div class="box-msg">
+              <p class="status date">21/09/2019 - 15:00 às 16:00</p>
+              <p class="status-description">Rua José de Oliveira Coelho, 808</p>
+              <p class="status-action">Vila Andrade, São Paulo - SP</p>
+              <p class="buttons">
+                <a href="#" class="link">Compartilhar</a>
+                <span class="foot-spacer">&nbsp;-&nbsp;</span>
+                <a href="#" class="link">Como chegar</a>
+              </p>
+            </div>
+          </div>
+          <!-- end Box Details Visits -->
+
+          <!-- Box Cancel Visits -->
+          <div class="box-cancel-visits">
+            <div class="box-head">
+              <img src="./img/icon-illus-calendar-question-grey.png" />
+
+              <h3 class="title">
+                Deseja realmente cancelar a visita agendada?
+              </h3>
+
+              <p class="description">
+                Esta ação é irreversível.
+              </p>
+            </div>
+
+            <div class="box-msg">
+              <p class="status date">21/09/2019 - 15:00 às 16:00</p>
+              <p class="status-description">Rua José de Oliveira Coelho, 808</p>
+              <p class="status-action">Vila Andrade, São Paulo - SP</p>
+            </div>
+          </div>
+          <!-- end Box Cancel Visits -->
+
+          <!-- Box Canceled Visits -->
+          <div class="box-canceled-visits">
+            <div class="box-head">
+              <img src="./img/icon-illus-calendar-remove-red.png" />
+
+              <h3 class="title">
+                Visita cancelada
+              </h3>
+
+              <p class="description">
+                Enviamos uma confirmação do cancelamento da sua visita para seu WhatsApp.
+              </p>
+            </div>
+          </div>
+          <!-- end Box Canceled Visits -->
+
+        </section>
+        <!-- end MODAL BODY -->
+
+        <!-- MODAL FOOT -->
+        <section class="modal-card-foot">
+
+          <!-- Box Not Visits -->
+          <div class="box-not-visits row">
+            <button class="button is-primary is-inverted" aria-label="close">Voltar para lista</button>
+          </div>
+          <!-- end Box Not Visits -->
+
+          <!-- Box New Visits -->
+          <div class="box-new-visits row">
+            <button class="button is-primary disabled" id="btn-finish-visit" data-modal="modal-visits" open-is-modal="scheduled-visits">Agendar visita</button>
+          </div>
+          <!-- end Box New Visits -->
+
+          <!-- Box Scheduled Visits -->
+          <div class="box-scheduled-visits row">
+            <button class="button is-primary is-inverted" data-modal="modal-visits" open-is-modal="list-visits">Voltar
+              para a Minha Lista</button>
+          </div>
+          <!-- end Box Scheduled Visits -->
+
+          <!-- Box Details Visits -->
+          <div class="box-details-visits row">
+            <button class="button is-primary" data-modal="modal-visits" open-is-modal="cancel-visits">Cancelar visita</button>
+
+            <button class="button is-primary is-inverted" data-modal="modal-visits" open-is-modal="new-visits">Alterar</button>
+          </div>
+          <!-- end Box Details Visits -->
+
+          <!-- Box Cancel Visits -->
+          <div class="box-cancel-visits row">
+            <button class="button is-primary is-inverted" aria-label="close">Manter visita</button>
+
+            <button class="button is-primary" data-modal="modal-visits"
+              open-is-modal="canceled-visits">Sim, cancelar</button>
+          </div>
+          <!-- end Box Cancel Visits -->
+
+          <!-- Box Canceled Visits -->
+          <div class="box-canceled-visits row">
+            <button class="button is-primary is-inverted" data-modal="modal-visits" open-is-modal="list-visits">Voltar
+              para a Minha Lista</button>
+          </div>
+          <!-- end Box Canceled Visits -->
+
+        </section>
+        <!-- end MODAL FOOT -->
+
+      </div>
+
+    </div>
+    <!-- end MODAL VISITS -->
+
+
+  </div>
+  <!-- end LOADING CONTENT -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>

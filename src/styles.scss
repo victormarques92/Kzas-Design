@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+// GOOGLE FONT
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+// GOOGLE ICONS
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round');
+
+// BRANDS
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/brands.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/regular.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css');
+
+// AOS
+@import "../node_modules/aos/src/sass/aos.scss";
+
+// RESET
+@import "../src/css/-reset.scss";
+
+// BULMA
+@import "../src/css/bulma-variables.scss";
+
+// BASE
+@import "../src/css/-color.scss";
+@import "../src/css/-text.scss";
+@import "../src/css/-generic.scss";
+@import "../src/css/-columns.scss";
+@import "../src/css/-main.scss";
+@import "../src/css/-blocks.scss";
+@import "../src/css/-helpers.scss";
+
+// LOADING
+@import "../src/css/loading.scss";
+
+// BULMA
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/form/all.sass";
+@import "../node_modules/bulma/sass/elements/tag.sass";
+//@import "../node_modules/bulma-checkradio/src/sass/index.sass";
+//@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/other.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+// BULMA EXTENSIONS
+@import "../node_modules/bulma-steps/src/sass/index.sass";
+@import "../node_modules/bulma-tooltip/src/sass/index.sass";
+
+// PLUGIN - HOPSCOTCH
+@import "../src/css/hopscotch.css";
+@import "../src/css/hopscotch-custom.scss";
+
+// PLUGIN - SWIPER
+@import "../src/css/swiper.css";
+
+// PLUGIN - OLARK
+@import "../src/css/olark.scss";
+
+// ELEMENTS
+@import "../src/css/navbar.scss";
+@import "../src/css/footbar.scss";
+@import "../src/css/footer.scss";
+@import "../src/css/topbar.scss";
+@import "../src/css/hero.scss";
+@import "../src/css/accordion.scss";
+@import "../src/css/rating.scss";
+@import "../src/css/progressbar.scss";
+@import "../src/css/modal.scss";
+@import "../src/css/gallery.scss";
+@import "../src/css/box-confirmation.scss";
+@import "../src/css/custom.scss";
+
+// PAGES
+@import "../src/css/animations.scss";
+@import "../src/css/home.scss";
+@import "../src/css/login.scss";
+@import "../src/css/signup.scss";
+@import "../src/css/match.scss";
+@import "../src/css/minha-lista.scss";
+@import "../src/css/product.scss";
+@import "../src/css/seo-cluster.scss";
+@import "../src/css/institucional.scss";
+@import "../src/css/imprensa.scss";
+@import "../src/css/404.scss";
+@import "../src/css/cluster.scss";
+@import "../src/css/faq.scss";
+
+// BULMA CUSTOMIZE
+@import "../src/css/bulma-custom.scss";

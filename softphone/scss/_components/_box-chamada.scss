@@ -1,0 +1,12 @@
+.box-chamada {
+    .lista-chamada {
+        .chamada {
+            padding-bottom: 8px;
+            border-bottom: 1px solid map-get($colors, 'gray-f8');
+
+            p:first-of-type {
+                margin-bottom: -5px;
+            }
+        }
+    }
+}

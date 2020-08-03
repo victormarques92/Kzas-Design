@@ -1,0 +1,96 @@
+* {
+    transition: all .2s ease-in-out;
+}
+
+html {
+    background-color: $grey-lighter;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 18.75rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+
+article,
+aside,
+figure,
+picture,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: $font-primary;
+}
+
+select {
+    font-family: "Helvetiva Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+code,
+pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: $font-code;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: baseline;
+}
+
+small {
+    font-size: $size-1;
+}
+   
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+strong {
+  color: inherit;
+  font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+// Block
+
+fieldset {
+    border: none
+}
+
+pre {
+    background-color: $grey-lighter;
+    color: red;
+    font-size: $size-1;
+    overflow-x: auto;
+    padding: 1.250rem 1.500rem;
+    white-space: pre;
+    word-wrap: normal;
+    code {
+        background-color: transparent;
+        color: currentColor;
+        font-size: 1em;
+        padding: 0;
+    }
+}
+  
+

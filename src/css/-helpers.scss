@@ -1,0 +1,45 @@
+.row {
+  display: flex;
+}
+
+.halign-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.halign-middle {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.halign-right {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.is-absolute {
+  position: absolute;
+}
+
+@media (max-width: 1008px) {
+  .order-1 {
+    order: 1;
+  }
+}

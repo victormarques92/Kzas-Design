@@ -1,0 +1,363 @@
+/*
+HERO
+*/
+
+section.signup-hero:not(.hero) .section-title {
+    padding-bottom: 1.500rem;
+}
+
+section.signup:not(.hero) .section-title {
+    padding-bottom: 1.000rem;
+}
+
+.signup-hero {
+    .card {
+        box-shadow: $card-white-shadow;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $grey-light;
+        
+        text-align: center;
+        
+        cursor: pointer;
+        
+        &:hover {
+            box-shadow: $card-shadow;
+            border-color: $grey;
+        }
+        
+        .card-image {
+            padding-top: 0.500rem;
+        }
+        .card-content {
+            padding-top: 0;
+            padding-bottom: 0.500rem;
+        }
+        .card-footer {
+            padding-top: 0.500rem;
+        }
+    }
+}
+
+/*
+end HERO
+*/
+
+/*
+FORM
+*/
+
+section.signup .section-content {
+    max-width: 37.000rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.signup .signup-form {
+    margin-left: 0.500rem;
+    margin-right: 0.500rem;
+    padding-bottom: 1.500rem;
+}
+
+/*
+end FORM
+*/
+
+/*
+RENT
+*/
+
+section.signup-rent:not(.hero) .container {
+    padding-top: 0;
+    padding-bottom: 5.000rem;
+}
+
+.signup-rent {
+    
+    .section-list {
+        
+        .section-item {
+            
+            .columns {
+                max-width: 50.000rem;
+                margin-left: auto;
+                margin-right: auto;    
+
+                align-content: center;
+            }
+            
+            .item-image {
+                width: 10.000rem;
+                padding-left: 0.500rem;
+                padding-right: 0.500rem;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .item-content {
+                padding-left: 0.500rem;
+                padding-right: 0.500rem;
+                
+                .title {
+                    padding-bottom: 0.500rem;
+                }
+                .buttons {
+                    padding-top: 0.500rem;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
+
+/*
+end RENT
+*/
+
+/*
+STEPS
+*/
+
+.section-steps {
+    margin-top: -2.500rem;
+    
+    display: flex;
+    align-items: center;
+    height: 7.500rem;
+    
+    overflow-x: auto;
+    @include no-scrollbar();
+    
+    .steps {
+        flex-shrink: 0;
+        
+        min-height: auto;
+        height: 2.500rem;
+        width: 42.500rem;
+        min-width: 23rem;
+        margin: auto;
+        
+        .step-item {
+            
+            &:hover {
+                background: none;
+            }
+            
+            &:not(:first-child) {
+                flex-basis: auto;
+            }
+            
+            &:not(:first-child)::before {
+                height: 0.125rem;
+                width: 100%;
+                bottom: 0;
+                left: -50%;
+                top: 1.250rem;
+            }
+            
+            &::before {
+                background: linear-gradient(to left, $grey-light 50%, $secundary 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+            }
+            
+            // TOOLTIP
+            .tooltip {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 2;
+            }
+            
+            &.is-active::before,
+            &.is-completed::before {
+                background-position: left bottom;
+            }
+            
+            .step-marker {
+                width: 2.500rem;
+                height: 2.500rem;
+                left: calc(50% - 1.250rem);
+
+                font-weight: 700;
+                font-size: $size-4;
+                color: $grey;
+                background: $white;
+                border: 0.125rem solid $grey-light;
+                box-shadow: inset 5px -5px 0px 0px $grey-lighter;
+                
+                .icon * {
+                    font-size: 1.250rem;
+                }
+                
+            }
+            
+            &.is-disabled {                
+                cursor: not-allowed;
+                
+                .step-marker {
+                    color: $white;
+                    background: $grey-light;
+                    border: 0.125rem solid $grey-light;
+                    box-shadow: none;
+
+                    &::before {
+                        position: absolute;
+                        top: -1.000rem;
+
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.750rem;
+                        height: 0.750rem;
+                        overflow: hidden;
+
+                        font-family: "Font Awesome 5 Free";
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+
+                        font-size: 0.750rem;
+
+                        font-weight: 900;
+                        content: "\f023";
+                        color: $grey-light;
+                    }
+                    
+                }
+                
+            }
+            
+            &.is-active {
+                cursor: default;
+            
+                .step-marker {
+                    color: $secundary;
+                    background-color: $white;
+                    border-color: $secundary;                
+                    box-shadow: inset 5px -5px 0px 0px $secundary-lighter;
+                }
+            
+            }
+            
+            &.is-completed {
+            
+                .step-marker {
+                    color: $white;
+                    background-color: $secundary;
+                    border-color: $secundary;
+                    box-shadow: none;
+                    
+                    .marker-number {
+                        display: none;
+                    }
+                    
+                    &::before {
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 1.500rem;
+                        height: 1.500rem;
+                        overflow: hidden;
+
+                        font-family: "Font Awesome 5 Free";
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+
+                        font-size: 1.500rem;
+
+                        font-weight: 900;
+                        content: "\f00c";
+                        color: $white;
+                    }
+                    
+                }
+            }
+            
+            &.is-final .step-marker {                
+                box-shadow: none;
+                
+                .icon * {
+                    color: $secundary;
+                }
+            }
+            
+        }
+        // end STEP ITEM
+            
+        
+        
+        
+    }
+}
+
+/*
+end STEPS
+*/
+
+
+
+
+
+
+
+
+
+
+// MOBILE
+@media screen and (max-width: 1008px) {
+    // RENT
+    .signup-rent .section-list .section-item {
+        
+        text-align: center;
+        
+        .item-image {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .item-content {
+            .buttons {
+                justify-content: center;
+            }            
+        }
+        
+    }
+    
+    .section-steps {
+        margin-left: -1.500rem;
+        margin-right: -1.500rem;
+
+        .steps {
+            padding-left: 1.000rem;
+            padding-right: 1.000rem;
+        }
+    }
+    
+    section.signup .signup-form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}

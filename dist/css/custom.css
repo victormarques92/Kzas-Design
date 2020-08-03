@@ -1,0 +1,127 @@
+/*
+CHAT PLUGIN
+*/
+
+body #olark-wrapper {
+    z-index: 32 !important;
+    position: relative !important;
+}
+
+/*
+end CHAT PLUGIN
+*/
+
+/*
+VISITS
+*/
+
+.box-new-visits .parsley-errors-list {
+    margin-top: -1rem !important;
+}
+
+/*
+end VISITS
+*/
+
+/*
+MINHA LISTA
+*/
+
+@media screen and (max-width: 1008px) {
+    section.minha-lista .container {
+        width: auto;
+    }
+}
+
+section.minha-lista .box-list {
+    max-width: 53rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.minha-lista .box-list .head {
+    padding-left: 1.000rem;
+    padding-right: 1.000rem;
+}
+
+/* MINHAS LISTA - CARD */
+section.minha-lista .card.is-list .card-content {
+    padding-right: 1.000rem;
+}
+
+section.minha-lista .card.is-list .card-content .content-body .list li .icon {
+    font-size: 1.000rem;
+}
+
+section.minha-lista .card.is-list .card-actions {
+    position: relative;
+    width: 17.000rem;
+    flex-shrink: 0;
+    background-color: #fff;
+}
+
+section.minha-lista .card.is-list .card-actions:before {
+    content: "";
+    height: calc(100% - 2rem);
+    border: 1px dashed #e7e7e7;
+    top: 1.000rem;
+    left: -1px;
+    position: absolute;
+    bottom: 1.000rem;
+}
+/* MINHAS LISTA - CARD */
+
+/*
+end MINHA LISTA
+*/
+
+/*
+FORM
+*/
+
+/* INPUT DATE */
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #C0C0C0;
+}
+
+#modal-visits[is-modal=new-visits] .modal-card-body .box-new-visits .box-content .box-input .input-visit {
+    height: 2.5rem !important;
+}
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 100%;
+}
+
+input[type="date"], focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* end INPUT DATE */
+
+/*
+end FORM
+*/
+
+.box-confirmation.error .button:hover {
+    background-color: #630000;
+}
+
+/*
+LOGIN
+*/
+
+
+section.login .section-content .box-not-registered {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/*
+end LOGIN
+*/

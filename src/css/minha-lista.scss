@@ -1,0 +1,565 @@
+section.minha-lista {
+    @media screen and (min-width: 1008px) {
+        .container {
+          width: auto;
+        }
+
+        .footbar {
+            .container {
+                width: auto;
+            }
+        }
+    }
+
+    .box-confirmation {
+        display: none;
+        
+        &.success {
+            display: flex;
+        }
+        
+        p.text {
+            padding-bottom: 0;
+        }
+        
+    }
+    
+    .box-confirmation,
+    .box-list {
+        max-width: 53rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box-list {
+
+        .head {
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-left: 1.000rem;
+            padding-right: 1.000rem;
+            padding-bottom: 1.000rem;
+            
+            i {
+                color: $primary;
+            }
+            
+            .link {
+                font-size: $size-2;
+                margin-left: auto;
+            }
+            
+            
+            @media screen and (max-width: 1008px) {
+                justify-content: center;
+                text-align: center;
+                .title {
+                    width: 100%;
+                }
+                .link {
+                    margin-left: 0;
+                    margin-top: 0.500rem;
+                }
+            }
+            
+        }
+        
+    }
+
+    .footbar {
+        
+        .container {
+            padding: 0;
+        }
+
+        .footbar-saved,
+        .footbar-blocked {
+            flex: 1;
+        }
+
+
+        .footbar-saved {
+            display: flex;
+        }
+
+        .footbar-blocked {
+            display: none;
+        }
+
+        .button {
+            .badge {
+                background-color: #fdefee;
+                margin-left: 12px;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: $primary;
+            }
+
+            @media screen and (max-width: 576px) and (min-width: 320px) {
+                width: auto;
+                padding: 0 $size-1;
+
+            .badge {
+                margin-left: 0;
+            }
+
+            .notification-counter {
+                display: block;
+            }
+            }
+
+        }
+    }
+
+    .card.is-list {
+        min-height: 12.000rem;
+        .card-content {
+            .content-body {
+                .title {
+                    padding-right: $size-3;
+                }
+                .list li .icon {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .card-actions {
+
+        width: 17rem;
+        flex-shrink: 0;
+
+        @media screen and (max-width: 1008px) {
+        width: 100%;
+        }
+
+        &-body {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1008px) {
+        margin-bottom: $size-7;
+        }
+        }
+
+        &-foot {
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+        &.action {
+        position: relative;
+        width: 2.500rem;
+        height: 2.500rem;
+        padding: 0;
+
+        color: $primary;
+
+        margin-right: 0.500rem;
+
+        &:last-child {
+        margin-right: 0;
+        }
+
+
+        .icon {
+        font-size: $size-4;
+        }
+
+
+        &.trash {
+        background-color: transparent;
+        color: $grey;
+        border: none;
+        box-shadow: none;
+        width: auto;
+        height: auto;
+
+        i {
+        font-size: $size-4;
+        }
+        }
+
+        &.is-primary {
+        color: $white;
+        }
+
+        .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 .25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .5rem;
+        min-width: 1rem;
+        height: 1rem;
+        font-size: .75rem;
+        line-height: 1;
+        font-weight: bolder;
+        color: $white;
+        text-align: center;
+        background: $primary;
+        }
+        }
+        }
+        }
+
+        .card-saved,
+        .card-blocked {
+        padding: $size-7 $size-3 $size-5;
+        height: 100%;
+        }
+
+        .card-saved {
+        display: flex;
+        padding-top: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // PRICE
+        .price {
+        &.valor {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include price-info-color();
+
+        .price-label {
+        width: 100%;
+
+        .text {
+        font-size: $size-1;
+        line-height: 1;
+        color: $text-light;
+        }
+        }
+
+        .price-value {
+        .text {
+        font-size: $size-3;
+        font-weight: bolder;
+        }
+        }
+
+        .price-info {
+        display: flex;
+        align-items: center;
+        width: auto;
+
+        .icon {
+        font-size: 1.000rem;
+        margin-right: 0.250rem;
+        }
+
+        .text {
+        font-size: $size-1;
+        font-weight: bolder;
+        }
+        }
+
+        }
+        }
+
+        // end PRICE
+
+        // CASHBACK
+        .cashback {
+        text-align: right;
+
+        &-label {
+        display: block;
+
+        .text {
+        font-size: $size-1;
+        line-height: 1;
+        color: $text-light;
+        }
+        }
+
+        &-value {
+        display: block;
+
+        .text {
+        font-size: $size-3;
+        font-weight: bolder;
+        color: $secundary;
+        }
+        }
+        }
+
+        // end CASHBACK
+        }
+
+        .card-blocked {
+        display: none;
+        }
+        }
+    }
+
+  // PÁGINA COM NOTIFICAÇÃO
+  &.is-blocked {
+    .footbar {
+      .footbar-saved {
+        display: none;
+      }
+
+      .footbar-blocked {
+        display: flex;
+
+        .button {
+          i {
+            color: $white;
+          }
+          
+          strong {
+            color: $white;
+            display: block;
+          }
+
+          &.bg-purple {
+            background-color: $purple;
+          }
+
+          &.bg-warning {
+            background-color: $warning;
+          }
+
+          &.bg-error {
+            background-color: $error;
+          }
+        }
+      }
+    }
+
+    .box-confirmation {
+      display: flex;
+    }
+
+    .card.is-list {
+      .card-actions {
+        .card-saved {
+          display: none;
+        }
+
+        .card-blocked {
+          background-color: $grey-lighter;
+          color: $grey;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .card-actions-body {
+
+            @media screen and (max-width: 1008px) {
+              justify-content: center;
+              align-items: center;
+            }
+
+            .icon {
+              font-size: $size-7;
+              margin-right: $size-2;
+            }
+
+            p {
+                font-size: $size-3;
+                font-weight: bold;
+                line-height: 1.25;
+                padding-right: 0.500rem;
+            }
+          }
+
+          .card-actions-foot {
+            display: flex;
+            justify-content: space-between;
+
+            .btn-action {
+              background-color: transparent;
+              color: $grey;
+              font-size: $size-4;
+              margin-right: $size-4;
+
+              &:last-of-type {
+                margin-right: 0;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .outros-imoveis {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    width: 100%;
+  }
+}
+
+.page-minha-lista {
+  #modal-id-confirmation-tirar-foto {
+    .modal-card-foot {
+      padding-top: 0;
+
+      .button {
+        &.disabled {
+          opacity: .5;
+        }
+
+        &:last-child {
+          margin-left: .5rem;
+        }
+      }
+    }
+
+    .box-tirar-foto {
+      .box-image {
+        display: none;
+      }
+
+      .box-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .title {
+          color: $white;
+          margin-bottom: $size-3/2;
+        }
+
+        .text {
+          color: $white;
+          margin-bottom: $size-6;
+        }
+      }
+    }
+  }
+
+  #modal-id-confirmation {
+    .title {
+      margin-bottom: $size-1;
+
+      &.is-smallest {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    .modal-card-body {
+      .text {
+        &.is-smallest {
+          color: $black-light;
+          margin-top: $size-3;
+        }
+      }
+    }
+
+    .modal-card-foot {
+      padding-top: 0;
+
+      .button:last-child {
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  #modal-id-confirmation-documento-enviado {
+    .modal-card-foot {
+      padding-top: 0;
+    }
+
+    .image {
+      display: block;
+      max-width: 115px;
+      margin: 0 auto;
+    }
+
+    .title,
+    .text {
+      text-align: center;
+    }
+
+    .title {
+      margin-bottom: 8px;
+    }
+  }
+
+  .box-tirar-foto {
+    width: 100%;
+    height: 320px;
+    border-radius: 16px;
+    background-color: #222;
+    overflow: hidden;
+    padding: 0 70px;
+    margin-top: $size-1;
+
+    .box-image {
+      margin: 0 auto;
+      height: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .enquadro {
+        position: absolute;
+        width: 376px;
+        height: 224px;
+        background: transparent;
+        border: 8px solid rgba(248, 248, 248, .5);
+        border-radius: 16px;
+        left: calc(50% - 188px);
+        top: calc(50% - 112px);
+
+        &::after {
+          content: 'Frente da identificação';
+          bottom: -15px;
+          left: calc(50% - 82px);
+          position: absolute;
+          background-color: #444;
+          border-radius: 12px;
+          color: #fff;
+          font-size: 12px;
+          line-height: inherit;
+          font-weight: bold;
+          padding: 3px 16px;
+        }
+      }
+    }
+  }
+
+  .box-verificar-foto {
+    width: 100%;
+    height: 320px;
+    border-radius: 16px;
+    background-color: #222;
+    overflow: hidden;
+    padding: 0 40px;
+
+    .box-image {
+      margin: 0 auto;
+      height: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

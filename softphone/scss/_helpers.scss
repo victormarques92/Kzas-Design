@@ -1,0 +1,110 @@
+.hidden {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.not-bold {
+  font-weight: 400;
+}
+
+.on-bold {
+  font-weight: 700;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.full {
+  width: 100%;
+}
+
+// ==============================================
+//                                      Font Size
+// ==============================================
+.font12 {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.font14 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font16 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.font24 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.font28 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+// ==============================================
+//                                  Border Radius
+// ==============================================
+.br-4 {
+  border-radius: 4px;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-circle {
+  border-radius: 50%;
+}
+
+// ==============================================
+//                                     Image Size
+// ==============================================
+.box-60x60 {
+  height: 60px;
+  width: 60px;
+}
+
+.opacity-06 {
+  opacity: .6;
+}
+
+
+// ==============================================
+//                                      Head Kzas
+// ==============================================
+@media(max-width: 992px) {
+  .head-kzas {
+    justify-content: center !important;
+    text-align: center;
+    flex-direction: column;
+
+    .row {
+      &:first-child {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}

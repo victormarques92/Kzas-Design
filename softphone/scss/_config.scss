@@ -1,0 +1,53 @@
+// sass-lint:disable no-css-comments
+// sass-lint:disable no-url-domains
+// sass-lint:disable no-url-protocols
+
+//===============================================
+//                                Paleta de Cores
+//===============================================
+/*
+  Exemplo de chamadas:
+
+  background-color: map-get($colors, 'nome-da-cor');
+  @extend %bg-nome-da-cor
+
+*/
+
+$colors: (
+  'primary': #41a5bb,
+  'secundary': #f05e5c,
+  'black': #000,
+  'white': #fff,
+  'warning': #ffa310,
+  'warning-dark': #BD8B0C,
+  'success': #21a310,
+  'danger': #ff0010,
+  'green': #60b29f,
+  'gray': #444,
+  'gray-22': #222,
+  'gray-49': #495057,
+  'gray-6f': #6f6f6f,
+  'gray-6c': #6c6c6c,
+  'gray-94': #949494,
+  'gray-91': #919191,
+  'gray-c0': #c0c0c0,
+  'gray-c4': #c4c4c4,
+  'gray-e7': #e7e7e7,
+  'gray-f8': #f8f8f8,
+  'gray-opaco': rgba(0, 0, 0, 0.08)
+);
+
+//===============================================
+//                            Font Family & Icons
+//===============================================
+// GOOGLE FONT
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+// GOOGLE ICONS
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round');
+
+// BRANDS
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/brands.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/regular.css');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css');

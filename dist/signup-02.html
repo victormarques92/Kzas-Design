@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#41A5BB">
+        
+        <title>Kzas - Você no controle da compra do seu imóvel</title>
+        <meta name="description" content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <!-- jQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- LOADING -->
+        <script src="./js/loading.js"></script>
+
+        <!-- SMOOTHSCROLL -->
+        <script src="./js/smoothscroll.js"></script>
+        
+        <!-- VISIBLE -->
+        <script src="./js/visible.js"></script>
+        
+        <!-- BULMA TOAST -->
+        <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+        
+        <!-- jQUERY MASKS -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
+        <!-- https://plentz.github.io/jquery-maskmoney/ -->
+        
+        <!-- jQUERY VALIDATOR -->
+        <script type="text/javascript" src="js/parsley.min.js"></script>
+        <script type="text/javascript" src="js/parsley.lang.pt-br.js"></script>
+        <!-- http://parsleyjs.org/ -->
+        
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <!-- Google Analytics -->
+        <!-- Hotjar -->
+        
+    </head>
+    
+    <body class="page-signup signup-02">
+        
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- LOADING CONTENT -->
+        <div class="preloader-content">
+            
+            <!-- COOKIE ALERT -->
+            <div class="topbar is-secundary" style="display: none">
+                <div class="topbar-text">
+                    <p class="text">
+                        O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor experi&ecirc;ncia na compra do seu im&oacute;vel.
+                        <a class="link" href="" data-modal="modal-privacidade">
+                            <strong>
+                                Saiba mais
+                            </strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="topbar-action">
+                    <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title="" href="" role="close">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end COOKIE ALERT -->
+            
+            <!-- NAVBAR -->
+            <nav class="navbar has-border" role="navigation" aria-label="main navigation">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                    <div class="navbar-brand">
+
+                        <a class="navbar-item">
+                            <img src="./img/kzas-logo.png" alt="Kzas">
+                        </a>
+
+                    </div>
+
+                    <div class="navbar-menu">
+                        
+                        <div class="navbar-item is-mobile">
+                            
+                            <!-- DROPDOWN -->
+                            <div class="dropdown is-avatar">
+                                <!-- DROPDOWN TRIGGER -->
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <figure class="image is-40">
+                                            <img class="is-rounded" src="./img/icon-user-blue.png">
+                                        </figure>
+                                    </button>
+                                </div>
+                                <!-- end DROPDOWN TRIGGER -->
+                                <!-- DROPDOWN MENU -->
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <span class="text is-small">
+                                                <strong>Manuela Silva</strong>
+                                            </span>
+                                            <span class="text is-smallest">
+                                                manuela.silva@email.com
+                                            </span>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            Sair
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end DROPDOWN MENU -->
+                                
+                            </div>
+                            <!-- end DROPDOWN -->
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <!-- CONTAINER -->
+
+            </nav>
+            <!-- end NAVBAR -->
+
+            <!-- CADASTRO -->
+            <section class="signup">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                    
+                    <!-- STEPS -->
+                    <div class="section-steps">
+                    
+                        <div class="steps">
+                            
+                            <a class="step-item is-completed" href="signup-01.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">1</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas informa&ccedil;&otilde;es"></span>
+                            </a>
+                            <a class="step-item is-active" href="signup-02.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">2</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Disponibilidade financeira"></span>
+                            </a>
+                            <a class="step-item" href="signup-03.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">3</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas prefer&ecirc;ncias"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-04.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">4</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Match"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-05.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">5</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minha lista"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-05.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">6</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas Propostas"></span>
+                            </a>
+                            <span class="step-item is-final">
+                                <span class="step-marker">
+                                    <span class="icon">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                </span>
+                            </span>
+                            
+                        </div>
+                    
+                    </div>
+                    <!-- end STEPS -->
+                    
+                    <!-- TITLE -->
+                    <div class="section-title">
+                        
+                        <h2 class="title is-medium">
+                            <span>
+                                Disponibilidade financeira
+                            </span>
+                        </h2>
+                        <p class="text is-regular">
+                            Nunc vitae tortor quam. Donec ornare dapibus justo eu faucibus. Proin a libero eu enim pretium.
+                        </p>
+                        
+                    </div>
+                    <!-- end TITLE -->
+                    
+                    <!-- LIST -->
+                    <div class="section-content">
+                        
+                        <!-- FORM -->
+                        <div class="signup-form">
+                            
+                            <form data-parsley-validate>
+                                
+                                <!-- TITLE -->
+                                <div class="form-title">
+
+                                    <h3 class="title is-small">
+                                        Refer&ecirc;ncias de valor
+                                    </h3>
+
+                                    <button class="button is-regular is-neutral is-transparent is-circle is-icon-only"
+                                            title="Ajuda"
+                                            data-modal="modal-ajuda">
+                                        <span class="icon">
+                                            <i class="far fa-question-circle"></i>
+                                        </span>
+                                    </button>
+
+                                </div>
+                                <!-- end TITLE -->
+                                
+                                <!-- FIELDS -->
+                                <fieldset>
+                                
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <div class="control">
+                                                    <label class="toggle is-medium">
+                                                        <input type="checkbox" name="financiar" data-row="financiar">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Pretendo financiar o im&oacute;vel
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row" data-row="financiar">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Valor previsto para entrada
+                                                </label>
+                                                <div class="control">
+                                                    <input class="input is-medium has-mask" type="text"
+                                                       placeholder="R$"
+                                                       data-maskMoney="R$" />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Renda familiar mensal
+                                                </label>
+                                                <div class="control">
+                                                    <input class="input is-medium has-mask" type="text"
+                                                       placeholder="R$"
+                                                       data-maskMoney="R$" />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW -->
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <div class="control">
+                                                    <label class="toggle is-medium">
+                                                        <input type="checkbox" name="fgts" data-row="fgts">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Pretendo usar o saldo do meu FGTS
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row" data-row="fgts">
+
+                                        <div class="column is-half">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Qual valor aproximado do saldo FGTS
+                                                </label>
+                                                <div class="control">
+                                                    <input class="input is-medium has-mask" type="text"
+                                                       placeholder="R$"
+                                                       data-maskMoney="R$" />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW -->
+
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Qual sua fonte de renda?
+                                                </label>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Aposentado
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda" checked>
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Assalariado
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Aut&ocirc;nomo
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Empres&aacute;rio
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Funcion&aacute;rio P&uacute;blico
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Pensionista
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Produtor rural
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="fontederenda">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Profissional liberal
+                                                        </span>
+                                                    </label>
+                                                </div>                                               
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Selecione em quais bancos voc&ecirc; possui conta
+                                                </label>
+                                                <div class="control">
+                                                    <label class="checkbox is-medium has-image-left">
+                                                        <input type="checkbox" name="bancos">
+                                                        <span class="icon"></span>
+                                                        <figure class="image is-24">
+                                                            <img src="img/logo-bancos-bancodobrasil.png" alt="" />
+                                                        </figure>
+                                                        <span class="text">
+                                                            Banco do Brasil
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox is-medium has-image-left">
+                                                        <input type="checkbox" name="bancos">
+                                                        <span class="icon"></span>
+                                                        <figure class="image is-24">
+                                                            <img src="img/logo-bancos-bradesco.png" alt="" />
+                                                        </figure>
+                                                        <span class="text">
+                                                            Bradesco
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox is-medium has-image-left">
+                                                        <input type="checkbox" name="bancos">
+                                                        <span class="icon"></span>
+                                                        <figure class="image is-24">
+                                                            <img src="img/logo-bancos-caixa.png" alt="" />
+                                                        </figure>
+                                                        <span class="text">
+                                                            Caixa
+                                                        </span>
+                                                    </label>
+                                                </div>                                                
+                                                <div class="control">
+                                                    <label class="checkbox is-medium has-image-left">
+                                                        <input type="checkbox" name="bancos">
+                                                        <span class="icon"></span>
+                                                        <figure class="image is-24">
+                                                            <img src="img/logo-bancos-itau.png" alt="" />
+                                                        </figure>
+                                                        <span class="text">
+                                                            Ita&uacute;
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox is-medium has-image-left">
+                                                        <input type="checkbox" name="bancos">
+                                                        <span class="icon"></span>
+                                                        <figure class="image is-24">
+                                                            <img src="img/logo-bancos-santander.png" alt="" />
+                                                        </figure>
+                                                        <span class="text">
+                                                            Santander
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                </fieldset>
+                                <!-- end FIELDS -->
+                                
+                                <div class="columns field-buttons">
+                                    <div class="column">
+                                        <button type="button" class="button is-medium is-primary is-inverted is-fullwidth" id="prevStep" role="button">
+                                            <strong>Voltar</strong>
+                                        </button>
+                                    </div>
+                                    <div class="column">
+                                        <button type="submit" class="button is-medium is-primary is-fullwidth" id="nextStep" role="submit">
+                                            <strong>Pr&oacute;ximo passo</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                        <!-- end FORM -->
+                        
+                    </div>
+                    <!-- end LIST -->
+                
+                </div>
+                <!-- end CONTAINER -->
+            
+            </section>
+            <!-- end CADASTRO -->
+
+            <!-- FOOTER -->
+            <footer class="footer-light">
+                
+                <!-- COPY -->
+                <section class="copy">
+                    
+                    <div class="container">
+
+                        <div class="columns">
+
+                            <div class="column">
+
+                                <span class="text is-small">
+                                    Copyright &copy;2019 Kzas. Todos os direitos reservados.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <!-- end COPY -->
+
+            </footer>
+            <!-- end FOOTER -->
+            
+        </div>
+        <!-- end LOADING CONTENT -->
+        
+        <!-- MODAL VENDER -->
+        <div class="modal is-regular" id="modal-ajuda">
+            
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+            
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+                
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+
+                    <h4 class="title is-smallest">
+                        Para que usaremos essas informa&ccedil;&otilde;es?
+                    </h4>
+                    <h4 class="title is-regular">
+                        %Refer&ecirc;ncias de valor%
+                    </h4>
+
+                    <p class="text">
+                        Etiam elementum egestas sagittis. Nam condimentum tincidunt elit, nec pharetra mi dignissim in. Donec cursus erat nec sapien condimentum lobortis. Vestibulum sit amet tempus massa. Mauris nec lacus sagittis.
+                    </p>
+
+                    <p class="text">
+                        Ullamcorper est at, suscipit ante. Sed pellentesque erat a mauris bibendum malesuada. Donec elit ex, porttitor sit amet placerat at, tempor non risus.
+                    </p>
+
+                    <p class="text">
+                        Donec porta placerat arcu in auctor. Morbi placerat, velit vel gravida convallis, ligula turpis blandit lorem.
+                    </p>
+
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+                
+            </div>
+            <!-- end MODAL CARD -->
+            
+        </div>
+        <!-- end MODAL VENDER -->
+        
+        <!-- AOS -->
+        <script src="./js/aos.js"></script>
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+			});
+		</script>
+                
+    </body>
+</html>

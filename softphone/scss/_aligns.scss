@@ -1,0 +1,155 @@
+//===============================================
+//                                           ROWS
+//===============================================
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+
+//===============================================
+//                                        COLUMNS
+//===============================================
+.flex {
+  &-column {
+    flex-direction: column;
+  }
+
+  &-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+
+//===============================================
+//                               HORIZONTAL ALIGN
+//===============================================
+.halign {
+  &-left {
+    justify-content: flex-start;
+  }
+
+  &-middle {
+    justify-content: center;
+  }
+
+  &-right {
+    justify-content: flex-end;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+
+//===============================================
+//                                 VERTICAL ALIGN
+//===============================================
+.valign {
+  &-top {
+    align-items: flex-start;
+  }
+
+  &-middle {
+    align-items: center;
+  }
+
+  &-baseline {
+    align-items: baseline;
+  }
+
+  &-bottom {
+    align-items: flex-end;
+  }
+}
+
+//===============================================
+//                                CONTAINER ALIGN
+//===============================================
+.calign {
+  &-top {
+    align-content: flex-start;
+  }
+
+  &-middle {
+    align-content: center;
+  }
+
+  &-bottom {
+    align-content: flex-end;
+  }
+
+  &-around {
+    align-content: space-around;
+  }
+
+  &-between {
+    align-content: space-between;
+  }
+}
+
+
+//===============================================
+//                                    ALIGN ITEMS
+//===============================================
+.self {
+  &-top {
+    align-self: flex-start;
+  }
+
+  &-middle {
+    align-self: center;
+  }
+
+  &-bottom {
+    align-self: flex-end;
+  }
+
+  &-baseline {
+    align-self: baseline;
+  }
+}
+
+
+//===============================================
+//                                     TEXT ALIGN
+//===============================================
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}

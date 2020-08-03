@@ -1,0 +1,64 @@
+// GUTTER
+$column-gutter: 0.500rem;
+
+.columns {
+    display: flex;
+    width: 100%;
+}
+
+.columns .column {
+    width: 100%;
+    margin-left: 0.500rem;
+    margin-right: 0.500rem;
+    
+    &.is-full {
+        width: 100%;
+    }
+    
+    &.is-half {
+        max-width: calc(50% - 1.000rem);
+    }
+    
+    &.is-one-quarter {
+        max-width: calc(25% - 1.000rem);
+    }
+    
+    &.is-three-quarters {
+        max-width: calc(75% - 1.000rem);
+    }
+    
+    &.is-one-third {
+        max-width: calc(33.3333% - 1.000rem);
+    }
+    
+    &.is-two-thirds {
+        max-width: calc(66.6666% - 1.000rem);
+    }
+}
+
+// MOBILE LANDSCAPE
+@media screen and (max-width: 1008px) {
+    .columns {
+        flex-wrap: wrap;
+        
+        .column {
+        
+            &.is-half,
+            &.is-one-third,
+            &.is-one-quarter {
+                max-width: 100%;
+            }
+        
+        }
+        
+    }
+}
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}

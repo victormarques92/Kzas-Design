@@ -1,0 +1,64 @@
+.blocks {
+    display: flex;
+    width: 100%;
+}
+
+.blocks {
+    .block {
+        width: 100%;
+    
+        &.is-full {
+            width: 100%;
+        }
+
+        &.is-half {
+            max-width: 50%;
+        }
+
+        &.is-one-quarter {
+            max-width: 25%;
+        }
+
+        &.is-three-quarters {
+            max-width: 75%;
+        }
+
+        &.is-one-third {
+            max-width: 33.3333%;
+        }
+
+        &.is-two-thirds {
+            max-width: 75%;
+        }
+        
+    }
+}
+
+// MOBILE LANDSCAPE
+@media screen and (max-width: 1008px) {
+    .blocks {
+        flex-wrap: wrap;
+        
+        .block {
+        
+            &.is-half,
+            &.is-one-quarter,
+            &.is-three-quarters,
+            &.is-one-third,
+            &.is-two-thirds {
+                max-width: 100%;
+            }
+        
+        }
+        
+    }
+}
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}

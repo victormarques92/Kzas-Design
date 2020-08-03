@@ -1,0 +1,172 @@
+/*
+HERO
+*/
+
+.hero {
+    
+    display: flex;
+    min-height: 37.500rem;
+    
+    padding-bottom: 0; 
+    
+    background: $white;
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        padding-bottom: 3.000rem;
+
+        & > .hero-back {
+            padding-top: 1.000rem;
+            padding-bottom: 1.000rem;
+            flex-grow: 0;
+        }
+    }
+    
+    .columns {
+        
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 100%;
+        min-height: auto;
+        flex-grow: 1;
+        
+        .column {
+        
+            &.left,
+            &.right {
+                max-width: 50%;
+            }
+            
+            &.left {
+                display: flex;
+                flex-flow: column;
+                
+                h2 {
+                    &+ h2 {
+                        margin-top: 0.500rem;
+                    }
+                    &.title.is-primary {
+                        color: $primary;
+                    }
+                }
+                
+            }
+            
+            &.right {
+                .image {
+                    max-width: 35.000rem;
+                    margin: auto;
+                }
+            }
+            
+        }        
+    }
+    
+    .hero-title,
+    .buttons {
+        padding-top: 1.000rem;
+    }
+    
+    .hero-title,
+    .hero-text {
+        padding-left: 0.500rem;
+        padding-bottom: 1.000rem;
+    }
+    
+    .hero-title {
+        em {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    
+    .hero-text {
+        padding-bottom: 0;
+        p.text {
+            padding-bottom: 0;
+        }
+        .text {
+            color: $text-light;
+        }
+    }
+    
+    .hero-text + .buttons {
+        margin-top: 0.500rem;
+    }
+    
+    .buttons {
+        .button {
+            margin-bottom: 1.000rem;
+            padding-left: 1.000rem;
+            padding-right: 1.000rem;
+        }
+    }
+    
+    
+    // MEDIA
+    @media screen and (max-width: 1008px) {
+        
+        height: auto;
+        min-height: auto;
+        padding-top: 2.500rem;
+        padding-bottom: 2.500rem;
+        
+        .container {
+            padding-bottom: 2.500rem;
+
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: $grey-light;
+        }
+        
+        .columns {
+            
+            flex-wrap: wrap;
+            
+            .column {
+                
+                margin: auto;
+                
+                &.left,
+                &.right {
+                    max-width: 100%;
+                }
+                
+                
+                &.left {
+                    order: 1;
+                    width: 100%;
+                    max-width: 34.000rem;
+                }      
+                
+            }
+            
+        }
+        
+        .hero-text,
+        .hero-title {
+            padding-top: 0.500rem;
+        }
+        
+        .title,
+        .hero-text,
+        .text {
+            text-align: center;
+        }
+        
+        .buttons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+    }
+    
+}
+
+/*
+end HERO
+*/

@@ -1,0 +1,47 @@
+.error404 {
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .title {
+      font-size: $size-8*2;
+      margin-bottom: $size-3;
+
+      @media (max-width: 768px) {
+        font-size: $size-5*3;
+        margin-bottom: $size-3;
+      }
+    }
+
+    .text {
+      color: $black-light;
+      font-size: $size-7;
+      margin-bottom: $size-4;
+      max-width: 560px;
+
+      @media (max-width: 768px) {
+        font-size: $size-5;
+        margin-bottom: $size-5;
+      }
+    }
+
+    .error {
+      font-size: $size-4;
+      font-weight: 700;
+    }
+
+    .box-img {
+      max-width: 400px;
+
+      @media (max-width: 768px) {
+        margin-top: $size-3;
+      }
+    }
+  }
+}

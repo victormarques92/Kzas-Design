@@ -1,0 +1,15 @@
+@import './scss/reset';
+@import './scss/helpers';
+@import './scss/mixins';
+@import './scss/animate';
+@import './scss/config';
+@import './scss/functions';
+@import './scss/grid';
+@import './scss/aligns';
+
+// Components
+@import './scss/_components/box-card';
+@import './scss/_components/box-chamada';
+@import './scss/_components/box-status';
+@import './scss/_components/input';
+@import './scss/_components/select'

@@ -1,0 +1,177 @@
+body {
+    
+    
+    .hopscotch-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        z-index: 34;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    div.hopscotch-bubble {
+        
+        border-radius: $card-radius;
+        box-shadow: $modal-shadow;
+        
+        border: transparent;
+        font-family: $font-primary;
+        font-size: $size-2;
+        
+        // CLOSE
+        .hopscotch-bubble-close {
+            top: 0.250rem;
+            right: 0.250rem;
+            cursor: pointer;
+        }
+        
+        .hopscotch-bubble-arrow-container {
+            
+            &.down {
+                bottom: auto;
+                .hopscotch-bubble-arrow-border {
+                    border-top-color: rgba(0,0,0,0.1);
+                }
+            }
+            
+            &.up {
+                top: -17px;
+                .hopscotch-bubble-arrow-border {
+                    border-bottom-color: rgba(0,0,0,0.1);
+                }
+            }
+        
+        }
+                
+        .hopscotch-bubble-container {
+    
+            background-color: $white;
+
+            padding-top: 1.500rem !important;
+            padding-bottom: 1.000rem !important;
+
+            padding-left: 1.000rem !important;
+            padding-right: 1.000rem !important;
+
+            border-radius: $card-radius;
+            border-width: 1px;
+            border-style: solid;
+            border-color: $grey;
+            
+            // NUMBER            
+            .hopscotch-bubble-number {
+                
+                float: none;
+                width: 4.000rem;
+                
+                position: absolute;
+                bottom: 1.000rem;
+                left: 1.000rem;
+                
+                background: transparent;
+                
+                color: $text-dark;
+                font-weight: normal;
+                font-size: .800rem;
+                
+                text-align: left;
+                
+            }
+            
+            // CONTENT
+            .hopscotch-bubble-content {
+                margin-left: 0;
+            }
+            
+            // TEXT
+            .hopscotch-title,
+            .hopscotch-content {
+                font-family: inherit;
+            }
+            
+            .hopscotch-title {
+                margin-bottom: 0.500rem;
+                font-size: $size-3;
+            }
+            
+            .hopscotch-content {
+                padding-bottom: 0.500rem;
+                font-size: $size-2;
+                color: $text-light;
+            }
+            
+            // ACTIONS
+            .hopscotch-actions {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 1.000rem;
+            }
+            
+            // BUTTONS
+            .hopscotch-nav-button {
+                
+                display: flex;
+                align-items: center;
+                height: 2.000rem;
+                
+                padding-left: 1.000rem;
+                padding-right: 1.000rem;
+
+                border-width: 1px;
+                border-style: solid;
+
+                font-weight: bolder;
+                font-size: $size-2;
+                text-shadow: none;
+                
+                line-height: 1.000rem;
+                
+                border-radius: $button-radius;
+                
+                
+                &.next,
+                &.prev {
+                    background-image: none;
+                }
+                
+                &.next {
+                    border-color: $primary;
+                    background-color: $primary;
+                    box-shadow: $button-shadow;
+                }
+                
+                &.prev {
+                    border-color: $white;
+                    background-color: $white;
+                    color: $primary;
+                }
+            }
+
+        }
+        
+    }
+
+}
+
+
+
+
+
+
+// MOBILE
+@media screen and (max-width: 1008px) {
+    
+}
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}

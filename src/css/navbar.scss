@@ -1,0 +1,429 @@
+/* VARS */
+
+$navbar-left: 3.500rem;
+$navbar-right: 3.500rem;
+
+$navbar-background: $white;
+$navbar-fixed-z: 30;
+$navbar-height: 7.000em;
+$navbar-brand-height: $navbar-height*.6;
+$navbar-link-hover: $white;
+
+/* end VARS */
+
+/*
+NAVBAR
+*/
+
+.navbar {
+    position: relative;
+    z-index: 30;
+    
+    padding-top: 1.500rem;
+    padding-bottom: 1.500rem;
+    
+    background-color: transparent;
+    
+}
+
+// IS FIXED
+.navbar.is-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+    & + .hero,
+    & + section {
+        padding-top: 5.250rem;
+    }
+    
+    &.is-large + .hero {
+        padding-top: 7.000rem;
+    }
+
+    &.is-small + .hero {
+        padding-top: 4.000rem;
+    }    
+    
+}
+
+// IS ABSOLUTE
+.navbar.is-absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+    & + .hero,
+    & + section {
+        padding-top: 5.250rem;
+    }
+    
+    &.is-large + .hero {
+        padding-top: 7.000rem;
+    }
+
+    &.is-small + .hero {
+        padding-top: 4.000rem;
+    }    
+    
+}
+
+
+
+// CONTAINER
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+// REGULAR
+.navbar {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+}
+.navbar .navbar-brand img {
+    width: 2.250rem;
+    height: auto;
+}
+
+// LARGE
+.navbar.is-large {
+    padding-top: 1.500rem;
+    padding-bottom: 1.500rem;
+}
+.navbar.is-large .navbar-brand img {
+    width: 3.000rem;
+}
+
+// SMALL
+.navbar.is-small {
+    padding-top: 1.000rem;
+    padding-bottom: 1.000rem;
+}
+.navbar.is-small .navbar-brand img {
+    width: 1.500rem;
+}
+
+// LOGIN
+.navbar.is-giant {
+    padding-top: 2.500rem;
+    padding-bottom: 2.500rem;
+    text-align: center;
+}
+.navbar.is-giant .navbar-brand img {
+    width: 3.750rem;
+}
+
+// ITEMS
+.navbar .navbar-item {
+    display: flex;
+    align-items: center;    
+}
+
+.navbar .navbar-menu {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.navbar .navbar-menu .navbar-item {    
+    padding-left: 0.500rem;
+    padding-right: 0.500rem;
+    
+    font-weight: normal;
+    
+    text-decoration: none;
+}
+
+.navbar .navbar-menu .navbar-item:last-child {
+    padding-right: 0;
+}
+
+.navbar .navbar-brand .navbar-item:hover {
+    background-color: transparent;
+}
+
+.navbar .navbar-menu .navbar-item .button:not(.is-primary):not(.is-secundary):not(.is-bookmark) {
+    color: $text-dark;
+    font-weight: normal;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.navbar .navbar-menu .navbar-item .button:not(.is-primary):not(.is-secundary):not(.is-bookmark):hover,
+.navbar .navbar-menu .navbar-item .button.is-primary.is-inverted:hover,
+.navbar .navbar-menu .navbar-item .button.is-secundary.is-inverted:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: transparent;
+}
+
+.navbar .navbar-menu .navbar-item .button.is-primary.is-inverted,
+.navbar .navbar-menu .navbar-item .button.is-secundary.is-inverted {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+// NOTIFICATION
+.navbar .navbar-menu .navbar-item .button.notification {
+    position: relative;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: $secundary-lightest;
+    
+    &::before {
+        @include fontawesome('solid');
+        content: '\f0f3';
+        font-size: 1.250rem;
+        color: $secundary;
+    }
+    
+    &[data-status="empty"] {
+        background-color: $grey-lighter;
+        &::before {
+            @include fontawesome('regular');
+            font-size: 1.250rem;
+            color: $grey;
+        }
+        .badge {
+            display: none;
+        }
+    }
+    
+    .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        padding-left: 0.250rem;
+        padding-right: 0.250rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border-radius: 0.500rem;
+        min-width: 1.000rem;
+        height: 1.000rem;
+        
+        background-color: $secundary;
+        
+        font-size: 0.750rem;
+        line-height: 1;
+        font-weight: bolder;
+        color: $white;
+        
+        text-align: center;
+        
+    }
+}
+
+// USER DROPDOWN
+.navbar .navbar-menu .navbar-item .button.user {
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+    
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;        
+    }    
+    
+    .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        padding-top: 0;
+        padding-bottom: 0;
+
+        padding-left: 0.250rem;
+        padding-right: 0.250rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 0.500rem;
+        min-width: 1.000rem;
+        height: 1.000rem;
+
+        font-size: 10px;
+        line-height: 1;
+        font-weight: bolder;
+        color: $white;
+
+        text-align: center;
+
+        &.for-validation {
+            background-color: $purple;
+        }
+
+        &.waiting-validation {
+            background-color: $warning;
+        }
+
+        &.error-validation {
+            background-color: $error;
+        }
+
+    }
+}
+
+// BORDER
+.navbar.has-border {
+    background-color: $navbar-background;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+// SCROLLED
+.scrolled .navbar.is-fixed {
+    top: 0;
+    
+    background-color: $navbar-background;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+    
+    opacity: 0.96;    
+}
+
+.scrolled .navbar.is-large.is-fixed {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;    
+}
+
+.scrolled .navbar.is-large.is-fixed .navbar-brand img {
+    width: 2.250rem;
+    height: auto;
+}
+
+/*
+end NAVBAR
+*/
+
+/* DROPDOWN */
+
+.navbar .dropdown {
+    
+    &.is-avatar {
+        
+        width: 2.500rem;
+        height: 2.500rem;
+        
+        .button {
+            height: 2.500rem;
+            padding: 0;
+            background-color: $white;
+            border-radius: 50%;
+            border: none;
+            outline:none;
+        }
+        
+    }
+    .dropdown-menu {
+        
+        left: auto;
+        right: 0;
+        min-width: 5.000rem;
+        padding-top: 0.250rem;
+        z-index: 20;
+        
+        .dropdown-item {
+            text-decoration: none;
+            .text {
+                display: block;
+            }
+        }
+
+        &.minha-lista {
+            left: calc(50% - 10.25rem);
+            min-width: 20.5rem;
+            top: 55px;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -6px;
+                background: $white;
+                transform: rotate(45deg);
+                left: calc(50% - 10px);
+                box-shadow: 0 2px 3px rgba(68, 68, 68, .1), 0 0 0 1px rgba(68, 68, 68, .1);
+                z-index: -1;
+            }
+
+            &::after {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -6px;
+                background: $white;
+                transform: rotate(45deg);
+                left: calc(50% - 10px);
+            }
+
+            .text.is-small {
+                margin-bottom: 8px;
+            }
+
+            .text.is-smallest {
+                margin-bottom: 20px;
+            }
+
+            .button {
+                color: $white;
+                text-align: center;
+            }
+        }
+        
+    }
+
+}
+
+/* end DROPDOWN */
+
+@media screen and (max-width: 1008px) {
+    
+    .navbar .navbar-menu .navbar-item:not(.is-mobile) {
+        display: none;
+    }
+    
+    .navbar .navbar-menu .button.is-bookmark {
+        
+        .icon {
+            margin-right: 0.250rem;
+        }
+        
+        .badge {
+            margin-left: 0.250rem;
+        }
+        
+        .text {
+            display: none;
+        }
+                
+    }
+
+    .navbar .dropdown .dropdown-menu.minha-lista {
+        left: -110px;
+        min-width: 17rem;
+    }
+    
+}

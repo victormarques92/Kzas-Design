@@ -1,0 +1,36 @@
+.page-cluster {
+
+    .hero {
+
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+        
+        background-image: url('./img/cluster-hero-background.png');
+        
+        @media screen and (max-width: 1008px) {
+            
+            background-size: cover;
+            background-position: center center;
+            
+            .container {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+            
+        }
+        
+    }
+    
+    .section-form {
+        background-color: $grey-lighter;
+    }
+    
+    
+    footer {
+        margin-top: 0;
+    }
+    
+}
+
+

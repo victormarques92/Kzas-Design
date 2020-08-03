@@ -1,0 +1,136 @@
+// BRAND COLORS
+
+// RED
+$red: #F05E5C;
+
+$red-dark: #C25151;
+$red-darker: #903837;
+$red-darkest: #602625;
+
+$red-light: #F69E9D;
+$red-lighter: #F9BFBE;
+$red-lightest: #FEF7F6;
+
+// BLUE
+$blue: #41A5BB;
+
+$blue-dark: #327D8F;
+$blue-darker: #276370;
+$blue-darkest: #1A424B;
+
+$blue-light: #8DC9D6;
+$blue-lighter: #B3DBE4;
+$blue-lightest: #F0FBFF;
+
+// PURPLE
+$purple: #6E4DD0;
+
+$purple-dark: #583EA6;
+$purple-darker: #422E7D;
+$purple-darkest: #2C1F53;
+
+$purple-light: #A894E3;
+$purple-lighter: #C5B8EC;
+$purple-lightest: #E2DBF6;
+
+// HIGHLIGHT COLOR
+$yellow: #F2B946;
+$yellow-light: #FFD36C;
+$yellow-dark: #E1A93E;
+
+// BLACK COLOR
+$black: #444444;
+$black-dark: #222222;
+$black-light: #6F6F6F;
+$white: #FFFFFF;
+
+// GREY SCALE
+$grey: #C0C0C0;
+
+$grey-dark: #949494;
+$grey-light: #E7E7E7;
+$grey-lighter: #F8F8F8;
+
+// GRADIENT
+$blue-linear: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(240,251,255,1) 100%);
+
+// TEXT COLOR
+$text-darker: $black-dark;
+$text-dark: $black;
+$text-light: $black-light;
+$text-lightest: $grey-dark;
+$text-white: $white;
+
+// FEEDBACK - SUCCESS
+$success: #60B29F;
+$success-dark: #305950;
+$success-light: #78DFC7;
+$success-lighter: #E4F9F4;
+
+// FEEDBACK - ERROR
+$error: #A50000;
+$error-dark: #630000;
+$error-light: #E4B2B2;
+$error-lighter: #FAF0F0;
+
+// FEEDBACK - WARNING
+$warning: #BE8C00;
+$warning-dark: #735400;
+$warning-light: #E6CC7E;
+$warning-lighter: #FAF5E5;
+
+// FEEDBACK - INFO
+$info: #007AA5;
+$info-dark: #006184;
+$info-light: #B2D7E4;
+$info-lighter: #F0F7FA;
+
+// EXTRA
+$green-whatsapp: #64B061;
+$blue-facebook: #3B5998;
+$blue-messenger: #0084FE;
+$yellow-stars: #FBBF00;
+
+// BULMA
+$grey-dark: $black;
+$grey-light: $grey-light;
+
+// PRIMARY
+$primary: $red;
+$primary-dark: $red-dark;
+$primary-darker: $red-darker;
+$primary-darkest: $red-darkest;
+
+$primary-light: $red-light;
+$primary-lighter: $red-lighter;
+$primary-lightest: $red-lightest;
+
+// SECUNDARY
+$secundary: $blue;
+$secundary-dark: $blue-dark;
+$secundary-darker: $blue-darker;
+$secundary-darkest: $blue-darkest;
+
+$secundary-light: $blue-light;
+$secundary-lighter: $blue-lighter;
+$secundary-lightest: $blue-lightest;
+
+// TERTIARY
+$tertiary: $purple;
+$tertiary-dark: $purple-dark;
+$tertiary-darker: $purple-darker;
+$tertiary-darkest: $purple-darkest;
+
+$tertiary-light: $purple-light;
+$tertiary-lighter: $purple-lighter;
+$tertiary-lightest: $purple-lightest;
+
+// LINK
+$link: $red;
+
+// FOCUS
+$input-focus-border-color: $blue-light;
+$input-focus-box-shadow-color: $blue-lightest;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;

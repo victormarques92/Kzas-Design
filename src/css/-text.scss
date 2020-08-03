@@ -1,0 +1,220 @@
+// BASE FONT
+$font-primary: 'Quicksand', sans-serif;
+$font-code: monospace;
+
+// SIZES
+$size-1: 0.750rem; // 12px
+$size-2: 0.875rem; // 14px
+$size-3: 1.000rem; // 16px
+$size-4: 1.250rem; // 20px
+$size-5: 1.500rem; // 24px
+$size-6: 1.750rem; // 28px
+$size-7: 2.000rem; // 32px
+$size-8: 3.000rem; // 48px
+$size-9: 3.500rem; // 56px
+
+// LINE HEIGHTS
+
+
+// BODY
+
+/*
+TEXT
+*/
+
+body {
+    font-size: $size-3;
+    line-height: $size-3;
+    color: $text-dark;
+    font-weight: normal;
+}
+
+html {
+    font-size: $size-3;
+}
+
+// LINK INLINE
+a {
+    display: inline-block;
+    background-color: transparent;
+    color: $primary;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: $primary;
+    color: $white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title,
+.text {
+    color: $black;
+}
+
+// TEXT REGULAR
+.text,
+.text.is-regular {
+    font-size: $size-3;
+    font-weight: normal;
+    line-height: 1.5;
+}
+p.text,
+p.text.is-regular {
+    padding-bottom: $size-3/2;
+}
+
+// TEXT LARGE
+.text.is-large {
+    font-size: $size-4;
+}
+p.text.is-large {
+    padding-bottom: $size-4/2;
+}
+
+// TEXT SMALLEST
+.text.is-smallest {
+    font-size: $size-1;
+}
+p.text.is-smallest {
+    padding-bottom: $size-1/2;
+}
+
+// TEXT SMALL
+.text.is-small {
+    font-size: $size-2;
+}
+p.text.is-small {
+    padding-bottom: $size-2/2;
+}
+
+// TITLE REGULAR
+.title,
+.title.is-regular {
+    font-size: $size-6;
+    font-weight: bolder;
+    line-height: 1.16;
+}
+
+.title span {
+    display: block;
+}
+
+// TITLE SMALLER
+.title.is-smaller {
+    font-size: $size-3;
+}
+
+// TITLE SMALLEST
+.title.is-smallest {
+    font-size: $size-4;
+    padding-bottom: 1.000rem;
+}
+
+// TITLE SMALL
+.title.is-small {
+    font-size: $size-5;
+}
+
+// TITLE NORMAL
+.title.is-normal {
+    font-size: $size-6;
+}
+
+// TITLE MEDIUM
+.title.is-medium {
+    font-size: $size-7;
+}
+
+// TITLE LARGE
+.title.is-large {
+    font-size: $size-8;
+}
+
+// TITLE LARGER
+.title.is-larger {
+    font-size: $size-9;
+}
+
+/*
+end TEXT
+*/
+
+/*
+LIST
+*/
+
+.list {
+    
+    list-style: disc;
+    
+    li {
+        padding-bottom: 0.500rem;
+        list-style: inside;
+    }
+    
+    &.has-icons-left,
+    &.has-icons-right {
+        
+        li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.500rem;
+                height: 1.500rem;
+                
+                &.is-left {
+                    margin-right: 0.500rem;
+                }
+                
+                &.is-right {
+                    margin-left: 0.500rem;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+/*
+end LIST
+*/
+
+// MOBILE
+@media screen and (max-width: 1008px) {
+    .title span {
+        display: inline;
+    }
+    // TITLE LARGER
+    .title.is-larger {
+        font-size: $size-9*.75;
+    }
+    // TITLE LARGE
+    .title.is-large {
+        font-size: $size-8*.75;
+    }
+    // TITLE MEDIUM
+    .title.is-medium {
+        font-size: $size-7*.75;
+    }
+    .title.is-regular {
+        font-size: $size-6*.75;
+    }
+    .title.is-small {
+        font-size: $size-5*.75;
+    }
+    .title.is-smallest {
+        //font-size: $size-4*.75;
+    }
+}

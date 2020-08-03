@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#41A5BB">
+        
+        <title>Kzas - Você no controle da compra do seu imóvel</title>
+        <meta name="description" content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <!-- jQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- LOADING -->
+        <script src="./js/loading.js"></script>
+
+        <!-- SMOOTHSCROLL -->
+        <script src="./js/smoothscroll.js"></script>
+        
+        <!-- VISIBLE -->
+        <script src="./js/visible.js"></script>
+        
+        <!-- BULMA TOAST -->
+        <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+        
+        <!-- jQUERY MASKS -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+        
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <!-- Google Analytics -->
+        <!-- Hotjar -->
+        
+    </head>
+    
+    <body class="page-login">
+        
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- LOADING CONTENT -->
+        <div class="preloader-content">
+            
+            <!-- COOKIE ALERT -->
+            <div class="topbar is-secundary" style="display: none">
+                <div class="topbar-text">
+                    <p class="text">
+                        O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor experi&ecirc;ncia na compra do seu im&oacute;vel.
+                        <a class="link" href="" data-modal="modal-privacidade">
+                            <strong>
+                                Saiba mais
+                            </strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="topbar-action">
+                    <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title="" href="" role="close">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end COOKIE ALERT -->
+            
+            <!-- NAVBAR -->
+            <nav class="navbar is-giant" role="navigation" aria-label="main navigation">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                    <div class="navbar-brand">
+
+                        <img src="./img/kzas-logo.png" alt="Kzas">
+
+                    </div>
+                    
+                </div>
+                <!-- CONTAINER -->
+
+            </nav>
+            <!-- end NAVBAR -->
+
+            <!-- COMO FUNCIONA -->
+            <section class="login" id="login">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                    
+                    <!-- TITLE -->
+                    <div class="section-title">
+                        
+                        <h2 class="title is-medium">
+                            <span>Digite o c&oacute;digo de acesso que</span>
+                            <span>enviamos para seu WhatsApp</span>
+                        </h2>
+                        
+                    </div>
+                    <!-- end TITLE -->
+                    
+                    <!-- CONTENT -->
+                    <div class="section-content">
+                        
+                        <!-- FORM -->
+                        <div class="login-form">
+
+                            <form data-validation="false">
+
+                                <fieldset>
+
+                                    <!-- CODE -->
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input is-medium has-mask" type="text" id="loginCode"
+                                                   placeholder="C&oacute;digo de acesso"
+                                                   pattern="[a-zA-Z0-9]{8}"
+                                                   maxlength="8"
+                                                   required />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-key"></i>
+                                            </span>
+                                            <script type="text/javascript">
+                                                $(function() {
+                                                    $('.loginCode').mask('Z',{translation:  {'Z': {pattern: /[a-zA-Z0-9]/, recursive: true}}});
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <!-- end CODE -->
+
+                                    <div class="buttons">
+                                        <button type="submit" class="button is-medium is-primary is-fullwidth" id="startChat" role="submit" disabled>
+                                            <strong>Validar c&oacute;digo</strong>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                        <button type="button" class="button is-medium is-link is-fullwidth" id="codeForwarder" role="button" disabled>
+                                            <strong>
+                                                Reenviar c&oacute;digo
+                                                <span id="timer">
+                                                    em <span id="counter">60</span> seg...
+                                                </span>
+                                            </strong>
+                                        </button>
+                                    </div>
+
+                                </fieldset>
+
+                            </form>
+
+                        </div>
+                        <!-- end FORM -->
+                        
+                    </div>
+                    <!-- end CONTENT -->
+                
+                </div>
+                <!-- end CONTAINER -->
+            
+            </section>
+            <!-- end COMO FUNCIONA -->
+
+            <!-- FOOTER -->
+            <footer class="footer-light">
+                
+                <!-- COPY -->
+                <section class="copy">
+                    
+                    <div class="container">
+
+                        <div class="columns">
+
+                            <div class="column">
+
+                                <span class="text is-small">
+                                    Copyright &copy;2019 Kzas. Todos os direitos reservados.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <!-- end COPY -->
+
+            </footer>
+            <!-- end FOOTER -->
+            
+        </div>
+        <!-- end LOADING CONTENT -->
+        
+        <!-- LIGHTBOX PRIVACIDADE -->
+        <div class="modal" id="modal-privacidade">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h3 class="title is-small">
+                        Pol&iacute;tica de privacidade
+                    </h3>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+
+                    <p class="text">
+                        No Kzas, nós apreciamos muito tê-lo como cliente e, por isso, respeitamos muito sua privacidade e estamos comprometidos em proteger suas informações pessoais.
+                    </p>
+
+                    <p class="text">
+                        Nós incentivamos que você leia esta Política de Privacidade e entenda a informação que coletamos e como iremos utilizá-la. Esta política se aplica a nosso site que foi publicado previamente ao lançamento de nosso serviço completo.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Informação Coletada pelo Kzas
+                    </h4>
+
+                    <p class="text">
+                        Quando você visita nosso site, você pode escolher ser notificado do lançamento de nosso serviço, através do botão "Converse comigo agora” que o leva até seu WhatsApp para conversar com nosso atendente virtual que colherá alguns dados.
+                    </p>
+
+                    <p class="text">
+                        Ao conversar com nosso Atendente Virtual, o Kzas coleta as seguintes informações:
+                    </p>
+
+                    <ul class="list">
+                        <li class="text">Seu número de telefone celular onde você tem o WhatsApp.</li>
+                        <li class="text">Seu nome</li>
+                        <li class="text">A cidade em que você quer morar</li>
+                        <li class="text">O motivo pelo qual está buscando comprar um imóvel</li>
+                        <li class="text">Em quanto tempo pretende realizar a compra do imóvel</li>
+                        <li class="text">A renda mensal de seu grupo familiar</li>
+                    </ul>
+
+                    <p class="text">
+                        Todas estas informações são necessárias para:
+                    </p>
+
+                    <ul class="list">
+                        <li class="text">Notificá-lo quando do lançamento de nossa plataforma</li>
+                        <li class="text">Identificar as necessidades de imóveis nas diferentes regiões do Brasil e trabalhar na criação desta base de imóveis para atendê-lo.</li>
+                        <li class="text">Identificar as instituições financeiras que poderiam fornecer as melhores condições de financiamento de imóveis.</li>
+                    </ul>
+
+                    <p class="text">
+                        Toda esta informação é coletada automaticamente, sem interferência humana e processada utilizando-se apenas sistemas construídos pela Kzas sem a participação de nenhum terceiro exceto pela empresa  “Twilio Inc” (twilio.com) que utilizamos para a entrega de mensagens via Whatsapp.
+                    </p>
+
+                    <p class="text">
+                        O site Kzas.com.br também cria um cookie para medir a quantidade e frequência de visitas a nosso site. Cookies são pequenos arquivos que são transferidos de seu navegador para nossos servidores e identificam o seu navegador. O uso dos Cookies nos ajudam a melhorar nossos serviços e medir a eficácia de nossos esforços de marketing.Você é livre para desabilitar ou apagar os Cookies, para isto, basta acessar a página de configurações de seu navegador.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Uso de Logs
+                    </h4>
+
+                    <p class="text">
+                        O Kzas utiliza grava arquivos de logs de todos os serviços providos, incluindo: o tipo de navegador que você usa, data do acesso, páginas visitadas, seu endereço de IP e a página em que você estava que gerou a visita a nosso site. Nós também coletamos informações sobre seu computador ou aparelho móvel, como modelo, sistema operacional, versão, identificador único do aparelho e comportamento da navegação.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Quando o Kzas compartilha suas informações:
+                    </h4>
+
+                    <p class="text">
+                        Sua privacidade é importante e estamos comprometidos em proteger as informações que identificam você pessoalmente. Somente iremos compartilhar suas informações pessoais fora de nossa esfera de serviços, com seu consentimento explícito.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Segurança e retenção de dados:
+                    </h4>
+
+                    <p class="text">
+                        O Kzas trabalha com as melhores ferramentas e processos para garantir a segurança de sua informação. Entretanto, nenhuma transmissão via internet pode ser considerada inteiramente segura e, assim, não há como garantir segurança absoluta.
+                    </p>
+
+                    <p class="text">
+                        Você pode acessar, atualizar e deletar as informações pessoais que você nos forneceu. Nós poderemos manter históricos das versões originais de suas informações.
+                    </p>
+
+                    <p class="text">
+                        Manteremos suas informações pelo tempo necessário para cumprir os propósitos de nosso serviço ou, até que você requisite sua exclusão.
+                    </p>
+
+                    <p class="text">
+                        Nós armazenamos suas informações em servidores "Cloud", ou seja, providos por empresas de armazenamento possivelmente fora do país, como por exemplo: Amazon e Google.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Contactando o Kzas
+                    </h4>
+
+                    <p class="text">
+                        Se você tem perguntas sobre esta política de privacidade, ou as práticas de privacidade do Kzas, por favor entre em contato através do email privacidade@kzas.com.br, ou você pode mandar uma carta para o endereço: R Pedroso Alvarenga , 1208 cj 1207 São Paulo – S.P. - Cep 04531-911.
+                    </p>
+
+                    <h4 class="title is-smallest">
+                        Mudanças nesta Política de Privacidade
+                    </h4>
+
+                    <p class="text">
+                        Por favor se atente para o fato de que esta política de privacidade pode ser atualizada periodicamente e as versões atualizadas estarão sempre disponíveis para sua consulta.  Sempre que houver atualizações em nossa política de privacidade iremos notificá-lo sobre mudanças nesta política de privacidade, através de e-mails ou avisos em nosso site.
+                    </p>
+
+                    <!-- Content ... -->
+                </section>
+                <div class="modal-card-foot">
+                    <span class="text -is-small">
+                        <strong>Última Atualização: 10/maio/2019</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- end LIGHTBOX PRIVACIDADE -->
+        
+        <!-- AOS -->
+        <script src="./js/aos.js"></script>
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+			});
+		</script>
+                
+    </body>
+</html>

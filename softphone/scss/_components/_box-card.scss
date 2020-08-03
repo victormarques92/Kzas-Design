@@ -1,0 +1,19 @@
+// ==============================================
+//                                       BOX CARD
+// ==============================================
+.box-card {
+  background-color: map-get($colors, 'white');
+  border-radius: 8px;
+  padding: 16px;
+
+  .divider {
+    border-top: 2px solid map-get($colors, 'gray-e7');
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  &.full-height {
+    height: calc(100% - 16px);
+  }
+}

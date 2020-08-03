@@ -1,0 +1,369 @@
+/*
+GALLERY
+*/
+
+body {
+    &.gallery-open {
+        @include no-scrollbar();
+        overflow: hidden;
+    }
+}
+
+.gallery,
+.gallery .gallery-background {
+    position: fixed;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.gallery {
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 40;
+    
+    &:not(.is-active) {
+        display: none;
+    }
+    
+    .gallery-background {
+        background-color: $black-dark;
+        z-index: 38;
+    }
+    
+    .gallery-card {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 100%;
+        
+        background-color: $black-dark;
+        color: $white;
+        
+        .gallery-card-head,
+        .gallery-card-foot {
+            width: 100%;
+            padding-left: 2.500rem;
+            padding-right: 2.500rem;
+        }
+        
+        .gallery-card-body {
+            width: 100%;
+            height: 100%;
+            flex-grow: 1;
+        }
+        
+        .gallery-card-foot {
+            align-self: flex-end;
+            flex-grow: 0;
+            flex-shrink: 0;
+            
+            padding-top: 1.000rem;
+            padding-bottom: 1.000rem;
+            
+            background-color: rgba(68, 68, 68, 0.30);
+        }
+        
+    }
+    
+    // TABS
+    .gallery-tabs {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        max-width: 100%;
+        overflow: auto;
+
+        // TAB
+        .tab {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: auto;
+
+            text-decoration: none;
+
+            border-radius: $button-radius;
+
+            outline: none;
+
+            cursor: pointer;
+
+            margin-left: 0.250rem;
+            margin-right: 0.250rem;
+
+            padding-left: 1.000rem;
+            padding-right: 1.250rem;
+
+            height: 2.500rem;
+
+            background-color: transparent;
+
+            .icon {
+                margin-right: 0.500rem;
+                color: $white;
+            }
+
+            .text {
+                font-size: $size-2;
+                line-height: 1;
+                color: $white;
+            }
+
+            &:hover:not(.is-active):not(.is-disabled) {
+                background-color: $black-light;
+            }
+
+            &.is-active {
+                background-color: $black-dark;                          
+            }
+
+            &.is-disabled,
+            &.is-blocked {
+                opacity: 0.30;
+                pointer-events: none;
+                cursor: not-allowed;
+            }
+            
+            &.is-blocked {
+                            
+            }
+
+        }
+        // end TAB
+
+    }
+    // end TABS
+    
+    // TAB CONTENT
+    .tab-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 100%;
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            
+            // SLIDE
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    
+                    padding-top: 1.000rem;
+                    padding-bottom: 3.000rem;
+                                        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    
+                    img {
+                        max-height: 100%;
+                        margin-top: auto;
+                    }
+                    
+                    figcaption {
+                        position: static;
+                        width: 100%;
+                        margin-bottom: auto;
+                        background-color: transparent;
+                    }
+                }
+                
+            }
+            // end SLIDER
+            
+            // PREV / NEXT
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: absolute;
+                top: 50%;
+                width: 1.500rem;
+                height: 1.500rem;
+                margin-top: -0.750rem;
+                z-index: 10;
+                cursor: pointer;
+                
+                background-image: none;
+                right: 0.500rem;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                opacity: 0.50;
+                
+                &::before {
+                    font-family: "Font Awesome 5 Free";
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+
+                    font-weight: 900;
+
+                    font-size: 1.500rem;
+                    color: $white;
+                }
+                
+            }
+            
+            // PREV
+            .swiper-button-prev,
+            .swiper-container-rtl .swiper-button-next {
+                left: 0.500rem;
+                &::before {
+                    content: "\f053";
+                }
+            }
+            
+            // NEXT
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {    
+                right: 0.500rem;
+                &::before {
+                    content: "\f054";
+                }
+            }
+            
+            // DOT COLOR
+            .swiper-pagination-bullet-active {
+                background: $white;
+            }
+            
+        }
+        
+        // VIDEO
+        .video {
+            width: 100%;
+            height: 100%;
+
+            padding-top: 3.000rem;
+            padding-bottom: 3.000rem;
+            
+            padding-left: 3.000rem;
+            padding-right: 3.000rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            iframe {
+                max-height: 100%;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+        
+        // end VIDEO
+        
+        &:not(.is-active) {
+            display: none;
+        }
+    }
+    // end TAB CONTENT
+    
+    // DELETE
+    .delete,
+    .modal-close {
+        position: absolute;
+        top: 1.000rem;
+        right: 1.000rem;
+        
+        height: 2.500rem;
+        max-height: 2.500rem;
+        max-width: 2.500rem;
+        min-height: 2.500rem;
+        min-width: 2.500rem;
+        width: 2.500rem;
+        
+        background-color: transparent;
+        
+        z-index: 48;
+        
+        &:hover {
+            background-color: $black;
+        }
+        
+    }
+    
+    .delete::before,
+    .modal-close::before,
+    .delete::after,
+    .modal-close::after {
+        background-color: $grey;
+    }
+    
+}
+
+/*
+end GALLERY
+*/
+
+
+
+// MOBILE LANDSCAPE
+@media screen and (max-width: 1008px) {
+    
+    .gallery {
+        
+        // TABS
+        .gallery-tabs {
+            // TAB   
+            .tab {
+                padding-left: 0;
+                padding-right: 0;
+                width: 2.500rem;
+                .icon {
+                    margin-right: 0;
+                }
+                .text {
+                    display: none;
+                }
+            }
+            // end TAB
+        }
+        // end TABS
+        
+    }
+    
+}
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    
+    
+    
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+
+

@@ -1,0 +1,149 @@
+.page-press {
+    
+    .hero {
+        @include hero-custom('small');        
+    }
+    
+    // KZAS MIDIA
+    .kzas-midia {
+        
+        padding-left: 1.000rem;
+        padding-right: 1.000rem;
+
+        .title {
+            margin-bottom: $size-6;
+        }
+
+        .list-media {
+            
+            .item {
+                border-top: 1px solid $grey-light;
+                padding-top: $size-3;
+                padding-bottom: $size-4;
+
+                &:first-of-type {
+                    border: none;
+                }
+
+                .date {
+                    font-size: $size-1;
+                    color: $black-light;
+                    margin-bottom: $size-3/2;
+                }
+
+                .item-tag {
+                    font-weight: bold;
+                    color: $blue;
+                }
+
+                .title-item {
+                    font-size: $size-5;
+                    line-height: $size-7;
+                    font-weight: bold;
+                    max-width: 700px;
+                    margin-bottom: $size-3/2;
+                    
+                    a {
+                        color: $text-dark;
+                        text-decoration: none;
+                        
+                        &:hover {
+                            background-color: transparent;
+                            text-decoration: underline;
+                        }
+                    }
+                    
+                }
+
+                .author {
+                    color: $black-light;
+                }
+            }
+            
+        }
+
+    }
+    // end KZAS MIDIA
+    
+    .section-form {
+        background-color: $secundary-lightest;
+        
+        & + footer {
+            margin-top: 0;
+        }
+        
+        // FOOT
+        .content-foot {
+            border-top: 1px dashed $grey-light;
+            margin-top: 0.500rem;
+            padding-top: 1.500rem;
+            padding-bottom: 1.5rem;
+
+            .columns {
+                display: flex;
+                justify-content: space-between;
+                
+                .column {
+                    
+                    &:only-child {
+                        width: 100%;
+                        p {
+                            text-align: left;
+                        }
+                    }
+                    
+                    p {
+                        span {
+                            display: block;
+                        }
+                    }
+                    
+                    
+                    &:last-of-type {
+                        
+                        width: 9.000rem; 
+                        
+                        @media screen and (max-width: 1008px) {
+                            width: 100%; 
+                        }
+                        
+                        text-align: right;
+
+                        p {
+                            padding: 0;
+                        }
+                        
+                    }
+                    
+                    @media screen and (max-width: 1008px) {
+                        text-align: center;
+                        &:only-child,
+                        &:last-of-type {
+                            text-align: center;
+                            p {
+                                text-align: center;
+                            }
+                        }
+                        
+                        text-align: center;
+                        
+                        p {
+                            text-align: center;
+                            span {
+                                display: inline;
+                            }
+                        }
+                            
+                    }
+                    
+                    
+                    
+                    
+                }
+            }
+        }
+        
+    }
+    
+}
+

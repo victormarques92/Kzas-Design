@@ -1,0 +1,54 @@
+.institucional {
+  .section-head {
+    margin-top: $size-3/2;
+    margin-bottom: $size-4*2;
+    padding-bottom: $size-5;
+    position: relative;
+    
+    &::after {
+      background-color: $grey-light;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      left: -8px;
+      position: absolute;
+      width: calc(100% + 16px);
+    }
+
+    .text {
+      color: #949494;
+      margin-top: $size-3/2;
+    }
+  }
+
+  .section-content {
+    .title {
+      max-width: 560px;
+      padding: 0;
+      margin-bottom: $size-3;
+
+      &.is-regular {
+        margin-bottom: $size-4*2;
+      }
+
+      &.is-small {
+        padding-top: $size-3/2;
+      }
+    }
+
+    .text {
+      padding: 0;
+      margin-bottom: $size-5;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: $size-8;
+      margin-bottom: $size-6/2;
+    }
+
+    .paragraph {
+      padding-left: $size-7;
+    }
+  }
+}

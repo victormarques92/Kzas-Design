@@ -1,0 +1,123 @@
+/*
+BOX CONFIRMATION
+*/
+
+.box-confirmation {
+    display: flex;
+	align-items: center;
+	
+	border-radius: $modal-radius;
+	
+	margin-bottom: 2.000rem;
+	padding: 1.000rem 2.000rem;
+	width: 100%;
+    
+    border: 1px solid $purple;
+
+	&-icon {
+		max-width: 10.000rem;
+		margin-right: 2.000rem;
+
+		@media screen and (max-width: 1008px) {
+			display: none;
+		}
+	}
+
+	.content {
+        
+        
+		@media screen and (max-width: 1008px) {
+			text-align: center;
+		}
+
+		&-title {
+			font-size: $size-3;
+			font-weight: bolder;
+			margin-bottom: 0.500rem;
+		}
+        
+        .text {
+            color: $text-light;
+        }
+
+		.button {
+			background-color: $purple;
+            border-color: $purple;
+			color: $white;
+			font-size: $size-1;
+			margin-top: 1.000rem;
+            
+            @media screen and (max-width: 1008px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+			&:hover {
+				background-color: $purple-dark;
+                border-color: $purple-dark;
+			}
+		}
+	}
+
+	&.error {
+		border-color: $error;
+		
+		.button {
+			background-color: $error;
+            border-color: $error;
+
+			&:hover {
+				background-color: $error-dark;
+                border-color: $error-dark;
+			}
+		}
+	}
+    
+    &.warning {        
+		background-color: $warning;
+		border-color: $warning;
+		color: $white;
+		font-weight: bold;
+		justify-content: center;
+
+		i {
+			font-size: 22px;
+			margin-right: $size-1;
+		}
+	}
+    
+    &.success {
+		background-color: $success;
+		border-color: $success;
+		color: $white;
+		font-weight: bold;
+		justify-content: center;
+        
+		i {
+			font-size: 22px;
+			margin-right: $size-1;
+		}
+	}
+    
+    &.warning,
+    &.success {
+        .content {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 1008px) {
+                flex-direction: column;
+            }            
+        }
+        
+        i {
+			@media screen and (max-width: 1008px) {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0.500rem;
+            }
+		}
+        
+        
+    }
+    
+}

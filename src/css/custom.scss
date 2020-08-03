@@ -1,0 +1,62 @@
+#olark-wrapper {
+  z-index: 32 !important;
+  position: relative !important;
+}
+
+.box-new-visits {
+  .parsley-errors-list {
+    margin-top: -1rem !important;
+  }
+}
+
+// section.minha-lista {
+//   .card.is-list {
+//     .card-content {
+//       .content-body {
+//         .title {
+//           padding-right: $size-3;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// #modal-visits[is-modal=new-visits] .modal-card-body .box-new-visits .box-content .box-input .input-visit {
+  //   height: $size-4*2 !important;
+  // }
+
+
+/* Always display the drop down caret */
+input[type="date"]
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 100%;
+
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+
+  &::-webkit-calendar-picker-indicator {
+    color: $grey;
+  }
+}
+
+// input[type="date"],
+// focus {
+//   box-shadow: none;
+//   -webkit-box-shadow: none;
+//   -moz-box-shadow: none;
+// }
+
+// .box-confirmation.error .button:hover {
+//   background-color: #630000;
+// }
+
+// section.login .section-content .box-not-registered {
+//   padding-top: 1.5rem;
+//   padding-bottom: 1.5rem;
+// }

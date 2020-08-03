@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#41A5BB">
+        
+        <title>Kzas - Você no controle da compra do seu imóvel</title>
+        <meta name="description" content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <!-- jQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- LOADING -->
+        <script src="./js/loading.js"></script>
+
+        <!-- SMOOTHSCROLL -->
+        <script src="./js/smoothscroll.js"></script>
+        
+        <!-- VISIBLE -->
+        <script src="./js/visible.js"></script>
+        
+        <!-- BULMA TOAST -->
+        <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+        
+        <!-- jQUERY MASKS -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+        
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <!-- Google Analytics -->
+        <!-- Hotjar -->
+        
+    </head>
+    
+    <body class="page-login">
+        
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- LOADING CONTENT -->
+        <div class="preloader-content">
+            
+            <!-- COOKIE ALERT -->
+            <div class="topbar is-secundary" style="display: none">
+                <div class="topbar-text">
+                    <p class="text">
+                        O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor experi&ecirc;ncia na compra do seu im&oacute;vel.
+                        <a class="link" href="" data-modal="modal-privacidade">
+                            <strong>
+                                Saiba mais
+                            </strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="topbar-action">
+                    <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title="" href="" role="close">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end COOKIE ALERT -->
+            
+            <!-- NAVBAR -->
+            <nav class="navbar is-giant" role="navigation" aria-label="main navigation">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                    <div class="navbar-brand">
+
+                        <img src="./img/kzas-logo.png" alt="Kzas">
+
+                    </div>
+                    
+                </div>
+                <!-- CONTAINER -->
+
+            </nav>
+            <!-- end NAVBAR -->
+
+            <!-- COMO FUNCIONA -->
+            <section class="login" id="login">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                    
+                    <!-- TITLE -->
+                    <div class="section-title" style="padding-bottom: .500rem;">
+                        <h2 class="title is-medium" style="padding-bottom: .500rem;">
+                            <span>Crie seu perfil no Kzas</span>
+                        </h2>
+                        <p class="text is-regular">
+                            Olá! Para receber seu código de acesso,
+                            <br>
+                            coloque seu WhatsApp
+                        </p>
+                    </div>
+                    <!-- end TITLE -->
+                    
+                    <!-- CONTENT -->
+                    <div class="section-content">
+                        
+                        <!-- FORM -->
+                        <div class="login-form">
+
+                            <form data-validation>
+
+                                <fieldset>
+
+                                    <!-- NATIONAL PHONE -->
+                                    <div class="field">
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input is-medium has-mask" type="tel"
+                                                   placeholder="DDD + Celular"
+                                                   pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})"
+                                                   data-mask='(00) 00000-0000'
+                                                   required />
+                                            <span class="icon is-small is-left">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-check"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons" style="margin-bottom: 12px;">
+                                        <button type="submit" class="button is-medium is-primary is-fullwidth" id="startChat" role="submit" disabled>
+                                            <strong>Enviar c&oacute;digo</strong>
+                                        </button>
+                                    </div>
+                                    
+                                    <span style="font-size: 80%; text-align: center; width: 100%; display: block;">Seus dados estarão seguros e você não precisa memorizar senha.</span>
+
+                                </fieldset>
+
+                            </form>
+
+                        </div>
+                        <!-- end FORM -->
+
+                        <!-- SOCIAL -->
+                        <div class="login-social">
+
+                            <h3 class="title is-smallest">
+                                <strong>Ou acesse com:</strong>
+                            </h3>
+
+                            <div class="buttons columns">
+                                
+                                <div class="column">
+                                    <button type="button" class="button is-regular is-google is-fullwidth" id="loginGoogle" role="button">
+                                        <span class="icon">
+                                            <img src="./img/logo-google-default.png" alt="Google">
+                                        </span>
+                                        <strong>Google</strong>
+                                    </button>
+                                </div>
+
+                                <div class="column">
+                                    <button type="button" class="button is-regular is-facebook is-fullwidth" id="loginFacebook" role="button">
+                                        <span class="icon">
+                                            <img src="./img/logo-facebook-white.png" alt="Google">
+                                        </span>
+                                        <strong>Facebook</strong>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <!-- end SOCIAL -->
+
+                        <div class="box-not-registered">
+                            <a href="#" class="link">Ainda não sou cadastrado</a>
+                        </div>
+                        
+                    </div>
+                    <!-- end CONTENT -->
+                
+                </div>
+                <!-- end CONTAINER -->
+            
+            </section>
+            <!-- end COMO FUNCIONA -->
+
+            <!-- FOOTER -->
+            <footer class="footer-light">
+                
+                <!-- COPY -->
+                <section class="copy">
+                    
+                    <div class="container">
+
+                        <div class="columns">
+
+                            <div class="column">
+
+                                <span class="text is-small">
+                                    Copyright &copy;2019 Kzas. Todos os direitos reservados.
+                                </span>
+
+                            </div>
+
+                            <div class="column">
+                                
+                                <span class="text is-small">
+                                    Ao prosseguir você está de acordo com os
+                                    <a class="link is-primary" href="#">
+                                        <strong class="text is-small">
+                                            Termos de uso
+                                        </strong>
+                                    </a>
+                                    e                                
+                                    <a class="link is-primary" href="#">
+                                        <strong class="text is-small">
+                                            Política de privacidade
+                                        </strong>
+                                    </a>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <!-- end COPY -->
+
+            </footer>
+            <!-- end FOOTER -->
+            
+        </div>
+        <!-- end LOADING CONTENT -->
+                
+    </body>
+</html>

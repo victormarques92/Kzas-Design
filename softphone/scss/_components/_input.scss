@@ -1,0 +1,8 @@
+.input {
+
+    border: 1px solid map-get($colors, 'gray-opaco');
+
+    &::placeholder {
+        color: mapget($colors, 'gray-94');
+    }
+}

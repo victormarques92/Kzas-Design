@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#41A5BB">
+        
+        <title>Kzas - Você no controle da compra do seu imóvel</title>
+        <meta name="description" content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <!-- jQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- LOADING -->
+        <script src="./js/loading.js"></script>
+
+        <!-- SMOOTHSCROLL -->
+        <script src="./js/smoothscroll.js"></script>
+        
+        <!-- VISIBLE -->
+        <script src="./js/visible.js"></script>
+        
+        <!-- BULMA TOAST -->
+        <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+        
+        <!-- jQUERY MASKS -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
+        <!-- https://plentz.github.io/jquery-maskmoney/ -->
+        
+        <!-- jQUERY VALIDATOR -->
+        <script type="text/javascript" src="js/parsley.min.js"></script>
+        <script type="text/javascript" src="js/parsley.lang.pt-br.js"></script>
+        <!-- http://parsleyjs.org/ -->
+        
+        <!-- SWIPER -->
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <!-- http://idangero.us/swiper/ -->
+        
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <!-- Google Analytics -->
+        <!-- Hotjar -->
+        
+    </head>
+    
+    <body class="page-match match">
+        
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- LOADING CONTENT -->
+        <div class="preloader-content">
+            
+            <!-- COOKIE ALERT -->
+            <div class="topbar is-secundary" style="display: none">
+                <div class="topbar-text">
+                    <p class="text">
+                        O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor experi&ecirc;ncia na compra do seu im&oacute;vel.
+                        <a class="link" href="" data-modal="modal-privacidade">
+                            <strong>
+                                Saiba mais
+                            </strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="topbar-action">
+                    <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title="" href="" role="close">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end COOKIE ALERT -->
+            
+            <!-- NAVBAR -->
+            <nav class="navbar has-border" role="navigation" aria-label="main navigation">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                    <div class="navbar-brand">
+
+                        <a class="navbar-item">
+                            <img src="./img/kzas-logo.png" alt="Kzas">
+                        </a>
+
+                    </div>
+
+                    <div class="navbar-menu">
+                        
+                        <!-- MINHA LISTA -->
+                        <div class="navbar-item is-mobile" style="position: relative">
+                            
+                            <button type="button" class="button is-bookmark is-regular has-icons-left" role="button"
+                                    id="button-saveList"
+                                    data-modal="modal-saveList">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                                <strong class="text">
+                                    Minha lista
+                                </strong>
+                                <span class="badge is-rounded">
+                                    <strong class="save-counter">0</strong>
+                                </span>
+                            </button>
+
+                            <!-- MODAL IMÓVEIS SALVO -->
+                            <div class="modal-imoveis">
+                                <div class="modal-imoveis-content">
+                                    <h3 class="title is-smaller">Você já salvou <span class="save-counter">4</span> imóveis
+                                    </h3>
+                                    <p class="text is-small">
+                                        Agora você já pode acessar a Minha lista e enviar mensagens para os vendedores,
+                                        agendar visitas e fazer propostas.
+                                    </p>
+
+                                    <button class="button is-small is-primary is-fullwidth"
+                                            type="button" role="button">
+                                        <strong>
+                                            Acessar a minha lista
+                                        </strong>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- end MODAL IMÓVEIS SALVO -->
+                            
+                        </div>
+                        <!-- end MINHA LISTA -->
+
+
+                        <!-- NOTIFICAÇÃO -->
+                        <div class="navbar-item is-mobile">
+
+                            <a class="button is-circle notification" target="_blank"></a>
+
+                        </div>
+                        <!-- end NOTIFICAÇÃO -->
+                        
+                        
+                        <!-- AVATAR -->
+                        <div class="navbar-item is-mobile">
+                            
+                            <!-- DROPDOWN -->
+                            <div class="dropdown is-avatar">
+                                <!-- DROPDOWN TRIGGER -->
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <figure class="image is-40">
+                                            <img class="is-rounded" src="./img/icon-user-blue.png">
+                                        </figure>
+                                    </button>
+                                </div>
+                                <!-- end DROPDOWN TRIGGER -->
+                                <!-- DROPDOWN MENU -->
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <span class="text is-small">
+                                                <strong>Manuela Silva</strong>
+                                            </span>
+                                            <span class="text is-smallest">
+                                                manuela.silva@email.com
+                                            </span>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            Sair
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end DROPDOWN MENU -->
+                                
+                            </div>
+                            <!-- end DROPDOWN -->
+                            
+                        </div>
+                        <!-- end AVATAR -->
+
+                    </div>
+                    
+                </div>
+                <!-- CONTAINER -->
+
+            </nav>
+            <!-- end NAVBAR -->
+
+            <!-- MATCH -->
+            <!--
+                • AO CARREGAR A PAGINA:
+                - SE RESULTADO ZERO:
+                - ATRIBUTO: data-counter="is-zero"
+                - SEM A CLASSE: "tour"
+                - <section class="match" data-counter="is-zero">
+            -->
+            <section class="match tour" data-counter>
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                                        
+                    <!-- MATCH END -->
+                    <div class="match-start">
+                        
+                        <div class="section-landing">
+                        
+                            <figure class="image is-160">
+                                <img src="img/icon-illus-match-color.png"
+                                     alt="" />
+                            </figure>
+
+                            <div class="landing-text">
+                                <h2 class="title is-medium">
+                                    <span>
+                                        Chegou a hora de escolher
+                                    </span>
+                                    <span>
+                                        seus im&oacute;veis preferidos
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <div class="buttons is-column">
+                                
+                                <button type="button" class="button is-medium is-primary" role="button"
+                                        id="button-startTour">
+                                    <strong>Entenda como escolher</strong>
+                                </button>
+                                <button type="button" class="button is-medium is-primary is-inverted" role="button"
+                                        id="button-startMatch">
+                                    <strong>J&aacute; sei como fazer</strong>
+                                </button>
+                                
+                            </div>
+                                                
+                        </div>  
+                        
+                    </div>
+                    <!-- end MATCH END -->
+                    
+                    <!-- MATCH FRAME -->
+                    <div class="match-frame">
+                    
+                        <!-- STEPS -->
+                        <div class="section-steps">
+                    
+                            <div class="steps">
+
+                                <a class="step-item is-completed" href="signup-01.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">1</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Minhas informa&ccedil;&otilde;es"></span>
+                                </a>
+                                <a class="step-item is-completed" href="signup-02.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">2</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Disponibilidade financeira"></span>
+                                </a>
+                                <a class="step-item is-completed" href="signup-03.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">3</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Minhas prefer&ecirc;ncias"></span>
+                                </a>
+                                <a class="step-item is-active" href="signup-04.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">4</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Match"></span>
+                                </a>
+                                <a class="step-item" href="signup-05.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">5</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Minha lista"></span>
+                                </a>
+                                <a class="step-item is-disabled" href="signup-05.html">
+                                    <span class="step-marker">
+                                        <span class="marker-number">6</span>
+                                    </span>
+                                    <span class="tooltip"
+                                          data-tooltip="Minhas Propostas"></span>
+                                </a>
+                                <span class="step-item is-final">
+                                    <span class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-key"></i>
+                                        </span>
+                                    </span>
+                                </span>
+
+                            </div>
+                    
+                        </div>
+                        <!-- end STEPS -->
+                    
+                        <!-- TITLE -->
+                        <div class="section-title">
+                        
+                            <h2 class="title is-medium">
+                                <span>
+                                    Im&oacute;veis que deram match
+                                </span>
+                            </h2>
+                            <p class="text is-regular">
+                                Selecionamos 13 im&oacute;veis compat&iacute;veis com suas prefer&ecirc;ncias e que cabem no seu bolso.
+                            </p>
+
+                        </div>
+                        <!-- end TITLE -->
+                    
+                        <!-- LIST -->
+                        <div class="section-content">
+                        
+                            <div class="match-nav">
+                                <button type="button" class="button is-grey is-transparent is-rounded is-medium"
+                                        role="button"
+                                        id="prevCard">
+                                    <span class="icon is-left">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                </button>
+                                <button type="button" class="button is-grey is-transparent is-rounded is-medium"
+                                        role="button"
+                                        id="nextCard">
+                                    <span class="icon is-left">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <!-- MATCH CARDS -->
+                            <div class="match-cards">
+                                
+                                
+
+                                <!-- CARD -->
+                                <div class="card is-product" id="tegra-138921"
+                                     data-tag-control="new"
+                                     data-match="active">
+
+                                    <!-- CARD IMAGE -->
+                                    <div class="card-image">
+
+                                        <!-- TAGS -->
+                                        <div class="tags">
+
+                                            <!-- VISUALIZADO -->
+                                            <span class="tag is-rounded  is-grey is-inverted"
+                                                  data-tag="viewed">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-eye"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Visualizado
+                                                </strong>
+                                            </span>
+
+                                            <!-- NOVO NO MATCH -->
+                                            <span class="tag is-rounded is-tertiary"
+                                                  data-tag="new">
+                                                <strong class="text">
+                                                    Novo no match
+                                                </strong>
+                                            </span>
+                                            
+                                            <!-- ELIMINAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="remove">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-times"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Eliminar
+                                                </strong>
+                                            </button>
+                                            <!-- ELIMINAR -->
+                                            
+                                            <!-- SALVAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="save">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Salvar
+                                                </strong>
+                                            </button>
+                                            <!-- end SALVAR -->
+
+                                        </div>
+                                        <!-- end TAGS -->
+                                        
+                                        <!-- SWIPER -->
+                                        <div class="swiper-container">
+                                            
+                                            <!-- WRAPPER -->
+                                            <div class="swiper-wrapper">
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-a-02.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-a-01.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-a-03.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                            </div>
+                                            <!-- WRAPPER -->
+                                            
+                                            <!-- DOTS -->
+                                            <div class="swiper-pagination"></div>
+                                            <!-- end DOTS -->
+                                            
+                                            <!-- NAV -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                            <!-- NAV -->
+                                            
+                                        </div>
+                                        <!-- end SWIPER -->
+
+                                    </div>
+                                    <!-- CARD IMAGE -->
+
+                                    <!-- CARD CONTENT -->
+                                    <div class="card-content">
+
+                                        <!-- CONTENT HEAD -->
+                                        <div class="content-head columns">
+
+                                            <div class="column">
+
+                                                <span class="match-score is-hottest">
+                                                    <figure class="image is-24">
+                                                        <img src="img/icon-match-hot-small.png" alt="" />
+                                                    </figure>
+                                                    <strong>Match 95%</strong>
+                                                </span>
+
+                                            </div>
+
+                                            <div class="column tags">
+
+                                                <span class="tag is-rounded is-superinc is-inverted">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-bolt"></i>
+                                                    </span>
+                                                    <strong class="text">
+                                                        Super Inc
+                                                    </strong>
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end CONTENT HEAD -->
+
+                                        <!-- CONTENT BODY -->
+                                        <div class="content-body">
+
+                                            <h3 class="title is-smallest">
+                                                Apartamento em &aacute;rea nobre do Morumbi, com op&ccedil;&otilde;es de 2 e 3 dorms e &aacute;rea &uacute;til de 80 &agrave; 120m&sup2;
+                                            </h3>
+
+                                            <ul class="list has-icons-left">
+                                                <li class="match-interests">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Pontos de interesses em 1,5km &agrave; 4,5km
+                                                    </span>
+                                                </li>
+                                                <li class="match-status">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-dolly"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Pronto para morar
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <!-- end CONTENT BODY -->
+
+                                        <!-- CONTENT FOOT -->
+                                        <div class="content-foot columns">
+
+                                            <div class="column">
+
+                                                <ul class="list has-icons-left">
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-bed"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            2 - 3
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-car"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            1 -3
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-vector-square"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            80 - 120 m&sup2;
+                                                        </span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="column buttons">
+
+                                                <button type="button" class="button is-primary is-inverted is-rounded is-regular" role="button">
+                                                    <strong>
+                                                        + Detalhes
+                                                    </strong>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end CONTENT FOOT -->
+
+                                    </div>
+                                    <!-- end CARD CONTENT -->
+
+                                </div>
+                                <!-- end CARD -->
+
+
+
+                                <!-- CARD -->
+                                <div class="card is-product" id="tegra-033401"
+                                     data-tag-control="viewed">
+
+                                    <!-- CARD IMAGE -->
+                                    <div class="card-image">
+
+                                        <!-- TAGS -->
+                                        <div class="tags">
+
+                                            <!-- VISUALIZADO -->
+                                            <span class="tag is-rounded  is-grey is-inverted"
+                                                  data-tag="viewed">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-eye"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Visualizado
+                                                </strong>
+                                            </span>
+
+                                            <!-- NOVO NO MATCH -->
+                                            <span class="tag is-rounded is-tertiary"
+                                                  data-tag="new">
+                                                <strong class="text">
+                                                    Novo no match
+                                                </strong>
+                                            </span>
+                                            
+                                            <!-- ELIMINAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="remove">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-times"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Eliminar
+                                                </strong>
+                                            </button>
+                                            <!-- ELIMINAR -->
+                                            
+                                            <!-- SALVAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="save">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Salvar
+                                                </strong>
+                                            </button>
+                                            <!-- end SALVAR -->
+
+                                        </div>
+                                        <!-- end TAGS -->
+
+                                        <!-- SWIPER -->
+                                        <div class="swiper-container">
+                                            
+                                            <!-- WRAPPER -->
+                                            <div class="swiper-wrapper">
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-b-01.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-b-02.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-b-03.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                            </div>
+                                            <!-- WRAPPER -->
+                                            
+                                            <!-- DOTS -->
+                                            <div class="swiper-pagination"></div>
+                                            <!-- end DOTS -->
+                                            
+                                            <!-- NAV -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                            <!-- NAV -->
+                                            
+                                        </div>
+                                        <!-- end SWIPER -->
+
+                                    </div>
+                                    <!-- CARD IMAGE -->
+
+                                    <!-- CARD CONTENT -->
+                                    <div class="card-content">
+
+                                        <!-- CONTENT HEAD -->
+                                        <div class="content-head columns">
+
+                                            <div class="column">
+
+                                                <span class="match-score is-hot">
+                                                    <figure class="image is-24">
+                                                        <img src="img/icon-match-hot-small.png" alt="" />
+                                                    </figure>
+                                                    <strong>Match 90%</strong>
+                                                </span>
+
+                                            </div>
+
+                                            <!--
+                                            <div class="column tags">
+
+                                                <span class="tag is-rounded is-superinc is-inverted">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-bolt"></i>
+                                                    </span>
+                                                    <strong class="text">
+                                                        Super Inc
+                                                    </strong>
+                                                </span>
+
+                                            </div>
+                                            -->
+
+                                        </div>
+                                        <!-- end CONTENT HEAD -->
+
+                                        <!-- CONTENT BODY -->
+                                        <div class="content-body">
+
+                                            <h3 class="title is-smallest">
+                                                Apartamento em &aacute;rea nobre do Morumbi, com op&ccedil;&otilde;es de 2 e 3 dorms e &aacute;rea &uacute;til de 80 &agrave; 120m&sup2;
+                                            </h3>
+
+                                            <ul class="list has-icons-left">
+                                                <li class="match-interests">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Pontos de interesses em 1,5km &agrave; 4,5km
+                                                    </span>
+                                                </li>
+                                                <li class="match-status">
+                                                    <span class="icon is-left">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Previs&atilde;o de entrega: 2&ordm; semestre de 2021
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <!-- end CONTENT BODY -->
+
+                                        <!-- CONTENT FOOT -->
+                                        <div class="content-foot columns">
+
+                                            <div class="column">
+
+                                                <ul class="list has-icons-left">
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-bed"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            4 - 6
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-car"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            2 -5
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-vector-square"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            180 - 400 m&sup2;
+                                                        </span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="column buttons">
+
+                                                <button type="button" class="button is-primary is-inverted is-rounded is-regular" role="button">
+                                                    <strong>
+                                                        + Detalhes
+                                                    </strong>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end CONTENT FOOT -->
+
+                                    </div>
+                                    <!-- end CARD CONTENT -->
+
+                                </div>
+                                <!-- end CARD -->
+
+
+
+                                <!-- CARD -->
+                                <div class="card is-product" id="tegra-010203"
+                                     data-tag-control>
+
+                                    <!-- CARD IMAGE -->
+                                    <div class="card-image">
+
+                                        <!-- TAGS -->
+                                        <div class="tags">
+
+                                            <!-- VISUALIZADO -->
+                                            <span class="tag is-rounded  is-grey is-inverted"
+                                                  data-tag="viewed">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-eye"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Visualizado
+                                                </strong>
+                                            </span>
+
+                                            <!-- NOVO NO MATCH -->
+                                            <span class="tag is-rounded is-tertiary"
+                                                  data-tag="new">
+                                                <strong class="text">
+                                                    Novo no match
+                                                </strong>
+                                            </span>
+                                            
+                                            <!-- ELIMINAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="remove">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-times"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Eliminar
+                                                </strong>
+                                            </button>
+                                            <!-- ELIMINAR -->
+                                            
+                                            <!-- SALVAR -->
+                                            <button class="tag is-rounded is-grey is-inverted"
+                                                    data-tag="save">
+                                                <span class="icon is-left">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <strong class="text">
+                                                    Salvar
+                                                </strong>
+                                            </button>
+                                            <!-- end SALVAR -->
+
+                                        </div>
+                                        <!-- end TAGS -->
+
+                                        <!-- SWIPER -->
+                                        <div class="swiper-container">
+                                            
+                                            <!-- WRAPPER -->
+                                            <div class="swiper-wrapper">
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-c-01.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-c-02.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                                <!-- SLIDE -->
+                                                <div class="swiper-slide">
+                                                    <figure class="image is-background"
+                                                            style="background-image: url(img/imoveis/tegra-c-03.jpg)">
+                                                    </figure>
+                                                </div>
+                                                <!-- end SLIDE -->
+                                                
+                                            </div>
+                                            <!-- WRAPPER -->
+                                            
+                                            <!-- DOTS -->
+                                            <div class="swiper-pagination"></div>
+                                            <!-- end DOTS -->
+                                            
+                                            <!-- NAV -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                            <!-- NAV -->
+                                            
+                                        </div>
+                                        <!-- end SWIPER -->
+
+                                    </div>
+                                    <!-- CARD IMAGE -->
+
+                                    <!-- CARD CONTENT -->
+                                    <div class="card-content">
+
+                                        <!-- CONTENT HEAD -->
+                                        <div class="content-head columns">
+
+                                            <div class="column">
+
+                                                <span class="match-score is-warm">
+                                                    <figure class="image is-24">
+                                                        <img src="img/icon-match-warmer-small.png" alt="" />
+                                                    </figure>
+                                                    <strong>Match 80%</strong>
+                                                </span>
+
+                                            </div>
+
+                                            <!--
+                                            <div class="column tags">
+
+                                                <span class="tag is-rounded is-superinc is-inverted">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-bolt"></i>
+                                                    </span>
+                                                    <strong class="text">
+                                                        Super Inc
+                                                    </strong>
+                                                </span>
+
+                                            </div>
+                                            -->
+
+                                        </div>
+                                        <!-- end CONTENT HEAD -->
+
+                                        <!-- CONTENT BODY -->
+                                        <div class="content-body">
+
+                                            <h3 class="title is-smallest">
+                                                Maison no centro de Pinheiros, com bela vista para Parque Villa Lobos e f&aacute;cil acesso &agrave; Marginal Pinheiros
+                                            </h3>
+
+                                            <ul class="list has-icons-left">
+                                                <li class="match-interests">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Pontos de interesses em 1,5km &agrave; 4,5km
+                                                    </span>
+                                                </li>
+                                                <li class="match-status is-verified">
+                                                    <span class="icon is-left">
+                                                        <i class="fas fa-user-check"></i>
+                                                    </span>
+                                                    <span class="text is-small">
+                                                        Im&oacute;vel de propriet&aacute;rio verificado
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <!-- end CONTENT BODY -->
+
+                                        <!-- CONTENT FOOT -->
+                                        <div class="content-foot columns">
+
+                                            <div class="column">
+
+                                                <ul class="list has-icons-left">
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-bed"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            4 - 6
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-car"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            2 -5
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon is-left">
+                                                            <i class="fas fa-vector-square"></i>
+                                                        </span>
+                                                        <span class="text is-small">
+                                                            180 - 400 m&sup2;
+                                                        </span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="column buttons">
+
+                                                <button type="button" class="button is-primary is-inverted is-rounded is-regular" role="button">
+                                                    <strong>
+                                                        + Detalhes
+                                                    </strong>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end CONTENT FOOT -->
+
+                                    </div>
+                                    <!-- end CARD CONTENT -->
+
+                                </div>
+                                <!-- end CARD -->
+                                
+                                
+
+                            </div>
+                            <!-- MATCH CARDS -->
+
+                            <!-- MATCH ACTIONS -->
+                            <div class="match-actions">
+
+                                <div class="buttons">
+
+                                    <button type="button" class="button is-black is-rounded is-medium has-icons-left" role="button"
+                                            data-modal="modal-eliminar"
+                                            id="removeCard">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                        <strong>
+                                            Eliminar
+                                        </strong>
+                                    </button>
+
+                                    <strong class="divider">ou</strong>
+
+                                    <button type="button" class="button is-primary is-rounded is-medium has-icons-left" role="button"
+                                            id="saveCard">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <strong>
+                                            Salvar
+                                        </strong>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <!-- end MATCH ACTIONS -->
+
+                            <!-- MATCH FOOT -->
+                            <div class="match-foot">
+
+                                <p class="text is-small">
+                                    Ainda n&atilde;o encontrou o que procurava?
+                                </p>
+                                
+                                <p class="text is-small">
+                                    <a href="signup-03.html" class="link">Altere suas prefer&ecirc;ncias</a>
+                                    <span class="foot-spacer">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+                                    <a href="" class="link" data-modal="modal-removeList">Acesse a lista de eliminados</a>
+                                </p>
+
+                            </div>
+                            <!-- end MATCH FOOT -->
+
+                        </div>
+                        <!-- end LIST -->
+                        
+                    </div>
+                    <!-- end MATCH FRAME -->
+                    
+                    <!-- MATCH END -->
+                    <div class="match-end">
+                        
+                        <div class="section-landing">
+                        
+                            <figure class="image is-160">
+                                <img src="img/icon-illus-saved-red.png"
+                                     alt="" />
+                            </figure>
+
+                            <div class="landing-text">
+                                <h2 class="title is-medium">
+                                    Voc&ecirc; salvou
+                                    <strong class="save-counter">0</strong>
+                                    em sua lista
+                                </h2>
+                                <p class="text is-regular">
+                                    Agora voc&ecirc; j&aacute; poder&aacute; enviar mensagens para os vendedores e agendar visitas com toda a seguran&ccedil;a e sigilo de suas informa&ccedil;&otilde;es
+                                </p>
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button" class="button is-medium is-primary" role="button">
+                                    <strong>Pr&oacute;ximo passo</strong>
+                                </button>
+                            </div>
+
+                            <!-- MATCH FOOT -->
+                            <div class="match-foot">
+
+                                <p class="text is-small">
+                                    Ainda n&atilde;o encontrou o que procurava?
+                                </p>
+                                
+                                <p class="text is-small">
+                                    <a href="signup-03.html" class="link">Altere suas prefer&ecirc;ncias</a>
+                                    <span class="foot-spacer">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+                                    <a href="" class="link" data-modal="modal-removeList">Acesse a lista de eliminados</a>
+                                </p>
+
+                            </div>
+                            <!-- end MATCH FOOT -->
+
+
+                        </div>
+                        
+                    </div>
+                    <!-- end MATCH END -->
+                    
+                    <!-- MATCH RESET -->
+                    <div class="match-reset">
+                        
+                        <div class="section-landing">
+                        
+                            <figure class="image is-160">
+                                <img src="img/icon-illus-searching-blue.png"
+                                     alt="" />
+                            </figure>
+
+                            <div class="landing-text">
+                                <h2 class="title is-medium">
+                                    <span>
+                                        Ainda n&atilde;o encontrou
+                                    </span>
+                                    <span>
+                                        seu im&oacute;vel ideal?
+                                    </span>
+                                </h2>
+                                <p class="text is-regular">
+                                    Reveja seus descartados, ainda da tempo de salvá-los. Se ainda  assim n&atilde;o encontrar seu im&oacute;vel ideal, altere suas prefer&ecirc;ncias e refa&ccedil;a o match.
+                                </p>
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button" class="button is-medium is-primary" role="button">
+                                    <strong>Altere suas prefer&ecirc;ncias</strong>
+                                </button>
+                            </div>
+
+                            <!-- LANDING FOOT -->
+                            <div class="landing-foot">
+
+                                <p class="text is-small">
+                                    Deseja rever algum im&oacute;vel descartado?
+                                    <a href="" class="link" data-modal="modal-removeList">Acesse a lista de eliminados</a>
+                                </p>
+
+                            </div>
+                            <!-- end LANDING FOOT -->
+
+
+                        </div>
+                        
+                    </div>
+                    <!-- end MATCH RESET -->
+                    
+                    <!-- MATCH ZERO -->
+                    <div class="match-zero">
+                        
+                        <div class="section-landing">
+                        
+                            <figure class="image is-160">
+                                <img src="img/icon-illus-searching-sad-blue.png"
+                                     alt="" />
+                            </figure>
+
+                            <div class="landing-text">
+                                <h2 class="title is-medium">
+                                    <span>
+                                        Infelizmente n&atilde;o encontramos
+                                    </span>
+                                    <span>
+                                        um im&oacute;vel compat&iacute;vel
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button" class="button is-medium is-primary" role="button">
+                                    <strong>Altere suas prefer&ecirc;ncias</strong>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+                    <!-- end MATCH ZERO -->
+                
+                </div>
+                <!-- end CONTAINER -->
+            
+            </section>
+            <!-- end MATCH -->
+
+            <!-- FOOTER -->
+            <footer class="footer-light">
+                
+                <!-- COPY -->
+                <section class="copy">
+                    
+                    <div class="container">
+
+                        <div class="columns">
+
+                            <div class="column">
+
+                                <span class="text is-small">
+                                    Copyright &copy;2019 Kzas. Todos os direitos reservados.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <!-- end COPY -->
+
+            </footer>
+            <!-- end FOOTER -->
+            
+        </div>
+        <!-- end LOADING CONTENT -->
+        
+        <!-- MODAL ELIMINAR -->
+        <div class="modal is-medium" id="modal-eliminar">
+            
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+            
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+                
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+
+                    <h4 class="title is-regular">
+                        Eliminando im&oacute;vel do match
+                    </h4>
+                    <p class="text">
+                        Ajude-nos a melhorar nossa intelig&ecirc;ncia de match, conte-nos por que n&atilde;o gostou do im&oacute;vel.
+                    </p>
+                    <h5 class="title is-smallest">
+                        Escolha um ou mais motivos
+                    </h5>
+
+                    <form>
+                        
+                        <div class="field checktags">
+                        
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de um im&oacute;vel pronto para morar</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso do im&oacute;vel dispon&iacute;vel antes do 2&ordm; Semestre/2012</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">N&atilde;o quero um im&oacute;vel neste bairro</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">N&atilde;o quero casa</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de mais quartos</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de menos quartos</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de mais vagas</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="investir">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de menos vagas</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de um im&oacute;vel menor</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="control">
+                                <label class="checkbox is-regular is-checktag is-secundary">
+                                    <input type="checkbox" name="eliminar">
+                                    <span class="checktag">
+                                        <span class="text">Preciso de um im&oacute;vel maior</span>
+                                    </span>
+                                </label>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
+                    
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+                
+                <!-- MODAL FOOT -->
+                <div class="modal-card-foot">
+                    
+                    <div class="buttons columns">
+                        
+                        <div class="column">
+                            <button type="button" role="button" class="button is-medium is-primary is-inverted is-fullwidth"
+                                    id="removeCard-active">
+                                <strong>Eliminar apenas este im&oacute;vel</strong>
+                            </button>
+                        </div>
+                    
+                        <div class="column">
+                            <button type="button" role="button" class="button is-medium is-primary is-fullwidth"
+                                    id="removeCard-all" data-remove="#tegra-033401, #tegra-010203">
+                                <strong>Eliminar todos os im&oacute;veis similares (8)</strong>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+                <!-- end MODAL FOOT -->
+                
+            </div>
+            <!-- end MODAL CARD -->
+            
+        </div>
+        <!-- end MODAL ELIMINAR -->
+        
+        <!-- MODAL SAVE LIST -->
+        <div class="modal is-medium" id="modal-saveList">
+            
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+            
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+                
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <h3 class="title is-small">
+                        Minha Lista
+                    </h3>
+                    <a href="" class="button is-circle is-small is-grey is-transparent tooltip is-tooltip-left"
+                       data-tooltip="Ir para lista completa">
+                        <span class="icon">
+                            <i class="fas fa-th-list"></i>
+                        </span>
+                    </a>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+                    
+                    <div class="match-saves" data-match="saveList"></div>
+                    <!-- Content ... -->
+                    
+                </section>
+                <!-- end MODAL BODY -->
+                
+            </div>
+            <!-- end MODAL CARD -->
+            
+        </div>
+        <!-- end MODAL SAVE LIST -->
+        
+        <!-- MODAL REMOVE LIST -->
+        <div class="modal is-medium" id="modal-removeList">
+            
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+            
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+                
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                    <h3 class="title is-small">
+                        Eliminados
+                    </h3>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+                    
+                    <div class="match-removes" data-match="removeList"></div>
+                    <!-- Content ... -->
+                    
+                </section>
+                <!-- end MODAL BODY -->
+                
+            </div>
+            <!-- end MODAL CARD -->
+            
+        </div>
+        <!-- end MODAL REMOVE LIST -->
+        
+        <!-- HOPSCOTCH -->
+        <script type="text/javascript" src="js/hopscotch.min.js"></script>
+        <!-- https://linkedin.github.io/hopscotch/ -->
+        <script type="text/javascript" src="js/match-tour.js"></script>
+        <!-- end HOPSCOTH -->
+        
+        <!-- AOS -->
+        <script src="./js/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+			});
+		</script>
+                
+    </body>
+</html>

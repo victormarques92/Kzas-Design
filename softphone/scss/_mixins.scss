@@ -1,0 +1,14 @@
+//===============================================
+//              Transform font-size from PX to EM
+//===============================================
+@mixin font($size) {
+  font-size: ($size / 16) + em;
+}
+
+//=========== How to use
+
+// @include font(20);
+
+// 20 = valor da fonte em px.
+
+// resultado: font-size: 1.25em;

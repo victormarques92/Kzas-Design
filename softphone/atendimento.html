@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Softphone - Kzas</title>
+
+  <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body class="pad-all-16">
+  <div class="row">
+    <div class="col-12 col-lg-8 lg__pad-right-8">
+
+      <!-- card 01 -->
+      <div class="box-card mg-bottom-16">
+        <h1 class="font16">Kzas Phone</h1>
+
+        <div class="divider"></div>
+
+        <div class="row halign-between valign-middle">
+          <div class="row">
+            <img class="box-60x60 br-circle" src="./images/atendimento.jpg" />
+
+            <div class="mg-left-20">
+              <p class="font16">00:00:01</p>
+              <p class="font16">De <span class="on-bold">Adriano Vieland</span></p>
+              <a class="font12 on-bold cl-primary" href="#">Cliente Kzas Buyer</a>
+            </div>
+          </div>
+
+          <div class="row mg-top-16 lg__mg-top-0">
+            <a href="#" class="bg-primary br-circle box-60x60 row halign-middle valign-middle mg-right-16"><i
+                class="material-icons font28 cl-white">phone_disabled</i></a>
+
+            <a href="#" class="bg-secundary br-circle box-60x60 row halign-middle valign-middle mg-right-16"><i
+                class="material-icons font28 cl-white">textsms</i></a>
+
+            <a href="#" class="bg-secundary br-circle box-60x60 row halign-middle valign-middle"><i
+                class="material-icons font28 cl-white">call_end</i></a>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="font14 mg-bottom-8">Adicionar participante na chamada</p>
+
+        <div class="row">
+
+          <div class="col-12 col-lg-6 lg__pad-right-8 box-tipo">
+            <select data-id="select-tipo-participante">
+              <option data-display="Selecione">Selecione</option>
+              <option value="Participantes contrato">Participantes contrato</option>
+              <option value="Vendedor">Vendedor</option>
+              <option value="Especialista">Especialista</option>
+              <option value="Atendente">Atendente</option>
+              <option value="Participante não cadastrado">Participante não cadastrado</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-lg-6 lg__pad-left-8 mg-top-16 lg__mg-top-0 box-participante">
+            <select data-id="select-nome-participante">
+              <option data-display="Selecione">Selecione</option>
+              <option Value="Selecionar todos">Selecionar todos</option>
+              <option value="Roberto Nascimento">Roberto Nascimento</option>
+              <option value="Fabiano Araújo">Fabiano Araújo</option>
+              <option value="isabella Ferreira">isabella Ferreira</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-lg-6 lg__pad-right-8 mg-top-16 box-nao-cadastrado hidden">
+
+            <input class="input font16 pad-both-12 pad-sides-16 br-4 full" id="nome-nao-cadastrado" type="text"
+              placeholder="Nome" />
+
+          </div>
+
+          <div class="col-12 col-lg-6 lg__pad-left-8 mg-top-16 box-nao-cadastrado hidden">
+
+            <input class="input font16 pad-both-12 pad-sides-16 br-4 full" id="telefone-nao-cadastrado" type="text"
+              placeholder="DDD + telefone" data-mask="(00) 00000-0000" />
+
+          </div>
+
+          <div class="col-12">
+            <a class="row bg-secundary br-4 cl-white halign-middle mg-top-16 pad-both-8 opacity-06 pointer" href="#"
+              data-id="btn-add-participante">Adicionar
+              participante</a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end Card 01 -->
+
+      <!-- Card 02 -->
+      <div class="box-card mg-bottom-16">
+        <h1 class="font16">Status</h1>
+
+        <div class="divider"></div>
+
+        <div class="box-status">
+          <ul class="lista-status">
+            <li class="item">
+              <p class="font12 cl-gray-49">28/08/2019 - 12:23</p>
+              <p class="font14 cl-gray-49">Ligação recebida por Anna Telles (Atendimento Kzas)</p>
+            </li>
+            <li class="item">
+              <p class="font12 cl-gray-49">27/08/2019 - 11:12</p>
+              <p class="font14 cl-gray-49">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="item">
+              <p class="font12 cl-gray-49">26/08/2019 - 10:01.</p>
+              <p class="font14 cl-gray-49">Aculis risus faucibus euismod mollis, lorem ipsum dolor sit amet, consectetur
+                adipiscing elit..</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- end Card 02 -->
+
+    </div>
+
+    <div class="col-12 col-lg-4 lg__pad-left-8">
+      <div class="box-card full-height mg-bottom-16">
+        <h1 class="font16">Quem está na chamada</h1>
+
+        <div class="divider"></div>
+
+        <div class="box-chamada">
+          <ul class="lista-chamada">
+            <li class="chamada">
+              <p class="font12 on-bold">Anna Telles</p>
+              <p class="font12">Atendimento Kzas</p>
+            </li>
+            <li class="row valign-middle halign-between chamada">
+              <div>
+                <p class="font12 on-bold">Adriano Vieland</p>
+                <p class="font12">Cliente Kzas Buyer</p>
+              </div>
+
+              <a class="font-12 bg-primary br-4 cl-white halign-middle mg-top-16 pad-both-8 pad-sides-8 opacity-06 pointer"
+                href="#">Acessar Perfil</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/jquery.nice-select.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/mask.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,71 @@
+section.login {
+    min-height: calc(100vh - 18.000rem);
+}
+
+
+section.login .container {
+    padding-top: 0;
+}
+
+section.login .section-content {
+    width: 18.000rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.login .login-form {
+    margin-left: 0.500rem;
+    margin-right: 0.500rem;
+    padding-bottom: 1.500rem;
+
+    #loginCode {
+        letter-spacing: 5px;
+
+        &::placeholder {
+            letter-spacing: initial;
+        }
+    }
+}
+
+section.login .login-form .field:not(:last-child) {
+    margin-bottom: 1.500rem;
+}
+
+section.login .login-form .buttons + .buttons {
+    margin-top: 1.000rem;
+}
+
+section.login .login-social .title {
+    text-align: center;
+}
+
+section.login .login-social .columns {
+    flex-wrap: nowrap;
+}
+
+section.login {
+    .section-content {
+        .box-not-registered {
+            border-top: 1px dashed $grey-light;
+            margin-top: $size-5;
+            padding: $size-1;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            text-align: center;
+            font-size: $size-2;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 768px) {
+
+    section.login .section-content {
+        width: 100%;
+    }
+    
+    section.login .login-social .columns {
+        flex-wrap: nowrap;
+    }
+
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#41A5BB">
+        
+        <title>Kzas - Você no controle da compra do seu imóvel</title>
+        <meta name="description" content="(i) Crédito e Financiamento Imobiliário, Imóveis, Casas e Apartamentos para Compra, Venda  - Kzas (ii)  Em Kzas você compra o sua nova casa ou apartamento novos ou usados de uma maneira diferente, com voce no controle de todo o processo. Voce também pode anunciar o seu imóvel (iii) Compre seu imóvel sem ter que revelar quem você é, (iv) Nossa inteligencia artificial ajuda a fazer o match das suas preferencias com o imóvel certo">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <!-- jQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- LOADING -->
+        <script src="./js/loading.js"></script>
+
+        <!-- SMOOTHSCROLL -->
+        <script src="./js/smoothscroll.js"></script>
+        
+        <!-- VISIBLE -->
+        <script src="./js/visible.js"></script>
+        
+        <!-- BULMA TOAST -->
+        <script type="text/javascript" src="js/bulma-toast.min.js"></script>
+        
+        <!-- jQUERY MASKS -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+        <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
+        <!-- https://plentz.github.io/jquery-maskmoney/ -->
+        
+        <!-- jQUERY VALIDATOR -->
+        <script type="text/javascript" src="js/parsley.min.js"></script>
+        <script type="text/javascript" src="js/parsley.lang.pt-br.js"></script>
+        <!-- http://parsleyjs.org/ -->
+        
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <!-- Google Analytics -->
+        <!-- Hotjar -->
+        
+    </head>
+    
+    <body class="page-signup signup-01">
+        
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loader-image"><img src="./img/kzas-loading.png" alt="Kzas"></div>
+        </div>
+        <!-- end LOADER -->
+
+        <!-- LOADING CONTENT -->
+        <div class="preloader-content">
+            
+            <!-- COOKIE ALERT -->
+            <div class="topbar is-secundary" style="display: none">
+                <div class="topbar-text">
+                    <p class="text">
+                        O Kzas te deseja boas-vindas. N&oacute;s usamos cookies para assegurar a voc&ecirc; uma melhor experi&ecirc;ncia na compra do seu im&oacute;vel.
+                        <a class="link" href="" data-modal="modal-privacidade">
+                            <strong>
+                                Saiba mais
+                            </strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="topbar-action">
+                    <button type="button" class="button is-regular is-neutral is-transparent is-circle is-icon-only" title="" href="" role="close">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end COOKIE ALERT -->
+            
+            <!-- NAVBAR -->
+            <nav class="navbar has-border" role="navigation" aria-label="main navigation">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                    <div class="navbar-brand">
+
+                        <a class="navbar-item">
+                            <img src="./img/kzas-logo.png" alt="Kzas">
+                        </a>
+
+                    </div>
+
+                    <div class="navbar-menu">
+                        
+                        <div class="navbar-item is-mobile">
+                            
+                            <!-- DROPDOWN -->
+                            <div class="dropdown is-avatar">
+                                <!-- DROPDOWN TRIGGER -->
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <figure class="image is-40">
+                                            <img class="is-rounded" src="./img/icon-user-blue.png">
+                                        </figure>
+                                    </button>
+                                </div>
+                                <!-- end DROPDOWN TRIGGER -->
+                                <!-- DROPDOWN MENU -->
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <span class="text is-small">
+                                                <strong>Manuela Silva</strong>
+                                            </span>
+                                            <span class="text is-smallest">
+                                                manuela.silva@email.com
+                                            </span>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            Sair
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end DROPDOWN MENU -->
+                                
+                            </div>
+                            <!-- end DROPDOWN -->
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <!-- CONTAINER -->
+
+            </nav>
+            <!-- end NAVBAR -->
+
+            <!-- CADASTRO -->
+            <section class="signup">
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                    
+                    <!-- STEPS -->
+                    <div class="section-steps">
+                    
+                        <div class="steps">
+                            
+                            <a class="step-item is-active" href="signup-01.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">1</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas informa&ccedil;&otilde;es"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-02.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">2</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Disponibilidade financeira"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-03.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">3</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas prefer&ecirc;ncias"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-04.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">4</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Match"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-05.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">5</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minha lista"></span>
+                            </a>
+                            <a class="step-item is-disabled" href="signup-05.html">
+                                <span class="step-marker">
+                                    <span class="marker-number">6</span>
+                                </span>
+                                <span class="tooltip"
+                                      data-tooltip="Minhas Propostas"></span>
+                            </a>
+                            <span class="step-item is-final">
+                                <span class="step-marker">
+                                    <span class="icon">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                </span>
+                            </span>
+                            
+                        </div>
+                    
+                    </div>
+                    <!-- end STEPS -->
+                    
+                    <!-- TITLE -->
+                    <div class="section-title">
+                        
+                        <h2 class="title is-medium">
+                            <span>
+                                Informa&ccedil;&otilde;es b&aacute;sicas
+                            </span>
+                        </h2>
+                        <p class="text is-regular">
+                            Nunc vitae tortor quam. Donec ornare dapibus justo eu faucibus. Proin a libero eu enim pretium.
+                        </p>
+                        
+                    </div>
+                    <!-- end TITLE -->
+                    
+                    <!-- LIST -->
+                    <div class="section-content">
+                        
+                        <!-- FORM -->
+                        <div class="signup-form">
+                            
+                            <form data-validation="false">
+                                
+                                <!-- TITLE -->
+                                <div class="form-title">
+
+                                    <h3 class="title is-small">
+                                        Dados pessoais
+                                    </h3>
+
+                                    <button class="button is-regular is-neutral is-transparent is-circle is-icon-only"
+                                            title="Ajuda"
+                                            data-modal="modal-ajuda">
+                                        <span class="icon">
+                                            <i class="far fa-question-circle"></i>
+                                        </span>
+                                    </button>
+
+                                </div>
+                                <!-- end TITLE -->
+                                
+                                <!-- FIELDS -->
+                                <fieldset>
+                                
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">Nome</label>
+                                                <div class="control has-icons-right">
+                                                    <input class="input is-medium is-valid" type="text"
+                                                           placeholder="Nome completo"
+                                                           pattern="[a-zA-Z\s]+"
+                                                           required readonly />
+                                                    <span class="icon is-small is-right">
+                                                        <i class="fas fa-check"></i>
+                                                        <i class="fas fa-exclamation-circle"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">CPF</label>
+                                                <div class="control has-icons-right">
+                                                    <input class="input is-medium has-mask" type="text"
+                                                       placeholder="000.000.000-00"
+                                                       data-mask='000.000.000-00'
+                                                       required />
+                                                    <span class="icon is-small is-right">
+                                                        <i class="fas fa-check"></i>
+                                                        <i class="fas fa-exclamation-circle"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">Telefone</label>
+                                                <div class="control has-icons-left has-icons-right">
+                                                    <input class="input is-medium has-mask" type="tel"
+                                                           placeholder="DDD + Celular"
+                                                           pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})"
+                                                           data-mask='(00) 00000-0000'
+                                                           required />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fab fa-whatsapp"></i>
+                                                    </span>
+                                                    <span class="icon is-small is-right">
+                                                        <i class="fas fa-check"></i>
+                                                        <i class="fas fa-exclamation-circle"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW -->
+
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">E-mail</label>
+                                                <div class="control has-icons-right">
+                                                    <input class="input is-medium" type="text"
+                                                           placeholder="Ex.: seunome@email.com"
+                                                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                           required />
+                                                    <span class="icon is-small is-right">
+                                                        <i class="fas fa-check"></i>
+                                                        <i class="fas fa-exclamation-circle"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Qual seu estado civil?
+                                                </label>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="estadocivil" checked>
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Solteiro
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="estadocivil">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Casado
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="estadocivil">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Separado
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="estadocivil">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Divorciado
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="estadocivil">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Vi&uacute;vo
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                </fieldset>
+                                <!-- end FIELDS -->
+                                
+                                
+                                
+                                <!-- TITLE -->
+                                <div class="form-title">
+
+                                    <h3 class="title is-small">
+                                        Seu perfil
+                                    </h3>
+
+                                    <button class="button is-regular is-neutral is-transparent is-circle is-icon-only"
+                                            title="Ajuda"
+                                            data-modal="modal-ajuda">
+                                        <span class="icon">
+                                            <i class="far fa-question-circle"></i>
+                                        </span>
+                                    </button>
+
+                                </div>
+                                <!-- end TITLE -->
+                                
+                                <!-- FIELDS -->
+                                <fieldset>
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">
+                                                    Em quanto tempo, aproximadamente, pretende se mudar?
+                                                </label>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="prazomudar" checked>
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            3 meses
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="prazomudar">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            6 meses
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="prazomudar">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            1 ano
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="prazomudar">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            2 anos
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="radio is-medium">
+                                                        <input type="radio" name="prazomudar">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Sem pressa
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <div class="control">
+                                                    <label class="toggle is-medium">
+                                                        <input type="checkbox" name="possuoimvel">
+                                                        <span class="icon"></span>
+                                                        <span class="text">
+                                                            Possuo im&oacute;vel no meu nome
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">Qual sua ocupa&ccedil;&atilde;o?</label>
+                                                <div class="control has-icons-left autocomplete">
+                                                    <input class="input is-medium" type="search" 
+                                                       id="myInput" 
+                                                       placeholder="Busque e selecione sua ocupa&ccedil;&atilde;o"
+                                                       required />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- FAKE JSON -->
+                                            <script src="./json/occupations.js"></script>
+                                            <!-- end FAKE JSON -->
+                                            <script>
+                                                autocomplete(document.getElementById("myInput"), occupations);
+                                            </script>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                    <!-- ROW -->
+                                    <div class="columns field-row">
+
+                                        <div class="column">
+
+                                            <div class="field">
+                                                <label class="label is-regular">Qual seu grau de escolaridade?</label>
+                                                <div class="control">
+                                                    <div class="select is-medium">
+                                                        <select required>
+                                                            <option disabled selected>Selecione</option>
+                                                            <option>Select dropdown</option>
+                                                            <option>With options</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end ROW -->
+                                    
+                                </fieldset>
+                                <!-- end FIELDS -->
+                                
+                                <div class="columns field-buttons">
+                                    <div class="column">
+                                        <button type="button" class="button is-medium is-primary is-inverted is-fullwidth" id="prevStep" role="button">
+                                            <strong>Voltar</strong>
+                                        </button>
+                                    </div>
+                                    <div class="column">
+                                        <button data-modal="modal-confirmar-telefone" class="button is-medium is-primary is-fullwidth" id="nextStep" role="submit">
+                                            <strong>Pr&oacute;ximo passo</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                        <!-- end FORM -->
+                        
+                        
+                        
+                    </div>
+                    <!-- end LIST -->
+                
+                </div>
+                <!-- end CONTAINER -->
+            
+            </section>
+            <!-- end CADASTRO -->
+
+            <!-- FOOTER -->
+            <footer class="footer-light">
+                
+                <!-- COPY -->
+                <section class="copy">
+                    
+                    <div class="container">
+
+                        <div class="columns">
+
+                            <div class="column">
+
+                                <span class="text is-small">
+                                    Copyright &copy;2019 Kzas. Todos os direitos reservados.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <!-- end COPY -->
+
+            </footer>
+            <!-- end FOOTER -->
+            
+        </div>
+        <!-- end LOADING CONTENT -->
+        
+        <!-- MODAL VENDER -->
+        <div class="modal is-regular" id="modal-ajuda">
+            
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+            
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+                
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+
+                    <h4 class="title is-smallest">
+                        Para que usaremos essas informa&ccedil;&otilde;es?
+                    </h4>
+                    <h4 class="title is-regular">
+                        %Dados pessoais%
+                    </h4>
+
+                    <p class="text">
+                        Etiam elementum egestas sagittis. Nam condimentum tincidunt elit, nec pharetra mi dignissim in. Donec cursus erat nec sapien condimentum lobortis. Vestibulum sit amet tempus massa. Mauris nec lacus sagittis.
+                    </p>
+
+                    <p class="text">
+                        Ullamcorper est at, suscipit ante. Sed pellentesque erat a mauris bibendum malesuada. Donec elit ex, porttitor sit amet placerat at, tempor non risus.
+                    </p>
+
+                    <p class="text">
+                        Donec porta placerat arcu in auctor. Morbi placerat, velit vel gravida convallis, ligula turpis blandit lorem.
+                    </p>
+
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+                
+            </div>
+            <!-- end MODAL CARD -->
+            
+        </div>
+        <!-- end MODAL VENDER -->
+
+        <!-- MODAL CONFIRMAR TELEFONE -->
+        <div class="modal is-small" id="modal-confirmar-telefone">
+
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+
+                    <h4 class="title is-small">
+                        Olá, precisamos confirmar seu telefone
+                    </h4>
+
+                    <div class="field" style="margin-bottom: 24px; margin-top: 8px;">
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium has-mask" type="tel" placeholder="DDD + Celular"
+                                pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})" data-mask='(00) 00000-0000'
+                                required />
+                            <span class="icon is-small is-left">
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button data-modal="modal-validar-codigo" class="button is-medium is-primary is-fullwidth" aria-label="close">
+                        <strong>Enviar código</strong>
+                    </button>
+
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+
+            </div>
+            <!-- end MODAL CARD -->
+
+        </div>
+        <!-- end MODAL CONFIRMAR TELEFONE -->
+
+        <!-- MODAL VERIFICAR CÓDIGO -->
+        <div class="modal is-small" id="modal-validar-codigo">
+
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+
+                    <h4 class="title is-small">
+                        Por favor, digite o código de acesso que enviamos
+                    </h4>
+
+                    <div class="login-form">
+
+                        <form data-validation="false">
+
+                            <fieldset>
+
+                                <!-- CODE -->
+                                <div class="field" style="margin-bottom: 24px; margin-top: 8px;">
+                                    <div class="control has-icons-left">
+                                        <input class="input is-medium has-mask" type="text" id="loginCode"
+                                            placeholder="Código de acesso" pattern="[a-zA-Z0-9]{8}" maxlength="8"
+                                            required="">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-key"></i>
+                                        </span>
+                                        <script type="text/javascript">
+                                            $(function () {
+                                                $('.loginCode').mask('Z', {
+                                                    translation: {
+                                                        'Z': {
+                                                            pattern: /[a-zA-Z0-9]/,
+                                                            recursive: true
+                                                        }
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <!-- end CODE -->
+
+                                <div class="buttons">
+                                    <button type="submit" class="button is-medium is-primary is-fullwidth"
+                                        id="startChat" role="submit" aria-label="close" data-modal="modal-telefone-validado" disabled>
+                                        <strong>Validar c&oacute;digo</strong>
+                                    </button>
+                                </div>
+
+                                <div class="buttons" style="margin-top: 1rem">
+                                    <button type="button" class="button is-medium is-link is-fullwidth"
+                                        id="codeForwarder" role="button" disabled>
+                                        <strong>
+                                            Reenviar código
+                                            <span id="timer">
+                                                em <span id="counter">51</span> seg...
+                                            </span>
+                                        </strong>
+                                    </button>
+                                </div>
+
+                            </fieldset>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+
+            </div>
+            <!-- end MODAL CARD -->
+
+        </div>
+        <!-- end MODAL VERIFICAR CÓDIGO -->
+
+        <!-- MODAL TELEFONE VALIDADO -->
+        <div class="modal is-small" id="modal-telefone-validado">
+
+            <!-- MODAL BACKGROUND -->
+            <div class="modal-background"></div>
+            <!-- end MODAL BACKGROUND -->
+
+            <!-- MODAL CARD -->
+            <div class="modal-card">
+
+                <!-- MODAL HEADER -->
+                <header class="modal-card-head">
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <!-- MODAL HEADER -->
+
+                <!-- MODAL BODY -->
+                <section class="modal-card-body">
+                    
+                    <figure class="image is-160">
+                        <img src="./img/icon-illus-phone-validated-blue.png" alt="" />
+                    </figure>                    
+
+                    <h3 class="title is-smallest text-center">
+                        Telefone validado
+                    </h3>
+
+                    <p class="text text-center" style="color: #6f6f6f; margin-bottom: 24px;">
+                        Muito obrigado Manuela, agora podemos falar com total segurança.
+                    </p>
+
+                    <button class="button is-medium is-secundary is-inverted is-fullwidth" aria-label="close">
+                        <strong>Voltar para cadastro</strong>
+                    </button>
+
+                    <!-- Content ... -->
+                </section>
+                <!-- end MODAL BODY -->
+
+            </div>
+            <!-- end MODAL CARD -->
+
+        </div>
+        <!-- end MODAL TELEFONE VALIDADO -->
+        
+        <!-- AOS -->
+        <script src="./js/aos.js"></script>
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+            });
+		</script>
+                
+    </body>
+</html>

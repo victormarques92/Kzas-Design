@@ -1,0 +1,21 @@
+.page-faq {
+    
+    .hero {
+        @include hero-custom('small');        
+    }
+    
+    .faq {
+        
+        .accordions {
+            padding-left: 1.000rem;
+            padding-right: 1.000rem;
+        }
+        
+        .accordion-header,
+        .accordion-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    
+}

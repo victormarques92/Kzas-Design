@@ -1,0 +1,147 @@
+/*
+RATING
+*/
+
+.rating {
+    display: flex;
+    align-items: center;
+    
+    .stars {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-right: 0.500rem;
+        
+        .star {
+            &::before {
+                @include material-icons();
+                content: $rating-full;
+                color: $grey-light;
+            }            
+        }
+        
+    }
+    .text {
+        font-weight: bolder;
+    }
+    // 1,0
+    &[data-rating='05'] {
+        .stars {
+            .star:nth-child(1)::before {
+                content: $rating-half;
+                color: $yellow-stars;
+            }
+        }
+    }
+    // 1,0
+    &[data-rating='10'] {
+        .stars {
+            .star:nth-child(1)::before {
+                color: $yellow-stars;
+            }
+        }
+    }
+    // 1,5
+    &[data-rating='15'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before {
+                color: $yellow-stars;
+            }
+            .star:nth-child(2)::before {
+                content: $rating-half;
+            }
+        }
+    }
+    // 2,0
+    &[data-rating='20'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before {
+                color: $yellow-stars;
+            }
+        }
+    }
+    
+    // 2,5
+    &[data-rating='25'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before {
+                color: $yellow-stars;
+            }
+            .star:nth-child(3)::before {
+                content: $rating-half;
+            }
+        }
+    }
+    // 3,0
+    &[data-rating='30'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before {
+                color: $yellow-stars;
+            }
+        }
+    }
+    
+    // 3,5
+    &[data-rating='35'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before,
+            .star:nth-child(4)::before {
+                color: $yellow-stars;
+            }
+            .star:nth-child(4)::before {
+                content: $rating-half;
+            }
+        }
+    }
+    // 4,0
+    &[data-rating='40'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before,
+            .star:nth-child(4)::before {
+                color: $yellow-stars;
+            }
+        }
+    }
+    
+    // 4,5
+    &[data-rating='45'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before,
+            .star:nth-child(4)::before,
+            .star:nth-child(5)::before {
+                color: $yellow-stars;
+            }
+            .star:nth-child(5)::before {
+                content: $rating-half;
+            }
+        }
+    }
+    // 5,0
+    &[data-rating='50'] {
+        .stars {
+            .star:nth-child(1)::before,
+            .star:nth-child(2)::before,
+            .star:nth-child(3)::before,
+            .star:nth-child(4)::before,
+            .star:nth-child(5)::before {
+                color: $yellow-stars;
+            }
+        }
+    }
+}
+
+/*
+end RATING
+*/

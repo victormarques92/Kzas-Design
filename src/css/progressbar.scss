@@ -1,0 +1,120 @@
+/*
+PROGRESS BAR
+*/
+
+.progressbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 2.500rem;
+    
+    .text {
+        margin-left: 0.500rem;
+        font-weight: bolder;
+    }
+    
+    .track {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 1.000rem;
+        background-color: $grey-light;
+        border-radius: 0.500rem;
+        
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            background-color: $grey;
+            border-radius: 0.500rem;
+        }
+        
+        &::after {
+            content: '';
+            display: flex;            
+            align-items: center;
+            justify-content: center;
+            width: 2.500rem;
+            height: 2.500rem;
+            margin-left: -2.500rem;
+            background-color: $grey;
+            border-radius: 50%;
+            
+            @include fontawesome('solid');
+            font-size: 1.250rem;
+            color: $white;
+        }
+    }
+    
+    // MATCH COLORS
+    &.is-hottest {
+        .track {
+            &::before,
+            &::after { background-color: $match-hottest; }            
+            &::after {
+                content: $match-hottest-icon;
+            }            
+        }
+    }
+    &.is-hot {
+        .track {
+            &::before,
+            &::after { background-color: $match-hot; }
+            &::after {
+                content: $match-hot-icon;
+            }
+        }
+    }
+    &.is-warm {
+        .track {
+            &::before,
+            &::after { background-color: $match-warm; }   
+            &::after {
+                content: $match-warm-icon;
+            }
+        }
+    }
+    &.is-cold {
+        .track {
+            &::before,
+            &::after { background-color: $match-cold; }
+            &::after {
+                content: $match-cold-icon;
+            }
+        }
+    }
+    
+    // BAR PROGRESS
+    @for $i from 1 through 100 {
+        
+        &[data-progressbar='#{$i}']{
+            .track {
+                &::before {
+                    width: round(percentage($i/100));
+                }
+            }
+        }
+        
+    }
+    
+    // IF
+    @for $a from 0 through 16 {
+        
+        &[data-progressbar='#{$a}']{
+            .track {
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+/*
+end PROGRESS BAR
+*/

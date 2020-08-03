@@ -1,0 +1,428 @@
+/* VARS */
+
+$footbar-background: $white;
+
+/* end VARS */
+
+/*
+FOOTBAR
+*/
+
+.footbar {
+    z-index: 30;
+    
+    padding-top: 1.000rem;
+    padding-bottom: 1.000rem;
+    
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.08);
+    
+    background-color: $footbar-background;
+    box-shadow: $footbar-shadow;
+    
+    &.is-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        @media (max-width: 576px) {
+            &.is-deslogado {
+                .button {
+                    &.is-primary {
+                        padding: 0 1rem;
+                        width: auto;
+                        
+                        strong {
+                            display: block;
+                        }
+                    }
+                }
+                
+                .footbar-blocked {
+                    display: flex;
+                    
+                    .button {
+                        display: none;
+                        
+                        &:first-of-type {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footbar-info,
+    .footbar-match,
+    .footbar-saved,
+    .footbar-blocked {
+        display: flex;
+        align-items: center;
+    }
+    
+    // BLOCKED
+    .footbar-blocked {
+        .button {
+            &:disabled {
+                background-color: $grey-lighter;
+                border-color: $grey-lighter;
+                color: $grey;
+                opacity: 1;
+                i.fas:before, i.far:before {
+                    content: '\f023';
+                    font-weight: 900;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    
+    // MATCH
+    .footbar-match {
+        .button {
+            &:disabled {
+                background-color: $grey-lighter;
+                border-color: $grey-lighter;
+                color: $grey;
+                opacity: 1;
+            }
+        }
+    }
+    
+    // SIGNUP
+    .footbar-signup,
+    .footbar-validate,
+    .footbar-info {
+        .button {
+            &.is-error {
+                background-color: $error;
+                color: $white;
+                &:hover {
+                    background-color: $error-dark;
+                }
+            }
+            &.is-warning {
+                background-color: $warning;
+                color: $white;
+                &:hover {
+                    background-color: $warning-dark;
+                }
+            }
+        }
+    }    
+    // end SIGNUP
+    
+    // VALIDATE
+    .footbar-validate {
+        margin-right: auto;
+    }
+    
+    // INFO
+    .footbar-info {
+        
+        // SCORE
+        .score {
+            display: flex;
+            align-items: center;
+            
+            padding-right: 1.000rem;
+            margin-right: 1.000rem;
+            
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: $grey-light;
+            
+            .text {
+                font-size: $size-5;
+                line-height: 1.5;
+            }
+            
+        }
+        // end SCORE
+        
+        // PRICE
+        .price {
+            &.valor {
+                display: flex;
+                flex-wrap: wrap;
+                @include price-info-color();
+                
+                .price-label {
+                    width: 100%;
+                    .text {
+                        font-size: $size-1;
+                        line-height: 1;
+                        color: $text-light;
+                    }
+                }
+                
+                .price-value {
+                    .text {
+                        font-size: $size-4;
+                        font-weight: bolder;
+                    }
+                }
+                
+                .price-info {
+                    display: flex;
+                    align-items: center;
+                    width: auto;
+                    margin-left: 0.500rem;
+                    .icon {
+                        font-size: 1.000rem;
+                        margin-right: 0.250rem;
+                    }
+                    .text {
+                        font-size: $size-1;
+                        font-weight: bolder;
+                    }
+                }
+                
+            }
+        }
+        // end PRICE
+        
+    }
+    // end INFO
+    
+    
+    // ACTION
+    .footbar-match,
+    .footbar-saved,
+    .footbar-blocked {
+        margin-left: auto;
+        
+        .button {
+            padding-right: 1.250rem;
+            
+            &:not(:last-child) {
+                margin-right: 0.500rem;
+            }
+            
+            &.is-neutral {
+                .icon {
+                    font-size: 1.250rem;
+                    color: $primary;
+                    position: relative;
+
+                    .badge {
+                        position: absolute;
+                        top: -8px;
+                        right: -8px;
+                        padding: 0 .25rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: .5rem;
+                        min-width: 1rem;
+                        height: 1rem;
+                        font-size: .75rem;
+                        line-height: 1;
+                        font-weight: 300;
+                        color: $white;
+                        text-align: center;
+                        background: $red;
+                    }
+
+                    &.send-proposal {
+                        .badge {
+                            background: $black;
+
+                            i {
+                                font-size: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-approved {
+                background: $success-lighter;
+                border-color: $success-lighter;
+
+                .icon {
+                    color: $success;
+                    position: relative;
+
+                    .badge {
+                        position: absolute;
+                        top: -8px;
+                        right: -8px;
+                        padding: 0 .25rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: .5rem;
+                        min-width: 1rem;
+                        height: 1rem;
+                        font-size: .75rem;
+                        line-height: 1;
+                        font-weight: 300;
+                        color: $white;
+                        text-align: center;
+                        background: $success;
+
+                        i {
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    // end ACTION
+    
+    // HELP
+    .footbar-help {
+        padding-left: 1.500rem;
+        margin-left: 1.500rem;
+        
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: $grey-light;
+        
+        .image {
+            position: relative;
+            
+            border-radius: 50%;
+            
+            border-width: 1px;
+            border-style: solid;
+            border-color: $white;
+            
+            box-shadow: $button-shadow;
+            
+            img {
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            
+            &::after {
+                position: absolute;
+                top: 0;
+                left: -1.000rem;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                width: 1.500rem;
+                height: 1.500rem;
+                
+                @include fontawesome('solid');
+                content: '\f141';
+                
+                font-size: 0.750rem;
+                color: $grey;
+                
+                background-color: $white;
+                
+                border-radius: 50%;
+                border-bottom-right-radius: 0;
+                
+                border-width: 1px;
+                border-style: solid;
+                border-color: $grey;
+
+                box-shadow: $button-shadow;
+            }
+        }
+        
+        
+    }
+    
+    // end HELP
+    
+}
+
+/*
+end FOOTBAR
+*/
+
+
+// MOBILE LANDSCAPE
+@media screen and (max-width: 1008px) {
+    
+    .footbar {
+        
+        // INFO
+        .footbar-info {
+            .score {
+                padding-right: 0.500rem;
+                margin-right: 0;
+                border-right: none;
+            }
+            .price.valor {
+                display: none;
+            }
+            
+        }
+        // end INFO
+        
+        // ACTION
+        .footbar-signup,
+        .footbar-preferences,
+        .footbar-validate,
+        .footbar-match,
+        .footbar-saved,
+        .footbar-blocked {
+            margin-left: auto;
+
+            .button {
+                padding-left: 0;
+                padding-right: 0;
+                width: 2.500rem;
+
+                strong,
+                .text {
+                    display: none;
+                }
+            }
+        }
+
+        .footbar-blocked {
+            display: none;
+        }
+        // end ACTION
+        
+        .footbar-signup,
+        .footbar-preferences,
+        .footbar-validate {
+            margin-left: 0;
+            margin-right: auto;
+        }
+        
+        // HELP
+        .footbar-help {
+            margin-left: 1.000rem;
+        }
+        // END HELP
+        
+    }
+    
+}
+
+// MOBILE PORTRAIT
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    
+    
+    
+}
+
+// IPAD LANDSCAPE
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
